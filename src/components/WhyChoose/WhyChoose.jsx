@@ -1,11 +1,11 @@
-import React from 'react';
+import React, {forwardRef} from 'react';
 import classes from "./whyChoose.module.css"
 import doctor from "../../assets/images/whyChoose/picture.png"
 import check from "../../assets/images/whyChoose/check.svg"
 
-const WhyChoose = () => {
+const WhyChoose = forwardRef((props, ref) => {
     return (
-        <div className={classes.container}>
+        <div className={classes.container} ref={ref}>
             <div className={classes.leftSide}>
                 <img src={doctor} alt="doctor" className={classes.doctorImage}/>
             </div>
@@ -59,6 +59,6 @@ const WhyChoose = () => {
             </div>
         </div>
     );
-};
+});
 
 export default WhyChoose;

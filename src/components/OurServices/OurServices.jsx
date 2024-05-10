@@ -1,13 +1,13 @@
-import React from 'react';
+import React, {forwardRef} from 'react';
 import classes from "./ourServices.module.css";
 import doctor from "../../assets/images/ourServices/doctor.svg"
 import prescriptions from "../../assets/images/ourServices/prescription.svg"
 import videoConsultation from "../../assets/images/ourServices/video consultation.svg"
 import veterinaryCare from "../../assets/images/ourServices/paw.svg"
 
-const OurServices = () => {
+const OurServices = forwardRef((props, ref) => {
     return (
-        <div className={classes.container}>
+        <div className={classes.container} ref={ref}>
             <div className={classes.title}>Our services</div>
             <div className={classes.serviceWrapper}>
                 <div className={classes.service}>
@@ -47,6 +47,6 @@ const OurServices = () => {
             </div>
         </div>
     );
-};
+});
 
 export default OurServices;

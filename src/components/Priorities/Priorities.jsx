@@ -1,10 +1,10 @@
-import React from 'react';
+import React, {forwardRef} from 'react';
 import classes from "./priorities.module.css"
 import doctor from "../../assets/images/priorities/man.png"
 
-const Priorities = () => {
+const Priorities = forwardRef((props, ref) => {
     return (
-        <div className={classes.container}>
+        <div className={classes.container} ref={ref}>
             <div className={classes.leftSide}>
                 <div className={classes.title}>Your health, our priority</div>
                 <div className={classes.description}>At Medivisit, your health and well-being are our top priorities. We
@@ -17,6 +17,6 @@ const Priorities = () => {
             </div>
         </div>
     );
-};
+});
 
 export default Priorities;
