@@ -5,6 +5,9 @@ import Banner from "./components/Banner/Banner";
 import classes from "./app.module.css"
 import Header from "./components/Header/Header";
 import React from "react";
+import OurServices from "./components/OurServices/OurServices";
+import WhyChoose from "./components/WhyChoose/WhyChoose";
+import Priorities from "./components/Priorities/Priorities";
 
 function App() {
     return (
@@ -13,7 +16,9 @@ function App() {
                 <Header/>
                 <Banner/>
             </div>
-
+            <OurServices/>
+            <WhyChoose/>
+            <Priorities/>
         </div>
     );
 }

@@ -1,0 +1,58 @@
+.container {
+    max-width: 1920px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 240px;
+}
+
+.leftSide {
+    max-width: 50%;
+    margin-right: 125px;
+}
+
+.doctorImage {
+    max-width: 100%;
+}
+
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+.title {
+    color: var(--Black);
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.reason {
+    margin-bottom: 30px;
+}
+
+.reasonNameWrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.check {
+    margin-right: 15px;
+}
+
+.reasonName {
+    color: var(--Black);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.reasonDescription {
+    padding-left: 39px;
+    color: var(--Black);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+

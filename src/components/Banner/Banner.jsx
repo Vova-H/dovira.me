@@ -1,11 +1,11 @@
 import React from 'react';
 import classes from "./banner.module.css"
-import pictureDoctor from "../../assets/images/picture of doctor.svg"
-import smallCard from "../../assets/images/smallCard.png"
-import card from "../../assets/images/card.png"
-import facebook from "../../assets/images/facebook.png"
-import instagram from "../../assets/images/instagram.png"
-import linkedIn from "../../assets/images/linkedin.png"
+import pictureDoctor from "../../assets/images/banner/picture of doctor.svg"
+import smallCard from "../../assets/images/banner/smallCard.png"
+import card from "../../assets/images/banner/card.png"
+import facebook from "../../assets/images/banner/facebook.png"
+import instagram from "../../assets/images/banner/instagram.png"
+import linkedIn from "../../assets/images/banner/linkedin.png"
 
 const Banner = () => {
     return (
