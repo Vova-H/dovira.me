@@ -1,0 +1,40 @@
+.headerContainer {
+    max-width: 1920px ;
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+}
+
+.logo {
+    max-width: 100px;
+    margin-right: 100px;
+    cursor: pointer;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigationItem {
+    margin-right: 60px;
+    font-family: Inter;
+    font-size: 18px;
+    color: var(--Black);
+}
+
+.navigationItem:last-child {
+    margin-right: 0;
+}
+
+.navigationItem:hover {
+    cursor: pointer;
+}
