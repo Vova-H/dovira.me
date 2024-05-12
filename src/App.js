@@ -9,6 +9,8 @@ import OurServices from "./components/OurServices/OurServices";
 import WhyChoose from "./components/WhyChoose/WhyChoose";
 import Priorities from "./components/Priorities/Priorities";
 import GetStartedToday from "./components/GetStartedToday/GetStartedToday";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 function App() {
 
@@ -16,7 +18,7 @@ function App() {
     const whyChooseUsRef = useRef(null);
     const ourPrioritiesRef = useRef(null);
     const downloadAppRef = useRef(null);
-    // const contactUsRef = useRef(null);
+    const contactUsRef = useRef(null);
 
     const scrollTo = (ref) => {
         ref.current.scrollIntoView({behavior: 'smooth', block: 'start'});
@@ -31,7 +33,8 @@ function App() {
                             ourServicesRef,
                             whyChooseUsRef,
                             ourPrioritiesRef,
-                            downloadAppRef
+                            downloadAppRef,
+                            contactUsRef
                         }}
                 />
                 <Banner/>
@@ -40,6 +43,8 @@ function App() {
             <WhyChoose ref={whyChooseUsRef}/>
             <Priorities ref={ourPrioritiesRef}/>
             <GetStartedToday ref={downloadAppRef}/>
+            <Contact ref={contactUsRef}/>
+            <Footer/>
         </div>
     );
 }

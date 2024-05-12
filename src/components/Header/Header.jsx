@@ -30,7 +30,9 @@ const Header = ({scrollTo, refs}) => {
                          onClick={() => handleNavigationClick(refs.downloadAppRef)}>
                         Download the app
                     </div>
-                    <div className={classes.navigationItem}>Contact us</div>
+                    <div className={classes.navigationItem}
+                         onClick={() => handleNavigationClick(refs.contactUsRef)}>Contact us
+                    </div>
                 </div>
             </div>
 
