@@ -7,9 +7,9 @@ import android from "../../assets/images/getStartedToday/android.png"
 
 const GetStartedToday = forwardRef((props, ref) => {
     return (
-        <div className={classes.container} ref={ref}>
+        <div className={classes.container}>
             <div className={classes.leftSide}>
-                <img src={phoneImage} className={classes.image} alt="Phone"/>
+                <img src={phoneImage} className={classes.image} alt="Phone" ref={ref}/>
             </div>
             <div className={classes.rightSide}>
                 <div className={classes.title}>Get started today!</div>
