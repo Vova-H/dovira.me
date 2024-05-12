@@ -3,9 +3,9 @@ import classes from "./banner.module.css"
 import pictureDoctor from "../../assets/images/banner/picture of doctor.svg"
 import smallCard from "../../assets/images/banner/smallCard.png"
 import card from "../../assets/images/banner/card.png"
-import facebook from "../../assets/images/banner/facebook.png"
-import instagram from "../../assets/images/banner/instagram.png"
-import linkedIn from "../../assets/images/banner/linkedin.png"
+import facebook from "../../assets/images/banner/facebook.svg"
+import instagram from "../../assets/images/banner/instagram.svg"
+import linkedIn from "../../assets/images/banner/linkedin.svg"
 
 const Banner = () => {
     return (
