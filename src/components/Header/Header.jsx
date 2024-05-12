@@ -10,7 +10,7 @@ const Header = ({scrollTo, refs}) => {
     };
 
     return (
-        <div className={classes.headerContainer}>
+        <header className={classes.headerContainer}>
             <div className={classes.header}>
                 <img className={classes.logo} src={Logo} alt="Logo"/>
                 <div className={classes.navigation}>
@@ -26,12 +26,15 @@ const Header = ({scrollTo, refs}) => {
                          onClick={() => handleNavigationClick(refs.ourPrioritiesRef)}>
                         Our priorities
                     </div>
-                    <div className={classes.navigationItem}>Download the app</div>
+                    <div className={classes.navigationItem}
+                         onClick={() => handleNavigationClick(refs.downloadAppRef)}>
+                        Download the app
+                    </div>
                     <div className={classes.navigationItem}>Contact us</div>
                 </div>
             </div>
 
-        </div>
+        </header>
     );
 };
 

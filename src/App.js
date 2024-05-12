@@ -8,13 +8,14 @@ import React, {useRef} from "react";
 import OurServices from "./components/OurServices/OurServices";
 import WhyChoose from "./components/WhyChoose/WhyChoose";
 import Priorities from "./components/Priorities/Priorities";
+import GetStartedToday from "./components/GetStartedToday/GetStartedToday";
 
 function App() {
 
     const ourServicesRef = useRef(null);
     const whyChooseUsRef = useRef(null);
     const ourPrioritiesRef = useRef(null);
-    // const downloadAppRef = useRef(null);
+    const downloadAppRef = useRef(null);
     // const contactUsRef = useRef(null);
 
     const scrollTo = (ref) => {
@@ -29,7 +30,8 @@ function App() {
                         refs={{
                             ourServicesRef,
                             whyChooseUsRef,
-                            ourPrioritiesRef
+                            ourPrioritiesRef,
+                            downloadAppRef
                         }}
                 />
                 <Banner/>
@@ -37,6 +39,7 @@ function App() {
             <OurServices ref={ourServicesRef}/>
             <WhyChoose ref={whyChooseUsRef}/>
             <Priorities ref={ourPrioritiesRef}/>
+            <GetStartedToday ref={downloadAppRef}/>
         </div>
     );
 }
