@@ -6,6 +6,7 @@
     align-items: center;
     background-image: linear-gradient(to bottom, rgba(226, 240, 255, 1), rgba(226, 240, 255, 0));
     margin-bottom: 110px;
+    border-radius: 20px;
 }
 
 .image {
@@ -30,7 +31,7 @@
     margin-bottom: 60px;
 }
 
-.email{
+.email {
     color: var(--Blue);
     text-decoration: none;
 }
