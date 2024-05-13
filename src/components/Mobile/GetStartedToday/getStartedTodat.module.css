@@ -1,0 +1,63 @@
+.container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+
+.title {
+    color: var(--Black);
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+
+.description {
+    color: var(--Black);
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+
+}
+
+.linkImage {
+    width: 100%;
+}
+
+.image {
+    width: 100%;
+    position: relative;
+}
+
+.ellipse3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+
+.ellipse2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+
+.ellipse1 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 100%;
+}

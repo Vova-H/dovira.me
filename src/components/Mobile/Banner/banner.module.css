@@ -1,0 +1,78 @@
+.bannerWrapper {
+    display: flex;
+    flex-direction: column;
+    font-family: Inter;
+
+}
+
+
+
+.title {
+    color: var(--Black);
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    max-width: 90%;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--Black);
+    margin-bottom: 30px;
+    max-width: 80%;
+
+}
+
+.button {
+    background-color: var(--Blue);
+    padding: 16px 85px;
+    width: 100%;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: Inter;
+    border-color: transparent;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.statistic {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+}
+
+.statisticItemWrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.statisticItemTextBefore {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.statisticItemCount {
+    font-weight: 500;
+    font-size: 28px;
+    color: var(--Blue);
+    margin-bottom: 5px;
+}
+
+.statisticItemText {
+    display: flex;
+    color: var(--Black);
+    font-weight: 400;
+    font-size: 16px;
+    max-width: 25%;
+}
+
+.doctor {
+    width: 100%;
+    margin-bottom: 70px;
+}

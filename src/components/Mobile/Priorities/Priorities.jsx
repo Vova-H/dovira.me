@@ -1,0 +1,18 @@
+import React, {forwardRef} from 'react';
+import classes from "./priorities.module.css"
+import doctor from "../../../assets/images/priorities/mobile/man.png"
+
+const Priorities = forwardRef((props, ref) => {
+    return (
+        <div className={classes.container}>
+            <div className={classes.title}>Your health, our priority</div>
+            <div className={classes.description}>At Medivisit, your health and well-being are our top priorities. We
+                are committed to providing you and your loved ones with convenient, reliable, and compassionate
+                medical care whenever you need it.
+            </div>
+            <img src={doctor} alt="doctor" className={classes.image} ref={ref}/>
+        </div>
+    );
+});
+
+export default Priorities;

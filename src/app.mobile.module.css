@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    max-width: 450px;
+    flex-direction: column;
+}
+
+.bannerSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, rgba(226, 240, 255, 1), rgba(226, 240, 255, 0));
+    padding: 0 15px;
+}
