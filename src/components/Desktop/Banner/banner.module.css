@@ -83,15 +83,20 @@
 
 .statistic {
     display: flex;
-
 }
 
 .statisticItemWrapper {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    margin-right: 60px;
+    margin-right: 55px;
+}
 
+.upperStatisticItemText{
+    color: var(--Black);
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 5px;
 }
 
 .statisticItemCount {
@@ -127,6 +132,4 @@
     text-decoration: none;
 }
 
-@media only screen and(max-width: 480px) {
 
-}

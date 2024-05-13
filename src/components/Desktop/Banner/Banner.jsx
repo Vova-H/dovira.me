@@ -30,14 +30,17 @@ const Banner = () => {
                     <button className={classes.button}>Download app</button>
                     <div className={classes.statistic}>
                         <div className={classes.statisticItemWrapper}>
+                            <p className={classes.upperStatisticItemText}>coming soon</p>
                             <p className={classes.statisticItemCount}>150k</p>
                             <div className={classes.statisticItemText}>Patients</div>
                         </div>
                         <div className={classes.statisticItemWrapper}>
+                            <p className={classes.upperStatisticItemText}>coming soon</p>
                             <p className={classes.statisticItemCount}>100+</p>
                             <div className={classes.statisticItemText}>Expert doctors</div>
                         </div>
                         <div className={classes.statisticItemWrapper}>
+                            <p className={classes.upperStatisticItemText}>coming soon</p>
                             <p className={classes.statisticItemCount}>100+</p>
                             <div className={classes.statisticItemText}>Expert veterinarians</div>
                         </div>
