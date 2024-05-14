@@ -4,13 +4,13 @@ import doctor from "../../../assets/images/priorities/mobile/man.png"
 
 const Priorities = forwardRef((props, ref) => {
     return (
-        <div className={classes.container}>
+        <div className={classes.container} ref={ref}>
             <div className={classes.title}>Your health, our priority</div>
             <div className={classes.description}>At Medivisit, your health and well-being are our top priorities. We
                 are committed to providing you and your loved ones with convenient, reliable, and compassionate
                 medical care whenever you need it.
             </div>
-            <img src={doctor} alt="doctor" className={classes.image} ref={ref}/>
+            <img src={doctor} alt="doctor" className={classes.image} />
         </div>
     );
 });

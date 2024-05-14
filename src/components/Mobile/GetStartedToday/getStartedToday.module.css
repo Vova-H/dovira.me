@@ -12,7 +12,6 @@
     font-size: 28px;
     font-weight: 500;
     margin-bottom: 20px;
-
 }
 
 .description {
@@ -25,11 +24,15 @@
 .links {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .link {
-
+    width: 200px;
+    margin-right: 5%;
+    &:last-child{
+        margin-right: 0;
+    }
 }
 
 .linkImage {
@@ -37,27 +40,7 @@
 }
 
 .image {
-    width: 100%;
-    position: relative;
-}
-
-.ellipse3 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-}
-
-.ellipse2 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-}
-
-.ellipse1 {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+    margin-right: 9%;
+    max-width: 100%;
     width: 100%;
 }
