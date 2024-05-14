@@ -1,21 +1,23 @@
 .headerContainer {
-    max-width: 1920px ;
+    width: 100%; /* Ensure the container spans the full width */
     display: flex;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    padding: 30px 0; /* Use padding for top and bottom space */
     justify-content: center;
+    background-color: #E2F0FF; /* Adjust background color if necessary */
 }
 
 .header {
+    width: 100%;
+    max-width: 1200px; /* Set a max width to center content */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 100%;
+    padding: 0 20px; /* Add padding to create space on the sides */
+    box-sizing: border-box; /* Ensure padding is included in width */
 }
 
 .logo {
     max-width: 100px;
-    margin-right: 100px;
     cursor: pointer;
 }
 

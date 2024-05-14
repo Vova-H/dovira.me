@@ -1,15 +1,17 @@
 .container {
-    max-width: 1920px;
     width: 100%;
     border-top: solid 1px #d3d3d3;
 }
 
 .content {
+    width: 100%;
+    max-width: 1200px; /* Set a max width to center content */
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    max-width: 70%;
+    align-items: center;
     margin: 20px auto;
+    padding: 0 20px; /* Add padding to create space on the sides */
+    box-sizing: border-box; /* Ensure padding is included in width */
 }
 
 .copyright {
@@ -18,16 +20,14 @@
     font-weight: 500;
 }
 
-.socialLinks {
-    :hover {
-        cursor: pointer;
-    }
+.socialLinks:hover {
+    cursor: pointer;
 }
 
 .socialLinkItem {
     margin-right: 30px;
+}
 
-    &:last-child {
-        margin-right: 0;
-    }
+.socialLinkItem:last-child {
+    margin-right: 0;
 }

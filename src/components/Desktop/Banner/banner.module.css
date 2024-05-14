@@ -1,29 +1,33 @@
 .bannerWrapper {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding-top: 10px;
-    font-family: Inter;
-    max-width: 1920px;
-    position: relative;
+    width: 100%; /* Ensure the container spans the full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .bannerContent {
-    max-width: 70%;
+    width: 100%;
+    max-width: 1200px; /* Set a max width to center content */
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    justify-self: center;
     margin-bottom: 200px;
+    padding: 0 20px; /* Add padding to create space on the sides */
+    box-sizing: border-box; /* Ensure padding is included in width */
 }
 
-
 .bannerLeftSide {
-    max-width: 60%;
+    flex: 1;
+    padding-right: 20px; /* Add padding between left and right sides */
 }
 
 .bannerRightSide {
-    max-width: 40%;
+    flex: 1;
     position: relative;
+    padding-left: 20px; /* Add padding between left and right sides */
 }
 
 .smallCardWrapper {
@@ -88,11 +92,10 @@
 .statisticItemWrapper {
     display: flex;
     flex-direction: column;
-    justify-content: left;
     margin-right: 55px;
 }
 
-.upperStatisticItemText{
+.upperStatisticItemText {
     color: var(--Black);
     font-size: 12px;
     font-weight: 500;
@@ -107,13 +110,10 @@
 }
 
 .statisticItemText {
-    display: flex;
-    flex-wrap: nowrap;
     color: var(--Black);
-    font-weight: 400;
     font-size: 22px;
+    font-weight: 400;
 }
-
 
 .socialLinksWrapper {
     position: absolute;
@@ -131,5 +131,3 @@
     height: 55px;
     text-decoration: none;
 }
-
-

@@ -1,14 +1,17 @@
 .container {
-    max-width: 1920px;
-    width: 70%;
+    width: 100%;
+    max-width: 1200px; /* Set a max width to center content */
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 240px;
+    padding: 0 20px; /* Add padding to create space on the sides */
+    box-sizing: border-box; /* Ensure padding is included in width */
 }
 
 .leftSide {
-    max-width: 50%;
-    margin-right: 125px;
+    flex: 1;
+    padding-right: 20px; /* Add padding between left and right sides */
 }
 
 .doctorImage {
@@ -16,9 +19,10 @@
 }
 
 .rightSide {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    max-width: 50%;
+    padding-left: 20px; /* Add padding between left and right sides */
 }
 
 .title {
@@ -54,5 +58,3 @@
     font-size: 18px;
     font-weight: 400;
 }
-
-
