@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     font-family: Inter;
-
 }
 
 
@@ -74,5 +73,5 @@
 
 .doctor {
     width: 100%;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }

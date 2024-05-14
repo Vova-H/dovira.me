@@ -2,12 +2,13 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 0 15px;
+    padding: 20px 15px 0;
 }
 
 
 .doctorImage {
     max-width: 100%;
+    margin-bottom: 50px;
 }
 
 .title {
