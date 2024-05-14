@@ -16,7 +16,6 @@ const WhyChoose = forwardRef((props, ref) => {
                     Access quality healthcare services without leaving your home, saving you time and hassle.
                 </div>
             </div>
-
             <div className={classes.reason}>
                 <div className={classes.reasonNameWrapper}>
                     <img src={check} alt="check" className={classes.check}/>
@@ -44,7 +43,7 @@ const WhyChoose = forwardRef((props, ref) => {
                     <img src={check} alt="check" className={classes.check}/>
                     <div className={classes.reasonName}>24/7 availability</div>
                 </div>
-                <div className={classes.reasonDescription} style={{marginBottom: "50px"}}>
+                <div className={classes.reasonDescription}>
                     Medical emergencies can happen at any time. With Medivisit, help is just a tap away, day or
                     night.
                 </div>
