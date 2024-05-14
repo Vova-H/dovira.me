@@ -7,6 +7,7 @@ import Instagram from "../../../assets/images/footer/instagram.svg";
 import LinkedIn from "../../../assets/images/footer/linkedin.svg";
 import closeIcon from "../../../assets/images/banner/mobile/cross.svg";
 
+
 const Header = ({scrollTo, refs}) => {
     const [openedMenu, setOpenedMenu] = useState(false);
     const services = refs.ourServicesRef;
@@ -55,9 +56,15 @@ const Header = ({scrollTo, refs}) => {
                         us</p>
                 </nav>
                 <div className={classes.socials}>
-                    <img src={FaceBook} alt="Facebook"/>
-                    <img src={LinkedIn} alt="LinkedIn"/>
-                    <img src={Instagram} alt="Instagram"/>
+                    <a href="https://www.facebook.com/MediVisit.dr">
+                        <img src={FaceBook} alt="Facebook" className={classes.socialItem}/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/medivisit-admin/">
+                        <img src={LinkedIn} alt="LinkedIn" className={classes.socialItem}/>
+                    </a>
+                    <a href="https://www.instagram.com/medivisit.dr_/">
+                        <img src={Instagram} alt="Instagram" className={classes.socialItem}/>
+                    </a>
                 </div>
             </div>
         </header>

@@ -12,13 +12,13 @@ const Banner = () => {
         <div className={classes.bannerWrapper}>
             <div className={classes.socialLinksWrapper}>
                 <div className={classes.socialLinkItemWrapper}>
-                    <a href=" https://www.facebook.com">
+                    <a href="https://www.facebook.com/MediVisit.dr">
                         <img src={facebook} alt="Facebook" className={classes.socialLinkItem}/>
                     </a>
-                    <a href="https://www.linkedin.com" style={{textDecoration: "none"}}>
+                    <a href="https://www.linkedin.com/in/medivisit-admin/" style={{textDecoration: "none"}}>
                         <img src={linkedIn} alt="Linked In" className={classes.socialLinkItem}/>
                     </a>
-                    <a href="https://www.instagram.com/">
+                    <a href="https://www.instagram.com/medivisit.dr_/">
                         <img src={instagram} alt="Instagram" className={classes.socialLinkItem}/>
                     </a>
                 </div>

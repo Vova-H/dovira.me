@@ -9,13 +9,13 @@ const Footer = () => {
         <footer className={classes.container}>
             <div className={classes.copyright}>© 2024 MediVisit. All rights reserved.</div>
             <div className={classes.socialLinks}>
-                <a href=" https://www.facebook.com">
+                <a href="https://www.facebook.com/MediVisit.dr">
                     <img src={facebook} alt="Facebook"/>
                 </a>
-                <a href="https://www.linkedin.com">
+                <a href="https://www.linkedin.com/in/medivisit-admin/">
                     <img src={linkedIn} alt="Linked In"/>
                 </a>
-                <a href="https://www.instagram.com/">
+                <a href="https://www.instagram.com/medivisit.dr_/">
                     <img src={instagram} alt="Instagram"/>
                 </a>
             </div>
