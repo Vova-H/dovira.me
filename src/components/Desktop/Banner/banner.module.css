@@ -20,33 +20,8 @@
     max-width: 60%;
 }
 
-.bannerRightSide {
-    max-width: 40%;
-    position: relative;
-}
-
-.smallCardWrapper {
-    position: absolute;
-    bottom: 26%;
-    left: -30%;
-}
-
-.smallCard {
-    width: 80%;
-}
-
-.card {
-    max-width: 250px;
-}
-
-.cardWrapper {
-    position: absolute;
-    top: 5%;
-    left: 70%;
-}
-
 .doctorImgWrapper {
-    max-width: 100%;
+    width: 100%;
 }
 
 .doctorImg {
@@ -89,6 +64,9 @@
     flex-direction: column;
     justify-content: left;
     margin-right: 55px;
+    &:last-child{
+        margin-right: 0;
+    }
 }
 
 .upperStatisticItemText{
