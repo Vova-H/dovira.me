@@ -1,6 +1,6 @@
 import React, {forwardRef} from 'react';
 import classes from "./priorities.module.css"
-import doctor from "../../../assets/images/priorities/mobile/man.png"
+import doctor from "../../../assets/images/priorities/man.png"
 
 const Priorities = forwardRef((props, ref) => {
     return (

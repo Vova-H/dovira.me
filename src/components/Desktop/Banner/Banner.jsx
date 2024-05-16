@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from "./banner.module.css"
-import pictureDoctor from "../../../assets/images/banner/picture of doctor2.svg"
+import pictureDoctor from "../../../assets/images/banner/picture of doctor.png"
 import smallCard from "../../../assets/images/banner/smallCard.png"
 import card from "../../../assets/images/banner/card.png"
 import facebook from "../../../assets/images/banner/facebook.svg"
@@ -50,12 +50,12 @@ const Banner = () => {
                     <div className={classes.doctorImgWrapper}>
                         <img src={pictureDoctor} alt="Doctor" className={classes.doctorImg}/>
                     </div>
-                    <div className={classes.smallCardWrapper}>
-                        <img src={smallCard} alt="Small card" className={classes.smallCard}/>
-                    </div>
-                    <div className={classes.cardWrapper}>
-                        <img src={card} alt="Card" className={classes.card}/>
-                    </div>
+                    {/*<div className={classes.smallCardWrapper}>*/}
+                    {/*    <img src={smallCard} alt="Small card" className={classes.smallCard}/>*/}
+                    {/*</div>*/}
+                    {/*<div className={classes.cardWrapper}>*/}
+                    {/*    <img src={card} alt="Card" className={classes.card}/>*/}
+                    {/*</div>*/}
                 </div>
             </div>
         </div>
