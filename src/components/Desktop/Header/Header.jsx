@@ -19,7 +19,7 @@ const Header = ({scrollTo, refs}) => {
     return (
         <header className={classes.headerContainer}>
             <div className={classes.header}>
-                <img className={classes.logo} src={Logo} alt="Logo"/>
+                <img className={classes.logo} src={Logo} alt="Logo" data-aos="fade-zoom-in" data-aos-delay="200" data-aos-duration="2000" />
                 <div className={classes.navigation}>
                     <div className={classes.navigationItem}
                          onClick={() => handleNavigationClick(refs.ourServicesRef)}
