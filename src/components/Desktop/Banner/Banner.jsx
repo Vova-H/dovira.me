@@ -38,8 +38,8 @@ const Banner = ({scrollTo, refs}) => {
             </div>
             <div className={classes.bannerContent}>
                 <div className={classes.bannerLeftSide}>
-                    <h1 className={classes.title} data-aos="fade-up" data-aos-delay="200">Are you tired of queues in hospitals?</h1>
-                    <p className={classes.subtitle} data-aos="fade-up" data-aos-delay="200">Get quality doctor visits
+                    <h1 className={classes.title} data-aos="fade-up" data-aos-delay="300">Are you tired of queues in hospitals?</h1>
+                    <p className={classes.subtitle} data-aos="fade-up" data-aos-delay="300">Get quality doctor visits
                         from home with Medivisit.</p>
                     <button className={classes.button} data-aos="fade-up" data-aos-delay="400"
                             onClick={() => handleNavigationClick(refs.downloadAppRef)}>Download app
