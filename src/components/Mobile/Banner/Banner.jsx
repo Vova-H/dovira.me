@@ -35,7 +35,7 @@ const Banner = ({scrollTo, refs}) => {
                         <div className={classes.statisticItemText}>Expert veterinarians</div>
                     </div>
                 </div>
-                <img src={doctor} alt="Doctor" className={classes.doctor} data-aos="fade" data-aos-delay="600" data-aos-duration="1500" />
+                <img src={doctor} alt="Doctor" className={classes.doctor}/>
         </div>
     );
 };
