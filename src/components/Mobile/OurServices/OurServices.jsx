@@ -1,16 +1,24 @@
-import React, {forwardRef} from 'react';
+import React, {forwardRef, useEffect} from 'react';
 import classes from "./ourServices.module.css";
 import doctor from "../../../assets/images/ourServices/doctor.svg"
 import prescriptions from "../../../assets/images/ourServices/prescription.svg"
 import videoConsultation from "../../../assets/images/ourServices/video consultation.svg"
 import veterinaryCare from "../../../assets/images/ourServices/paw.svg"
+import 'aos/dist/aos.css'
+import AOS from "aos";
 
 const OurServices = forwardRef((props, ref) => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+        });
+    }, []);
     return (
         <div className={classes.container} ref={ref}>
-            <div className={classes.title}>Our services</div>
+            <div className={classes.title} data-aos="fade-down" data-aos-delay="200" >Our services</div>
             <div className={classes.serviceWrapper}>
-                <div className={classes.service}>
+
+                <div className={classes.service} data-aos="fade-left" data-aos-delay="200" data-aos-duration="1500">
                     <img src={doctor} alt="doctor" className={classes.serviceImage}/>
                     <div className={classes.serviceName}>Doctor house calls</div>
                     <div className={classes.serviceDescription}>
@@ -20,7 +28,7 @@ const OurServices = forwardRef((props, ref) => {
                     </div>
                 </div>
 
-                <div className={classes.service}>
+                <div className={classes.service} data-aos="fade-left" data-aos-delay="300" data-aos-duration="1500">
                     <img src={prescriptions} alt="prescriptions" className={classes.serviceImage}/>
                     <div className={classes.serviceName}>Prescription services</div>
                     <div className={classes.serviceDescription}>With Medivisit, get prescriptions from our online
@@ -28,7 +36,7 @@ const OurServices = forwardRef((props, ref) => {
                     </div>
                 </div>
 
-                <div className={classes.service}>
+                <div className={classes.service} data-aos="fade-left" data-aos-delay="400" data-aos-duration="1500">
                     <img src={videoConsultation} alt="video consultaion" className={classes.serviceImage}/>
                     <div className={classes.serviceName}>Video consultations</div>
                     <div className={classes.serviceDescription}>Talk to your doctor from anywhere, perfect for busy
@@ -36,7 +44,7 @@ const OurServices = forwardRef((props, ref) => {
                     </div>
                 </div>
 
-                <div className={classes.service}>
+                <div className={classes.service} data-aos="fade-left" data-aos-delay="500" data-aos-duration="1500">
                     <img src={veterinaryCare} alt="veterinary care" className={classes.serviceImage}/>
                     <div className={classes.serviceName}>Veterinary care</div>
                     <div className={classes.serviceDescription}>Medivisit cares for your pets too! Request a vet house

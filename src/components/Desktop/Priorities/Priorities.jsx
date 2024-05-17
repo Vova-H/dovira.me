@@ -1,18 +1,9 @@
-import React, {forwardRef, useEffect} from 'react';
+import React, {forwardRef} from 'react';
 import classes from "./priorities.module.css"
 import doctor from "../../../assets/images/priorities/man.png"
-import 'aos/dist/aos.css'
-import AOS from "aos";
 
 const Priorities = forwardRef((props, ref) => {
-    useEffect(() => {
-        AOS.init({
-            duration: 1000,
-            once: false,
-            mirror: true,
-            anchorPlacement: 'top-bottom',
-        });
-    }, []);
+
     return (
         <div className={classes.extraContainer} ref={ref} data-aos="flip-left">
             <div className={classes.container}>

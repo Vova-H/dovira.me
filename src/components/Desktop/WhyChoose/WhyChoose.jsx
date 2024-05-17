@@ -1,20 +1,12 @@
-import React, {forwardRef, useEffect} from 'react';
+import React, {forwardRef} from 'react';
 import classes from "./whyChoose.module.css"
 import doctor from "../../../assets/images/whyChoose/picture.png"
 import check from "../../../assets/images/whyChoose/check.svg"
-import 'aos/dist/aos.css'
-import AOS from "aos";
+
 
 const WhyChoose = forwardRef((props, ref) => {
 
-    useEffect(() => {
-        AOS.init({
-            duration: 1000,
-            once: false,
-            mirror: true,
-            anchorPlacement: 'top-bottom'
-        });
-    }, []);
+
 
     return (
         <div className={classes.container} ref={ref}>

@@ -1,4 +1,4 @@
-import React, {forwardRef, useEffect} from 'react';
+import React, {forwardRef} from 'react';
 
 import classes from './getStartedTodat.module.css';
 import phoneImage from "../../../assets/images/getStartedToday/phone.png"
@@ -7,19 +7,9 @@ import android from "../../../assets/images/getStartedToday/android.png"
 import circle1 from "../../../assets/images/getStartedToday/1.png"
 import circle2 from "../../../assets/images/getStartedToday/2.png"
 import circle3 from "../../../assets/images/getStartedToday/3.png"
-import 'aos/dist/aos.css'
-import AOS from "aos";
 
 const GetStartedToday = forwardRef((props, ref) => {
 
-    useEffect(() => {
-        AOS.init({
-            duration: 1000,
-            once: false,
-            mirror: true,
-            anchorPlacement: 'top-bottom'
-        });
-    }, []);
 
     return (
         <div className={classes.container}>

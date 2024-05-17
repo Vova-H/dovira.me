@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import classes from "../app.desktop.module.css";
 import Header from "../components/Desktop/Header/Header";
 import Banner from "../components/Desktop/Banner/Banner";
@@ -8,7 +8,8 @@ import Priorities from "../components/Desktop/Priorities/Priorities";
 import GetStartedToday from "../components/Desktop/GetStartedToday/GetStartedToday";
 import Contact from "../components/Desktop/Contact/Contact";
 import Footer from "../components/Desktop/Footer/Footer";
-
+import 'aos/dist/aos.css'
+import AOS from "aos";
 
 const Desktop = (props) => {
     const ourServicesRef = props.ourServicesRef;
@@ -16,6 +17,15 @@ const Desktop = (props) => {
     const ourPrioritiesRef = props.ourPrioritiesRef;
     const downloadAppRef = props.downloadAppRef;
     const contactUsRef = props.contactUsRef;
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: false,
+            mirror: true,
+            anchorPlacement: 'top-bottom',
+        });
+    }, []);
 
 
     return (
@@ -30,7 +40,7 @@ const Desktop = (props) => {
                             contactUsRef
                         }}
                 />
-                <Banner scrollTo={props.scrollTo} refs={{downloadAppRef,}}/>
+                <Banner scrollTo={props.scrollTo} refs={{downloadAppRef}}/>
             </div>
             <OurServices ref={props.ourServicesRef}/>
             <WhyChoose ref={props.whyChooseUsRef}/>

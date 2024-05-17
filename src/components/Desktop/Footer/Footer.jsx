@@ -13,7 +13,7 @@ const Footer = () => {
                     <a href="https://www.facebook.com/MediVisit.dr">
                         <img src={facebook} alt="Facebook" className={classes.socialLinkItem}/>
                     </a>
-                    <a href="https://www.linkedin.com/in/medivisit-admin/">
+                    <a href="https://www.linkedin.com/company/medivisit-dr/about/?viewAsMember=true">
                         <img src={linkedIn} alt="Linked In" className={classes.socialLinkItem}/>
                     </a>
                     <a href="https://www.instagram.com/medivisit.dr_/">

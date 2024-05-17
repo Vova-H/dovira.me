@@ -1,16 +1,9 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import classes from './header.module.css';
 import Logo from "../../../assets/images/banner/logo.svg";
-import 'aos/dist/aos.css'
-import AOS from "aos";
+
 
 const Header = ({scrollTo, refs}) => {
-
-    useEffect(() => {
-        AOS.init({
-            duration: 1000,
-        });
-    }, []);
 
     const handleNavigationClick = (ref) => {
         scrollTo(ref);

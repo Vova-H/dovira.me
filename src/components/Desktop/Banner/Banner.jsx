@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import classes from "./banner.module.css"
 import pictureDoctor from "../../../assets/images/banner/picture of doctor.png"
 import facebook from "../../../assets/images/banner/facebook.svg"
@@ -6,15 +6,9 @@ import instagram from "../../../assets/images/banner/instagram.svg"
 import linkedIn from "../../../assets/images/banner/linkedin.svg"
 import smallCard from "../../../assets/images/banner/smallCard.png"
 import card from "../../../assets/images/banner/card.png"
-import 'aos/dist/aos.css'
-import AOS from "aos";
+
 
 const Banner = ({scrollTo, refs}) => {
-    useEffect(() => {
-        AOS.init({
-            duration: 1000,
-        });
-    }, []);
 
     const handleNavigationClick = (ref) => {
         scrollTo(ref);
@@ -27,7 +21,7 @@ const Banner = ({scrollTo, refs}) => {
                     <a href="https://www.facebook.com/MediVisit.dr" data-aos="fade-right" data-aos-delay="300">
                         <img src={facebook} alt="Facebook" className={classes.socialLinkItem}/>
                     </a>
-                    <a href="https://www.linkedin.com/in/medivisit-admin/"
+                    <a href="https://www.linkedin.com/company/medivisit-dr/about/?viewAsMember=true"
                        data-aos-delay="300" data-aos="fade-right">
                         <img src={linkedIn} alt="Linked In" className={classes.socialLinkItem}/>
                     </a>

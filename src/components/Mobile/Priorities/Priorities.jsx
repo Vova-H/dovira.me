@@ -4,7 +4,7 @@ import doctor from "../../../assets/images/priorities/man.png"
 
 const Priorities = forwardRef((props, ref) => {
     return (
-        <div className={classes.extraContainer} ref={ref}>
+        <div className={classes.extraContainer} ref={ref} data-aos="flip-left" data-aos-delay="600" data-aos-duration="1500" data-aos-anchor-placement="top-center">
             <div className={classes.container}>
                 <div className={classes.title}>Your health, our priority</div>
                 <div className={classes.description}>At Medivisit, your health and well-being are our top priorities. We

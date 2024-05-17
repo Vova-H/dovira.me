@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import classes from './header.module.css';
 import Logo from "../../../assets/images/banner/logo.svg";
 import Burger from "../../../assets/images/banner/mobile/burger menu.svg";
@@ -9,6 +9,9 @@ import closeIcon from "../../../assets/images/banner/mobile/cross.svg";
 
 
 const Header = ({scrollTo, refs}) => {
+
+
+
     const [openedMenu, setOpenedMenu] = useState(false);
     const services = refs.ourServicesRef;
     const whyChooseUs = refs.whyChooseUsRef
@@ -59,7 +62,7 @@ const Header = ({scrollTo, refs}) => {
                     <a href="https://www.facebook.com/MediVisit.dr">
                         <img src={FaceBook} alt="Facebook" className={classes.socialItem}/>
                     </a>
-                    <a href="https://www.linkedin.com/in/medivisit-admin/">
+                    <a href="https://www.linkedin.com/company/medivisit-dr/about/?viewAsMember=true">
                         <img src={LinkedIn} alt="LinkedIn" className={classes.socialItem}/>
                     </a>
                     <a href="https://www.instagram.com/medivisit.dr_/">

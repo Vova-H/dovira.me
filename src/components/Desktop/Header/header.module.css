@@ -1,19 +1,18 @@
 .headerContainer {
-    width: 100%; /* Ensure the container spans the full width */
+    width: 100%;
     display: flex;
-    padding: 30px 0; /* Use padding for top and bottom space */
+    padding: 30px 0;
     justify-content: center;
-    background-color: #E2F0FF; /* Adjust background color if necessary */
 }
 
 .header {
     width: 100%;
-    max-width: 1200px; /* Set a max width to center content */
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px; /* Add padding to create space on the sides */
-    box-sizing: border-box; /* Ensure padding is included in width */
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .logo {

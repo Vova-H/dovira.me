@@ -4,7 +4,7 @@ import classes from "./contact.module.css"
 
 const Contact = forwardRef((props, ref) => {
     return (
-        <div className={classes.container} ref={ref}>
+        <div className={classes.container} ref={ref} data-aos="fade-up" data-aos-delay="400" data-aos-duration="2500" data-aos-anchor-placement="top-center">
             <img src={email} alt="Email" className={classes.image}/>
             <div className={classes.title}>If you have any questions you can contact us by email and we will write
                 you.

@@ -1,19 +1,9 @@
-import React, {forwardRef, useEffect} from 'react';
+import React, {forwardRef} from 'react';
 import email from "../../../assets/images/contact/email.png"
 import classes from "./contact.module.css"
-import 'aos/dist/aos.css';
-import AOS from "aos";
 
 const Contact = forwardRef((props, ref) => {
 
-    useEffect(() => {
-        AOS.init({
-            duration: 1000,
-            once: false,
-            mirror: true,
-            anchorPlacement: 'top-bottom'
-        });
-    }, []);
 
     return (
         <div className={classes.container} ref={ref} data-aos="flip-right">
