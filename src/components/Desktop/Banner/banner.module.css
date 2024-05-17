@@ -27,31 +27,34 @@
 
 .smallCardWrapper {
     position: absolute;
-    bottom: 26%;
-    left: -30%;
+    bottom: 30%;
+    left: -20%;
 }
 
 .smallCard {
-    width: 80%;
-}
-
-.card {
-    max-width: 250px;
+    max-width: 50%;
 }
 
 .cardWrapper {
+    max-width: 100%;
     position: absolute;
     top: 5%;
-    left: 70%;
+    right: -80%;
 }
+
+.card {
+    width: 100%;
+    max-width: 50%;
+}
+
 
 .doctorImgWrapper {
     max-width: 100%;
-    margin-left: -15% ;
 }
 
 .doctorImg {
-    width: 140%;
+    max-width: 120%;
+    min-width: 100%;
 }
 
 .title {
@@ -92,7 +95,7 @@
     margin-right: 55px;
 }
 
-.upperStatisticItemText{
+.upperStatisticItemText {
     color: var(--Black);
     font-size: 12px;
     font-weight: 500;

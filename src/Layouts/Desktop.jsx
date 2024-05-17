@@ -30,7 +30,7 @@ const Desktop = (props) => {
                             contactUsRef
                         }}
                 />
-                <Banner/>
+                <Banner scrollTo={props.scrollTo} refs={{downloadAppRef,}}/>
             </div>
             <OurServices ref={props.ourServicesRef}/>
             <WhyChoose ref={props.whyChooseUsRef}/>
