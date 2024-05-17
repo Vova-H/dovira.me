@@ -7,7 +7,7 @@ const WhyChoose = forwardRef((props, ref) => {
     return (
         <div className={classes.container} ref={ref}>
             <div className={classes.title} data-aos="fade-down" data-aos-delay="200" >Why choose Medivisit?</div>
-            <div className={classes.reason} data-aos="fade-right" data-aos-delay="200" data-aos-duration="1500">
+            <div className={classes.reason} data-aos="fade-right" data-aos-delay="100" data-aos-duration="1500">
                 <div className={classes.reasonNameWrapper}>
                     <img src={check} alt="check" className={classes.check}/>
                     <div className={classes.reasonName}>Convenience</div>
@@ -16,7 +16,7 @@ const WhyChoose = forwardRef((props, ref) => {
                     Access quality healthcare services without leaving your home, saving you time and hassle.
                 </div>
             </div>
-            <div className={classes.reason} data-aos="fade-right" data-aos-delay="300" data-aos-duration="1500">
+            <div className={classes.reason} data-aos="fade-right" data-aos-delay="150" data-aos-duration="1500">
                 <div className={classes.reasonNameWrapper}>
                     <img src={check} alt="check" className={classes.check}/>
                     <div className={classes.reasonName}>Comprehensive care</div>
@@ -27,7 +27,7 @@ const WhyChoose = forwardRef((props, ref) => {
                 </div>
             </div>
 
-            <div className={classes.reason} data-aos="fade-right" data-aos-delay="400" data-aos-duration="1500">
+            <div className={classes.reason} data-aos="fade-right" data-aos-delay="200" data-aos-duration="1500">
                 <div className={classes.reasonNameWrapper}>
                     <img src={check} alt="check" className={classes.check}/>
                     <div className={classes.reasonName}>Licensed professionals</div>
@@ -38,7 +38,7 @@ const WhyChoose = forwardRef((props, ref) => {
                 </div>
             </div>
 
-            <div className={classes.reason} data-aos="fade-right" data-aos-delay="500" data-aos-duration="1500">
+            <div className={classes.reason} data-aos="fade-right" data-aos-delay="250" data-aos-duration="1500">
                 <div className={classes.reasonNameWrapper}>
                     <img src={check} alt="check" className={classes.check}/>
                     <div className={classes.reasonName}>24/7 availability</div>
