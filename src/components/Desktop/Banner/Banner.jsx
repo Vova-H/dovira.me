@@ -4,17 +4,16 @@ import pictureDoctor from "../../../assets/images/banner/picture of doctor.png"
 import facebook from "../../../assets/images/banner/facebook.svg"
 import instagram from "../../../assets/images/banner/instagram.svg"
 import linkedIn from "../../../assets/images/banner/linkedin.svg"
-import 'aos/dist/aos.css'
-import AOS from "aos";
 import smallCard from "../../../assets/images/banner/smallCard.png"
 import card from "../../../assets/images/banner/card.png"
+import 'aos/dist/aos.css'
+import AOS from "aos";
 
 const Banner = ({scrollTo, refs}) => {
     useEffect(() => {
         AOS.init({
             duration: 1000,
         });
-        console.log("Mount")
     }, []);
 
     const handleNavigationClick = (ref) => {
@@ -39,7 +38,7 @@ const Banner = ({scrollTo, refs}) => {
             </div>
             <div className={classes.bannerContent}>
                 <div className={classes.bannerLeftSide}>
-                    <h1 className={classes.title} data-aos="fade-up">Are you tired of queues in hospitals?</h1>
+                    <h1 className={classes.title} data-aos="fade-up" data-aos-delay="200">Are you tired of queues in hospitals?</h1>
                     <p className={classes.subtitle} data-aos="fade-up" data-aos-delay="200">Get quality doctor visits
                         from home with Medivisit.</p>
                     <button className={classes.button} data-aos="fade-up" data-aos-delay="400"
@@ -64,7 +63,7 @@ const Banner = ({scrollTo, refs}) => {
                     </div>
                 </div>
                 <div className={classes.bannerRightSide}>
-                    <div className={classes.doctorImgWrapper} data-aos="fade-in" data-aos-duration={1000}>
+                    <div className={classes.doctorImgWrapper} data-aos-delay="200"  data-aos="fade-in" data-aos-duration={1000}>
                         <img src={pictureDoctor} alt="Doctor" className={classes.doctorImg}/>
                     </div>
                     <div className={classes.smallCardWrapper} data-aos="fade-right" data-aos-duration={1000}>
