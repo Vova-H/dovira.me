@@ -24,22 +24,23 @@ const Banner = ({scrollTo, refs}) => {
         <div className={classes.bannerWrapper}>
             <div className={classes.socialLinksWrapper}>
                 <div className={classes.socialLinkItemWrapper}>
-                    <a href="https://www.facebook.com/MediVisit.dr" data-aos="fade-right">
+                    <a href="https://www.facebook.com/MediVisit.dr" data-aos="fade-right" data-aos-delay="300">
                         <img src={facebook} alt="Facebook" className={classes.socialLinkItem}/>
                     </a>
-                    <a href="https://www.linkedin.com/in/medivisit-admin/" style={{textDecoration: "none"}}
-                       data-aos="fade-right">
+                    <a href="https://www.linkedin.com/in/medivisit-admin/"
+                       data-aos-delay="300" data-aos="fade-right">
                         <img src={linkedIn} alt="Linked In" className={classes.socialLinkItem}/>
                     </a>
-                    <a href="https://www.instagram.com/medivisit.dr_/" data-aos="fade-right">
+                    <a href="https://www.instagram.com/medivisit.dr_/" data-aos="fade-right" data-aos-delay="300">
                         <img src={instagram} alt="Instagram" className={classes.socialLinkItem}/>
                     </a>
                 </div>
             </div>
             <div className={classes.bannerContent}>
                 <div className={classes.bannerLeftSide}>
-                    <h1 className={classes.title} data-aos="fade-up" data-aos-delay="300">Are you tired of queues in hospitals?</h1>
-                    <p className={classes.subtitle} data-aos="fade-up" data-aos-delay="300">Get quality doctor visits
+                    <h1 className={classes.title} data-aos="fade-up" data-aos-delay="400">Are you tired of queues in
+                        hospitals?</h1>
+                    <p className={classes.subtitle} data-aos="fade-up" data-aos-delay="400">Get quality doctor visits
                         from home with Medivisit.</p>
                     <button className={classes.button} data-aos="fade-up" data-aos-delay="400"
                             onClick={() => handleNavigationClick(refs.downloadAppRef)}>Download app
@@ -63,7 +64,8 @@ const Banner = ({scrollTo, refs}) => {
                     </div>
                 </div>
                 <div className={classes.bannerRightSide}>
-                    <div className={classes.doctorImgWrapper} data-aos-delay="200"  data-aos="fade-in" data-aos-duration={1000}>
+                    <div className={classes.doctorImgWrapper} data-aos-delay="200" data-aos="fade-in"
+                         data-aos-duration={1000}>
                         <img src={pictureDoctor} alt="Doctor" className={classes.doctorImg}/>
                     </div>
                     <div className={classes.smallCardWrapper} data-aos="fade-right" data-aos-duration={1000}>
