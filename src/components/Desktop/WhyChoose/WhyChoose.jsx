@@ -6,8 +6,6 @@ import check from "../../../assets/images/whyChoose/check.svg"
 
 const WhyChoose = forwardRef((props, ref) => {
 
-
-
     return (
         <div className={classes.container} ref={ref}>
             <div className={classes.leftSide} data-aos="fade-right">
