@@ -4,12 +4,17 @@
   "icons": [
     {
       "src": "favicon.svg",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "sizes": "64x64 32x32 24x24 16x16 42x42",
       "type": "image/x-icon"
     },
     {
       "src": "favicon.png",
-      "sizes": "64x64 32x32 24x24 16x16 48x42",
+      "sizes": "64x64 32x32 24x24 16x16 42x42",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16 42x42",
       "type": "image/x-icon"
     }
   ],
