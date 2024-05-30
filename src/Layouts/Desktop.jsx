@@ -22,9 +22,11 @@ const Desktop = (props) => {
         AOS.init({
             duration: 1000,
             once: false,
-            mirror: true,
             anchorPlacement: 'top-bottom',
         });
+        return () => {
+            AOS.refresh();
+        };
     }, []);
 
 

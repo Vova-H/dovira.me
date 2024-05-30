@@ -1,0 +1,84 @@
+.bannerWrapper {
+    display: flex;
+    flex-direction: column;
+    font-family: Inter;
+}
+
+.title {
+    color: var(--Black);
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    max-width: 90%;
+}
+
+.subtitle {
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--Black);
+    margin-bottom: 30px;
+    max-width: 90%;
+}
+
+.button {
+    background-color: var(--Blue);
+    padding: 16px 10px;
+    max-width: 100%;
+    width: 60%;
+    align-self: center;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: Inter;
+    border-color: transparent;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.statistic {
+    display: flex;
+    margin-bottom: 50px;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.statisticItemWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    flex: 1;
+    margin-right: 5%;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+
+.statisticItemTextBefore {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+
+}
+
+.statisticItemCount {
+    font-weight: 500;
+    font-size: 30px;
+    color: var(--Blue);
+    margin-bottom: 5px;
+}
+
+.statisticItemText {
+    display: flex;
+    color: var(--Black);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.doctor {
+    width: 100%;
+    margin-bottom: 50px;
+    height: auto;
+}

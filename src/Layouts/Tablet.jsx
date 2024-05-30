@@ -1,17 +1,18 @@
 import React, {useLayoutEffect} from 'react';
-import classes from "../app.mobile.module.css";
-import Header from "../components/Mobile/Header/Header";
-import Banner from "../components/Mobile/Banner/Banner";
-import OurServices from "../components/Mobile/OurServices/OurServices";
-import WhyChoose from "../components/Mobile/WhyChoose/WhyChoose";
-import Priorities from "../components/Mobile/Priorities/Priorities";
-import GetStartedToday from "../components/Mobile/GetStartedToday/GetStartedToday";
-import Contact from "../components/Mobile/Contact/Contact";
-import Footer from "../components/Mobile/Footer/Footer";
+import classes from "../app.tablet.module.css";
+
 import 'aos/dist/aos.css'
 import AOS from "aos";
+import Header from "../components/Tablet/Header/Header";
+import Banner from "../components/Tablet/Banner/Banner";
+import OurServices from "../components/Tablet/OurServices/OurServices";
+import WhyChoose from "../components/Tablet/WhyChoose/WhyChoose";
+import Priorities from "../components/Tablet/Priorities/Priorities";
+import GetStartedToday from "../components/Tablet/GetStartedToday/GetStartedToday";
+import Contact from "../components/Tablet/Contact/Contact";
+import Footer from "../components/Tablet/Footer/Footer";
 
-const Mobile = (props) => {
+const Tablet = (props) => {
 
     const ourServicesRef = props.ourServicesRef;
     const whyChooseUsRef = props.whyChooseUsRef;
@@ -22,7 +23,7 @@ const Mobile = (props) => {
         AOS.init({
             duration: 1000,
             once: false,
-            anchorPlacement: 'top-bottom',
+            anchorPlacement: 'top',
         });
         return () => {
             AOS.refresh();
@@ -54,4 +55,4 @@ const Mobile = (props) => {
     );
 };
 
-export default Mobile;
+export default Tablet;

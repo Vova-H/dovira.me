@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 70px 15px 0;
+    margin-bottom: 100px;
+}
+
+.doctorImage {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.title {
+    color: var(--Black);
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+
+.reason {
+    margin-bottom: 30px;
+}
+
+.reasonNameWrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.check {
+    margin-right: 15px;
+}
+
+.reasonName {
+    color: var(--Black);
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.reasonDescription {
+    padding-left: 39px;
+    color: var(--Black);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+

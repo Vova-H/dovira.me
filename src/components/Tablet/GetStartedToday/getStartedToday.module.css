@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 15px 0;
+}
+
+
+.title {
+    color: var(--Black);
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: var(--Black);
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link {
+    width: 200px;
+    margin-right: 5%;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.linkImage {
+    width: 100%;
+}
+
+.image {
+    margin-right: 9%;
+    max-width: 100%;
+    width: 100%;
+}

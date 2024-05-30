@@ -6,11 +6,12 @@ import videoConsultation from "../../../assets/images/ourServices/video consulta
 import veterinaryCare from "../../../assets/images/ourServices/paw.svg"
 import 'aos/dist/aos.css'
 
+
 const OurServices = forwardRef((props, ref) => {
 
     return (
         <div className={classes.container} ref={ref}>
-            <div className={classes.title} data-aos="fade-down" data-aos-delay="200">Our services</div>
+            <div className={classes.title} data-aos="fade-down" data-aos-delay="200" >Our services</div>
             <div className={classes.serviceWrapper}>
 
                 <div className={classes.service} data-aos="fade-left" data-aos-delay="100" data-aos-duration="1500">
