@@ -1,17 +1,18 @@
 import React, {useLayoutEffect} from 'react';
-import classes from "../styles/app.desktop.module.css";
-import Header from "../components/Desktop/Header/Header";
-import Banner from "../components/Desktop/Banner/Banner";
-import OurServices from "../components/Desktop/OurServices/OurServices";
-import WhyChoose from "../components/Desktop/WhyChoose/WhyChoose";
-import Priorities from "../components/Desktop/Priorities/Priorities";
-import GetStartedToday from "../components/Desktop/GetStartedToday/GetStartedToday";
-import Contact from "../components/Desktop/Contact/Contact";
-import Footer from "../components/Desktop/Footer/Footer";
+import Header from "../components/TabletL/Header/Header";
+import Banner from "../components/TabletL/Banner/Banner";
+import OurServices from "../components/TabletL/OurServices/OurServices";
+import WhyChoose from "../components/TabletL/WhyChoose/WhyChoose";
+import Priorities from "../components/TabletL/Priorities/Priorities";
+import GetStartedToday from "../components/TabletL/GetStartedToday/GetStartedToday";
+import Contact from "../components/TabletL/Contact/Contact";
+import Footer from "../components/TabletL/Footer/Footer";
 import 'aos/dist/aos.css'
 import AOS from "aos";
+import classes from "../styles/app.tabletL.module.css"
 
-const Desktop = (props) => {
+const TabletL = (props) => {
+
     const ourServicesRef = props.ourServicesRef;
     const whyChooseUsRef = props.whyChooseUsRef;
     const ourPrioritiesRef = props.ourPrioritiesRef;
@@ -54,4 +55,4 @@ const Desktop = (props) => {
     );
 };
 
-export default Desktop;
+export default TabletL;

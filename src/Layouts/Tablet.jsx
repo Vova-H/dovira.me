@@ -1,5 +1,5 @@
 import React, {useLayoutEffect} from 'react';
-import classes from "../app.tablet.module.css";
+import classes from "../styles/app.tablet.module.css";
 
 import 'aos/dist/aos.css'
 import AOS from "aos";

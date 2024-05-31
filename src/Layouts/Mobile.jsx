@@ -1,5 +1,5 @@
 import React, {useLayoutEffect} from 'react';
-import classes from "../app.mobile.module.css";
+import classes from "../styles/app.mobile.module.css";
 import Header from "../components/Mobile/Header/Header";
 import Banner from "../components/Mobile/Banner/Banner";
 import OurServices from "../components/Mobile/OurServices/OurServices";
