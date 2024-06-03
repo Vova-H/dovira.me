@@ -17,7 +17,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "clean": "rimraf ./node_modules ./build",
+    "clean": "rimraf ./build",
     "build": "npm run clean && react-scripts build"
   },
   "eslintConfig": {
