@@ -35,9 +35,10 @@ const Banner = ({scrollTo, refs}) => {
                     <h1 className={classes.title} data-aos="fade-up" data-aos-delay="400">Are you tired of queues in
                         hospitals?</h1>
                     <p className={classes.subtitle} data-aos="fade-up" data-aos-delay="400">Get quality doctor visits
-                        from home with Medivisit.</p>
+                        from home with DOVIRA.</p>
                     <button className={classes.button} data-aos="fade-up" data-aos-delay="400"
-                            onClick={() => handleNavigationClick(refs.downloadAppRef)}>Download app
+                            onClick={() => handleNavigationClick(refs.downloadAppRef)}>
+                        Try our web version
                     </button>
                     <div className={classes.statistic}>
                         <div className={classes.statisticItemWrapper} data-aos="fade-up" data-aos-duration={2000}>
@@ -62,10 +63,10 @@ const Banner = ({scrollTo, refs}) => {
                          data-aos-duration={1000}>
                         <img src={pictureDoctor} alt="Doctor" className={classes.doctorImg}/>
                     </div>
-                    <div className={classes.smallCardWrapper} data-aos="fade-right" data-aos-duration={1000}>
+                    <div className={classes.smallCardWrapper} data-aos="fade-right" data-aos-duration={2000}>
                         <img src={smallCard} alt="Small card" className={classes.smallCard}/>
                     </div>
-                    <div className={classes.cardWrapper} data-aos="fade-left" data-aos-duration={1000}>
+                    <div className={classes.cardWrapper} data-aos="fade-left" data-aos-duration={2000}>
                         <img src={card} alt="Card" className={classes.card}/>
                     </div>
                 </div>

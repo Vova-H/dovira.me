@@ -9,7 +9,7 @@
 .bannerContent {
     max-width: 70%;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     justify-self: center;
     margin-bottom: 50px;
@@ -27,24 +27,26 @@
 
 .smallCardWrapper {
     position: absolute;
+    max-width: 70%;
     bottom: 30%;
-    left: -20%;
+    left: -25%;
 }
 
 .smallCard {
-    max-width: 50%;
+    max-width: 70%;
+    height: auto;
 }
 
 .cardWrapper {
-    max-width: 100%;
+    max-width: 70%;
     position: absolute;
     top: 5%;
-    right: -80%;
+    right: -50%;
 }
 
 .card {
-    width: 100%;
-    max-width: 50%;
+    max-width: 70%;
+    height: auto;
 }
 
 
@@ -53,8 +55,7 @@
 }
 
 .doctorImg {
-    max-width: 120%;
-    min-width: 100%;
+    max-width: 100%;
 }
 
 .title {
@@ -73,7 +74,7 @@
 
 .button {
     background-color: var(--Blue);
-    padding: 16px 85px;
+    padding: 17px 55px;
     color: white;
     font-size: 22px;
     font-weight: 500;

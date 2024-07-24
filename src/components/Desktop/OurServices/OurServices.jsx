@@ -26,7 +26,7 @@ const OurServices = forwardRef((props, ref) => {
                 <div className={classes.service} data-aos="fade-up" data-aos-delay="200">
                     <img src={prescriptions} alt="prescriptions" className={classes.serviceImage}/>
                     <div className={classes.serviceName}>Prescription services</div>
-                    <div className={classes.serviceDescription}>With Medivisit, get prescriptions from our online
+                    <div className={classes.serviceDescription}>With DOVIRA, get prescriptions from our online
                         doctors directly in the app. Download them for easy access whenever necessary.
                     </div>
                 </div>
@@ -42,7 +42,7 @@ const OurServices = forwardRef((props, ref) => {
                 <div className={classes.service} data-aos="fade-up" data-aos-delay="600">
                     <img src={veterinaryCare} alt="veterinary care" className={classes.serviceImage}/>
                     <div className={classes.serviceName}>Veterinary care</div>
-                    <div className={classes.serviceDescription}>Medivisit cares for your pets too! Request a vet house
+                    <div className={classes.serviceDescription}>DOVIRA cares for your pets too! Request a vet house
                         call or schedule a video consultation to ensure your furry friends get the medical attention
                         they need.
                     </div>
