@@ -30,7 +30,7 @@ const Header = ({scrollTo, refs}) => {
                          onClick={() => handleNavigationClick(refs.ourPrioritiesRef)}
                          data-aos="fade-down" data-aos-delay="600"
                     >
-                        Our priorities
+                        Web version
                     </div>
                     <div className={classes.navigationItem}
                          onClick={() => handleNavigationClick(refs.downloadAppRef)}

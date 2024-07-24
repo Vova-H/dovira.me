@@ -12,7 +12,7 @@ const GetStartedToday = forwardRef((props, ref) => {
 
             <div className={classes.title} data-aos="fade-left" data-aos-delay="200">Get started today!</div>
             <div className={classes.description} data-aos="fade-right" data-aos-delay="200">Experience the convenience
-                and peace of mind that Medivisit offers.
+                and peace of mind that DOVIRA offers.
                 Download the app now and take control of your health journey with just a few taps. Your health is
                 important to us, and we're here to help every step of the way.
             </div>

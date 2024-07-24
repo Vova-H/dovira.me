@@ -18,8 +18,9 @@ const Banner = ({scrollTo, refs}) => {
                     data-aos="fade"
                     data-aos-delay="200"
                     data-aos-duration="2000"
-                    onClick={() => handleNavigationClick(refs.downloadAppRef)}
-            >Try our web version
+                    onClick={() => handleNavigationClick(refs.ourPrioritiesRef)}
+            >
+                Try our web version
             </button>
             <div className={classes.statistic}>
                 <div className={classes.statisticItemWrapper} data-aos="fade-up" data-aos-delay="200">

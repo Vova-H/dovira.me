@@ -35,3 +35,17 @@
     color: var(--Blue);
     text-decoration: none;
 }
+
+.socialLinks:hover {
+    cursor: pointer;
+}
+
+
+.socialLinkItem {
+    margin-right: 30px;
+}
+
+.socialLinks > a:last-child .socialLinkItem {
+    margin-right: 0;
+}
+

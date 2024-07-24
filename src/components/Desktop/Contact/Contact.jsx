@@ -1,6 +1,9 @@
 import React, {forwardRef} from 'react';
 import email from "../../../assets/images/contact/email.png"
 import classes from "./contact.module.css"
+import facebook from "../../../assets/images/footer/facebook.svg";
+import linkedIn from "../../../assets/images/footer/linkedin.svg";
+import instagram from "../../../assets/images/footer/instagram.svg";
 
 const Contact = forwardRef((props, ref) => {
 
@@ -8,12 +11,18 @@ const Contact = forwardRef((props, ref) => {
     return (
         <div className={classes.container} ref={ref} data-aos="flip-right">
             <img src={email} alt="Email" className={classes.image}/>
-            <div className={classes.title}>If you have any questions you can contact us by email and we will write
-                you.
+            <div className={classes.title}>
+                If you have any questions, please, feel free to contact us through social media and send us a message.
             </div>
-            <div className={classes.description}>
-                Our email:
-                <a href="mailto:startup4@smgbuilder.com" className={classes.email}> startup4@smgbuilder.com
+            <div className={classes.socialLinks}>
+                <a href="https://www.facebook.com/MediVisit.dr">
+                    <img src={facebook} alt="Facebook" className={classes.socialLinkItem}/>
+                </a>
+                <a href="https://www.linkedin.com/company/medivisit-dr/about/?viewAsMember=true">
+                    <img src={linkedIn} alt="Linked In" className={classes.socialLinkItem}/>
+                </a>
+                <a href="https://www.instagram.com/dovira.me?igsh=MWc1ODFqbDV6aGppeg%3D%3D&utm_source=qr">
+                    <img src={instagram} alt="Instagram" className={classes.socialLinkItem}/>
                 </a>
             </div>
         </div>

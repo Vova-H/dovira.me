@@ -23,7 +23,7 @@
 
 .button {
     background-color: var(--Blue);
-    padding: 16px 85px;
+    padding: 16px 0;
     width: 100%;
     color: white;
     font-size: 22px;

@@ -42,7 +42,7 @@ const Mobile = (props) => {
                             contactUsRef
                         }}
                 />
-                <Banner scrollTo={props.scrollTo} refs={{downloadAppRef}}/>
+                <Banner scrollTo={props.scrollTo} refs={{ourPrioritiesRef}}/>
             </div>
             <OurServices ref={props.ourServicesRef}/>
             <WhyChoose ref={props.whyChooseUsRef}/>

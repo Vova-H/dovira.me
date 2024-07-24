@@ -52,7 +52,7 @@ const WhyChoose = forwardRef((props, ref) => {
                         <div className={classes.reasonName}>24/7 availability</div>
                     </div>
                     <div className={classes.reasonDescription}>
-                        Medical emergencies can happen at any time. With Medivisit, help is just a tap away, day or
+                        Medical emergencies can happen at any time. With DOVIRA, help is just a tap away, day or
                         night.
                     </div>
                 </div>

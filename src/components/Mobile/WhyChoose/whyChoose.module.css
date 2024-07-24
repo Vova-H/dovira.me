@@ -3,6 +3,7 @@
     justify-content: center;
     flex-direction: column;
     padding: 20px 15px 0;
+    margin-bottom: 120px;
 }
 
 .doctorImage {
@@ -19,7 +20,7 @@
 
 
 .reason {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .reasonNameWrapper {

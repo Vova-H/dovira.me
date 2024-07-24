@@ -22,7 +22,7 @@ const GetStartedToday = forwardRef((props, ref) => {
 
             <div className={classes.rightSide}>
                 <div className={classes.title} data-aos="fade-left">Get started today!</div>
-                <div className={classes.description} data-aos="fade-left">Experience the convenience and peace of mind that Medivisit offers.
+                <div className={classes.description} data-aos="fade-left">Experience the convenience and peace of mind that DOVIRA offers.
                     Download the app now and take control of your health journey with just a few taps. Your health is
                     important to us, and we're here to help every step of the way.
                 </div>

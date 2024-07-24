@@ -16,7 +16,7 @@ const Footer = () => {
                     <a href="https://www.linkedin.com/company/medivisit-dr/about/?viewAsMember=true">
                         <img src={linkedIn} alt="Linked In" className={classes.socialLinkItem}/>
                     </a>
-                    <a href="https://www.instagram.com/medivisit.dr_/">
+                    <a href="https://www.instagram.com/dovira.me?igsh=MWc1ODFqbDV6aGppeg%3D%3D&utm_source=qr">
                         <img src={instagram} alt="Instagram" className={classes.socialLinkItem}/>
                     </a>
                 </div>

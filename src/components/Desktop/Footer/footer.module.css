@@ -5,29 +5,19 @@
 
 .content {
     width: 100%;
-    max-width: 1200px; /* Set a max width to center content */
+    max-width: 1200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: 20px auto;
-    padding: 0 20px; /* Add padding to create space on the sides */
-    box-sizing: border-box; /* Ensure padding is included in width */
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .copyright {
     color: black;
     font-size: 18px;
     font-weight: 500;
+    margin: 20px 0;
 }
 
-.socialLinks:hover {
-    cursor: pointer;
-}
-
-.socialLinkItem {
-    margin-right: 30px;
-}
-
-.socialLinkItem:last-child {
-    margin-right: 0;
-}

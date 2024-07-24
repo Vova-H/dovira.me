@@ -25,7 +25,7 @@ const Banner = ({scrollTo, refs}) => {
                        data-aos-delay="300" data-aos="fade-right">
                         <img src={linkedIn} alt="Linked In" className={classes.socialLinkItem}/>
                     </a>
-                    <a href="https://www.instagram.com/medivisit.dr_/" data-aos="fade-right" data-aos-delay="300">
+                    <a href="https://www.instagram.com/dovira.me?igsh=MWc1ODFqbDV6aGppeg%3D%3D&utm_source=qr" data-aos="fade-right" data-aos-delay="300">
                         <img src={instagram} alt="Instagram" className={classes.socialLinkItem}/>
                     </a>
                 </div>
