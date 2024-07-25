@@ -10,16 +10,18 @@ const Banner = ({scrollTo, refs}) => {
 
     return (
         <div className={classes.bannerWrapper}>
-            <h1 className={classes.title} data-aos="fade-left" data-aos-delay="200">Are you tired of queues in
-                hospitals?</h1>
-            <p className={classes.subtitle} data-aos="fade-left" data-aos-delay="200">Get quality doctor visits from
-                home with Medivisit.</p>
+            <h1 className={classes.title} data-aos="fade-left" data-aos-delay="200">
+                Are you tired of queues in hospitals?
+            </h1>
+            <p className={classes.subtitle} data-aos="fade-left" data-aos-delay="200">
+                Get quality doctor visits from home with DOVIRA.
+            </p>
             <button className={classes.button}
                     data-aos="fade"
                     data-aos-delay="200"
                     data-aos-duration="2000"
-                    onClick={() => handleNavigationClick(refs.downloadAppRef)}
-            >Download app
+                    onClick={() => handleNavigationClick(refs.ourPrioritiesRef)}
+            >Try our web version
             </button>
             <div className={classes.statistic}>
                 <div className={classes.statisticItemWrapper} data-aos="fade-up" data-aos-delay="200">

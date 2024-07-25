@@ -18,10 +18,10 @@ const Banner = ({scrollTo, refs}) => {
         <div className={classes.bannerWrapper}>
             <div className={classes.socialLinksWrapper}>
                 <div className={classes.socialLinkItemWrapper}>
-                    <a href="https://www.facebook.com/MediVisit.dr" data-aos="fade-right" data-aos-delay="300">
+                    <a href="///Facebook" data-aos="fade-right" data-aos-delay="300">
                         <img src={facebook} alt="Facebook" className={classes.socialLinkItem}/>
                     </a>
-                    <a href="https://www.linkedin.com/company/medivisit-dr/about/?viewAsMember=true"
+                    <a href="https://www.linkedin.com/company/dovira-me/"
                        data-aos-delay="300" data-aos="fade-right">
                         <img src={linkedIn} alt="Linked In" className={classes.socialLinkItem}/>
                     </a>

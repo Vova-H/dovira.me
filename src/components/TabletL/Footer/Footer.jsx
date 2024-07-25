@@ -10,10 +10,10 @@ const Footer = () => {
             <div className={classes.content}>
                 <div className={classes.copyright}>© 2024 MediVisit. All rights reserved.</div>
                 <div className={classes.socialLinks}>
-                    <a href="https://www.facebook.com/MediVisit.dr">
+                    <a href="///Facebook">
                         <img src={facebook} alt="Facebook" className={classes.socialLinkItem}/>
                     </a>
-                    <a href="https://www.linkedin.com/company/medivisit-dr/about/?viewAsMember=true">
+                    <a href="https://www.linkedin.com/company/dovira-me/">
                         <img src={linkedIn} alt="Linked In" className={classes.socialLinkItem}/>
                     </a>
                     <a href="https://www.instagram.com/dovira.me?igsh=MWc1ODFqbDV6aGppeg%3D%3D&utm_source=qr">

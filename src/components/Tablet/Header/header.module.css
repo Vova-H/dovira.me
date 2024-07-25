@@ -4,17 +4,17 @@
     justify-content: end;
     align-items: start;
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 140px;
 }
 
 .logo {
     flex: 0;
     position: absolute;
     z-index: 99;
-    top: 20px;
+    top: 40px;
     left: 50%;
     transform: translateX(-50%);
-    width: auto;
+    max-width: 20%;
 }
 
 .burger {
@@ -58,7 +58,6 @@
 }
 
 .navigationItem {
-    font-family: Inter;
     font-size: 25px;
     font-weight: 400;
     color: var(--Black);

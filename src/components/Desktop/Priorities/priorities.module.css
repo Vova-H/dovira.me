@@ -31,10 +31,6 @@
     align-self: start;
 }
 
-.imageWrapper {
-
-}
-
 .image {
     position: absolute;
     z-index: 99;
@@ -50,7 +46,6 @@
     color: white;
     font-size: 22px;
     font-weight: 500;
-    font-family: Inter;
     border-color: transparent;
     border-radius: 10px;
     margin-bottom: 110px;

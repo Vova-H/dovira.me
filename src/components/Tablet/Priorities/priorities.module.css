@@ -27,10 +27,27 @@
     color: var(--Black);
     font-size: 22px;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    max-width: 90%;
 }
-
 
 .image {
     max-width: 100%;
+    margin-bottom: 50px;
+}
+
+.button {
+    background-color: var(--Blue);
+    padding: 17px 0;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    border-color: transparent;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    align-self: center;
+    text-align: center;
+    text-decoration: none;
+    width: 60%;
 }

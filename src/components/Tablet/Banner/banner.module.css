@@ -1,15 +1,13 @@
 .bannerWrapper {
     display: flex;
     flex-direction: column;
-    font-family: Inter;
 }
 
 .title {
     color: var(--Black);
     font-size: 45px;
     font-weight: 500;
-    margin-bottom: 15px;
-    max-width: 90%;
+    margin-bottom: 20px;
 }
 
 .subtitle {
@@ -17,7 +15,6 @@
     font-weight: 400;
     color: var(--Black);
     margin-bottom: 30px;
-    max-width: 90%;
 }
 
 .button {
@@ -29,7 +26,6 @@
     color: white;
     font-size: 22px;
     font-weight: 500;
-    font-family: Inter;
     border-color: transparent;
     border-radius: 10px;
     margin-bottom: 50px;

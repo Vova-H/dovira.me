@@ -11,7 +11,6 @@ import closeIcon from "../../../assets/images/banner/mobile/cross.svg";
 const Header = ({scrollTo, refs}) => {
 
 
-
     const [openedMenu, setOpenedMenu] = useState(false);
     const services = refs.ourServicesRef;
     const whyChooseUs = refs.whyChooseUsRef
@@ -47,25 +46,30 @@ const Header = ({scrollTo, refs}) => {
             />
             <div className={`${classes.menu} ${openedMenu ? classes.menuOpen : ''}`}>
                 <nav className={classes.nav}>
-                    <p className={classes.navigationItem} onClick={() => handleNavigationClick(services)}>Our
-                        services</p>
-                    <p className={classes.navigationItem} onClick={() => handleNavigationClick(whyChooseUs)}>Why
-                        choose us</p>
-                    <p className={classes.navigationItem} onClick={() => handleNavigationClick(priorities)}>Our
-                        priorities</p>
-                    <p className={classes.navigationItem}
-                       onClick={() => handleNavigationClick(downloadApp)}>Download the app</p>
-                    <p className={classes.navigationItem} onClick={() => handleNavigationClick(contactUs)}>Contact
-                        us</p>
+                    <p className={classes.navigationItem} onClick={() => handleNavigationClick(services)}>
+                        Our services
+                    </p>
+                    <p className={classes.navigationItem} onClick={() => handleNavigationClick(whyChooseUs)}>
+                        Why choose us
+                    </p>
+                    <p className={classes.navigationItem} onClick={() => handleNavigationClick(priorities)}>
+                        Web version
+                    </p>
+                    <p className={classes.navigationItem} onClick={() => handleNavigationClick(downloadApp)}>
+                        Download the app
+                    </p>
+                    <p className={classes.navigationItem} onClick={() => handleNavigationClick(contactUs)}>
+                        Contact us
+                    </p>
                 </nav>
                 <div className={classes.socials}>
-                    <a href="https://www.facebook.com/MediVisit.dr">
+                    <a href="///Facebook">
                         <img src={FaceBook} alt="Facebook" className={classes.socialItem}/>
                     </a>
-                    <a href="https://www.linkedin.com/company/medivisit-dr/about/?viewAsMember=true">
+                    <a href="https://www.linkedin.com/company/dovira-me/">
                         <img src={LinkedIn} alt="LinkedIn" className={classes.socialItem}/>
                     </a>
-                    <a href="https://www.instagram.com/medivisit.dr_/">
+                    <a href="https://www.instagram.com/dovira.me?igsh=MWc1ODFqbDV6aGppeg%3D%3D&utm_source=qr">
                         <img src={Instagram} alt="Instagram" className={classes.socialItem}/>
                     </a>
                 </div>

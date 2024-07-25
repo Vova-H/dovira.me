@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://medivisit-dr.onrender.com/sitemap.xml
+Sitemap: https://dovira-me.onrender.com/sitemap.xml

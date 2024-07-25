@@ -63,10 +63,10 @@ const Header = ({scrollTo, refs}) => {
                     </p>
                 </nav>
                 <div className={classes.socials}>
-                    <a href="https://www.facebook.com/MediVisit.dr">
+                    <a href="///Facebook">
                         <img src={FaceBook} alt="Facebook" className={classes.socialItem}/>
                     </a>
-                    <a href="https://www.linkedin.com/company/medivisit-dr/about/?viewAsMember=true">
+                    <a href="https://www.linkedin.com/company/dovira-me/">
                         <img src={LinkedIn} alt="LinkedIn" className={classes.socialItem}/>
                     </a>
                     <a href="https://www.instagram.com/dovira.me?igsh=MWc1ODFqbDV6aGppeg%3D%3D&utm_source=qr">
