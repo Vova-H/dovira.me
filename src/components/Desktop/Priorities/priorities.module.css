@@ -19,7 +19,7 @@
     color: var(--Black);
     margin-bottom: 30px;
     margin-top: 100px;
-    width: 45%;
+    width: 42%;
 }
 
 .description {
@@ -27,17 +27,29 @@
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 40px;
-    width: 45%;
+    width: 40%;
     align-self: start;
 }
+
 
 .image {
     position: absolute;
     z-index: 99;
     right: -15%;
-    bottom: 15%;
-    max-width: 70%;
-    max-height: 100%;
+    top: -10%;
+    width: auto;
+    max-width: 75%;
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .image {
+        position: absolute;
+        z-index: 99;
+        right: -17%;
+        top: 10%;
+        width: auto;
+        max-width: 75%;
+    }
 }
 
 .button {
@@ -53,5 +65,6 @@
     align-self: start;
     text-align: center;
     text-decoration: none;
-    min-width: 35%;
+    min-width: 30%;
 }
+

@@ -9,7 +9,7 @@ const Contact = forwardRef((props, ref) => {
 
 
     return (
-        <div className={classes.container} ref={ref} data-aos="flip-right">
+        <div className={classes.container} ref={ref} data-aos="fade-out" data-aos-duration="2000">
             <img src={email} alt="Email" className={classes.image}/>
             <div className={classes.title}>
                 If you have any questions, please, feel free to contact us through social media and send us a message.

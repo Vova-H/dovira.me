@@ -5,8 +5,7 @@ import macbook from "../../../assets/images/priorities/macbook.png"
 const Priorities = forwardRef((props, ref) => {
 
     return (
-        <div ref={ref} data-aos="flip-left" data-aos-delay="600"
-             data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
+        <div ref={ref} data-aos="fade-out" data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
             <div className={classes.container}>
                 <div className={classes.title}>Try our web version</div>
                 <div className={classes.description}>

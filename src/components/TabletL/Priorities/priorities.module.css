@@ -5,11 +5,10 @@
     border-radius: 20px;
     padding: 0 15px;
     flex-direction: column;
-    margin-bottom: 50px;
     align-items: center;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 0 auto 50px;
     align-self: center;
+    max-width: 80%;
 }
 
 

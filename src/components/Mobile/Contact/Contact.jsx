@@ -7,7 +7,7 @@ import instagram from "../../../assets/images/footer/instagram.svg";
 
 const Contact = forwardRef((props, ref) => {
     return (
-        <div className={classes.container} ref={ref} data-aos="fade-up" data-aos-delay="400" data-aos-duration="2500"
+        <div className={classes.container} ref={ref} data-aos="fade-out" data-aos-duration="2000"
              data-aos-anchor-placement="top-center">
             <img src={email} alt="Email" className={classes.image}/>
             <div className={classes.title}>
