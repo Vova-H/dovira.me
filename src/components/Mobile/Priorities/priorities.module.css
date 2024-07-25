@@ -31,7 +31,22 @@
     color: var(--Black);
     font-size: 16px;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+}
+.button {
+    background-color: var(--Blue);
+    padding: 17px 0;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    border-color: transparent;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    align-self: center;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
 }
 
 

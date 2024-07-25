@@ -8,11 +8,11 @@ const WhyChoose = forwardRef((props, ref) => {
 
     return (
         <div className={classes.container} ref={ref}>
-            <div className={classes.leftSide} data-aos="fade-right">
+            <div className={classes.leftSide} data-aos="fade-right" data-aos-anchor-placement="top-bootom">
                 <img src={doctor} alt="doctor" className={classes.doctorImage}/>
             </div>
             <div className={classes.rightSide}>
-                <div className={classes.title} data-aos="fade-down">Why choose Medivisit?</div>
+                <div className={classes.title} data-aos="fade-down">Why choose DOVIRA?</div>
 
                 <div className={classes.reason} data-aos="fade-left" data-aos-delay="200">
                     <div className={classes.reasonNameWrapper}>
@@ -30,7 +30,7 @@ const WhyChoose = forwardRef((props, ref) => {
                         <div className={classes.reasonName}>Comprehensive care</div>
                     </div>
                     <div className={classes.reasonDescription}>
-                        From human health to veterinary care, Medivisit offers a wide range of medical services to meet
+                        From human health to veterinary care, DOVIRA offers a wide range of medical services to meet
                         all your needs.
                     </div>
                 </div>
@@ -52,8 +52,7 @@ const WhyChoose = forwardRef((props, ref) => {
                         <div className={classes.reasonName}>24/7 availability</div>
                     </div>
                     <div className={classes.reasonDescription}>
-                        Medical emergencies can happen at any time. With DOVIRA, help is just a tap away, day or
-                        night.
+                        Connect with a doctor anytime, day or night, and receive the consultation you need without delay.
                     </div>
                 </div>
             </div>

@@ -1,7 +1,6 @@
 .bannerWrapper {
     display: flex;
     flex-direction: column;
-    font-family: Inter;
 }
 
 .title {
@@ -28,7 +27,6 @@
     color: white;
     font-size: 22px;
     font-weight: 500;
-    font-family: Inter;
     border-color: transparent;
     border-radius: 10px;
     margin-bottom: 50px;

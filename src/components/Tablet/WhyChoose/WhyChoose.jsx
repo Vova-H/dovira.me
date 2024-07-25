@@ -44,8 +44,7 @@ const WhyChoose = forwardRef((props, ref) => {
                     <div className={classes.reasonName}>24/7 availability</div>
                 </div>
                 <div className={classes.reasonDescription}>
-                    Medical emergencies can happen at any time. With DOVIRA, help is just a tap away, day or
-                    night.
+                    Connect with a doctor anytime, day or night, and receive the consultation you need without delay.
                 </div>
             </div>
             <img src={doctor} alt="Doctor" className={classes.doctorImage} data-aos="fade" data-aos-delay="200" data-aos-duration="1500"/>

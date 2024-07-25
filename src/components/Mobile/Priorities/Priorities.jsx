@@ -9,9 +9,12 @@ const Priorities = forwardRef((props, ref) => {
             <div className={classes.container}>
                 <div className={classes.title}>Try our web version</div>
                 <div className={classes.description}>
-                    At DOVIRA, your health and well-being are our top priorities. We are committed to providing you and
-                    your loved ones with convenient, reliable, and compassionate medical care whenever you need it.
+                    Enjoy all the features of DOVIRA right from your browser. No downloads needed - just visit our
+                    website and start your consultation today!
                 </div>
+                <a href="///" className={classes.button}>
+                    Visit now
+                </a>
                 <img src={macbook} alt="doctor" className={classes.image}/>
             </div>
         </div>

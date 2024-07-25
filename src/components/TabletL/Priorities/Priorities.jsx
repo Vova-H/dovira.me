@@ -1,23 +1,22 @@
 import React, {forwardRef} from 'react';
 import classes from "./priorities.module.css"
-import doctor from "../../../assets/images/priorities/man.png"
+import macbook from "../../../assets/images/priorities/macbook.png"
 
 const Priorities = forwardRef((props, ref) => {
 
     return (
-        <div className={classes.extraContainer} ref={ref} data-aos="flip-left">
+        <div ref={ref} data-aos="flip-left" data-aos-delay="600"
+             data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
             <div className={classes.container}>
-                <div className={classes.leftSide}>
-                    <div className={classes.title}>Your health, our priority</div>
-                    <div className={classes.description}>At Medivisit, your health and well-being are our top
-                        priorities. We
-                        are committed to providing you and your loved ones with convenient, reliable, and compassionate
-                        medical care whenever you need it.
-                    </div>
+                <div className={classes.title}>Try our web version</div>
+                <div className={classes.description}>
+                    Enjoy all the features of DOVIRA right from your browser. No downloads needed - just visit our
+                    website and start your consultation today!
                 </div>
-                <div className={classes.rightSide}>
-                    <img src={doctor} alt="doctor" className={classes.image}/>
-                </div>
+                <a href="///" className={classes.button}>
+                    Visit now
+                </a>
+                <img src={macbook} alt="macbook" className={classes.image}/>
             </div>
         </div>
     );

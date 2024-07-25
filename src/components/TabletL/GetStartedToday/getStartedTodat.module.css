@@ -1,19 +1,16 @@
 .container {
-    width: 100%;
     max-width: 1200px;
     display: flex;
     align-items: center;
     margin-bottom: 200px;
-    justify-content: space-between;
     padding: 0 20px;
 }
 
 .rightSide {
-    flex: 1;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
-    margin-left: 30px;
+    margin-left: -3%;
 }
 
 .title {
@@ -28,30 +25,30 @@
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 40px;
-    max-width: 80%;
+    max-width: 90%;
 }
 
 .links {
     display: flex;
+    gap: 5%;
 }
 
-.links a {
-    margin-right: 20px;
-}
 
+.linkItemImage {
+    width: auto;
+    max-width: 100%;
+}
 
 .phoneWrapper {
-    flex: 1;
-    padding-right: 20px;
     display: flex;
     justify-content: center;
     position: relative;
-    max-width: 100%;
-    margin-left: -30px;
+    width: 50%;
+    margin-left: -2%;
 }
 
 .phoneImage {
-    max-width: 50%;
+    width: 50%;
     z-index: 999;
 }
 
@@ -64,6 +61,7 @@
     width: 80%;
     height: 80%;
     margin: auto;
+    /*margin-right: auto;*/
 }
 
 .circle2 {

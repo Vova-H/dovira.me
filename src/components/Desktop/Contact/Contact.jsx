@@ -15,7 +15,7 @@ const Contact = forwardRef((props, ref) => {
                 If you have any questions, please, feel free to contact us through social media and send us a message.
             </div>
             <div className={classes.socialLinks}>
-                <a href="///Facebook">
+                <a href="https://www.facebook.com/D0VIRA.me">
                     <img src={facebook} alt="Facebook" className={classes.socialLinkItem}/>
                 </a>
                 <a href="https://www.linkedin.com/company/dovira-me/">

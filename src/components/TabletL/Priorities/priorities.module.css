@@ -1,43 +1,53 @@
-.extraContainer{
-    max-width: 1920px;
-    width: 90%;
-}
 
 .container {
     display: flex;
     background-image: linear-gradient(to bottom, rgba(226, 240, 255, 1), rgba(226, 240, 255, 0));
-    margin-bottom: 150px;
-    position: relative;
     border-radius: 20px;
+    padding: 0 15px;
+    flex-direction: column;
+    margin-bottom: 50px;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    align-self: center;
 }
 
-.leftSide {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 65%;
-    padding-left: 60px;
-}
 
 .title {
-    font-size: 28px;
+    font-size: 35px;
     font-weight: 500;
     color: var(--Black);
-    margin-bottom: 30px;
     margin-top: 50px;
+    margin-bottom: 20px;
+    width: 75%;
+    text-align: center;
 }
 
 .description {
     color: var(--Black);
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 400;
-    margin-bottom: 70px;
-    width: 60%;
+    margin-bottom: 30px;
+    max-width: 90%;
 }
 
 .image {
-    position: absolute;
-    right: 0;
-    bottom: 70px;
-    max-width: 50%;
+    max-width: 100%;
+    margin-bottom: 50px;
+}
+
+.button {
+    background-color: var(--Blue);
+    padding: 17px 0;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    border-color: transparent;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    align-self: center;
+    text-align: center;
+    text-decoration: none;
+    width: 60%;
 }

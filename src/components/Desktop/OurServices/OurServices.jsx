@@ -15,36 +15,38 @@ const OurServices = forwardRef((props, ref) => {
             <div className={classes.serviceWrapper}>
                 <div className={classes.service} data-aos="fade-up">
                     <img src={doctor} alt="doctor" className={classes.serviceImage}/>
-                    <div className={classes.serviceName}>Doctor house calls</div>
+                    <div className={classes.serviceName}>Video consultations</div>
                     <div className={classes.serviceDescription}>
-                        Get a doctor at your door! Use our app to request a
-                        house call, and a qualified professional will come to you, ready to diagnose and treat various
-                        conditions.
+                        Connect with qualified doctors through high-quality video calls. Get medical advice and
+                        consultations from the comfort of your home.
                     </div>
                 </div>
 
                 <div className={classes.service} data-aos="fade-up" data-aos-delay="200">
                     <img src={prescriptions} alt="prescriptions" className={classes.serviceImage}/>
                     <div className={classes.serviceName}>Prescription services</div>
-                    <div className={classes.serviceDescription}>With DOVIRA, get prescriptions from our online
-                        doctors directly in the app. Download them for easy access whenever necessary.
+                    <div className={classes.serviceDescription}>
+                        With DOVIRA, get prescriptions from our online doctors
+                        directly in the app. Download them for easy access whenever necessary.
                     </div>
                 </div>
 
                 <div className={classes.service} data-aos="fade-up" data-aos-delay="400">
                     <img src={videoConsultation} alt="video consultation" className={classes.serviceImage}/>
-                    <div className={classes.serviceName}>Video consultations</div>
-                    <div className={classes.serviceDescription}>Talk to your doctor from anywhere, perfect for busy
-                        schedules or urgent needs.
+                    <div className={classes.serviceName}>Chat with doctor</div>
+                    <div className={classes.serviceDescription}>
+                        Have a question or need medical advice? Use our chat
+                        service to get prompt responses from experienced doctors.
                     </div>
                 </div>
 
                 <div className={classes.service} data-aos="fade-up" data-aos-delay="600">
                     <img src={veterinaryCare} alt="veterinary care" className={classes.serviceImage}/>
                     <div className={classes.serviceName}>Veterinary care</div>
-                    <div className={classes.serviceDescription}>DOVIRA cares for your pets too! Request a vet house
-                        call or schedule a video consultation to ensure your furry friends get the medical attention
-                        they need.
+                    <div className={classes.serviceDescription}>
+                        DOVIRA cares for your pets too! Request a vet house call
+                        or schedule a video consultation to ensure your furry friends get the medical attention they
+                        need.
                     </div>
                 </div>
             </div>

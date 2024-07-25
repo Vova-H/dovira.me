@@ -18,7 +18,7 @@ const Banner = ({scrollTo, refs}) => {
         <div className={classes.bannerWrapper}>
             <div className={classes.socialLinksWrapper}>
                 <div className={classes.socialLinkItemWrapper}>
-                    <a href="///Facebook" data-aos="fade-right" data-aos-delay="300">
+                    <a href="https://www.facebook.com/D0VIRA.me" data-aos="fade-right" data-aos-delay="300">
                         <img src={facebook} alt="Facebook" className={classes.socialLinkItem}/>
                     </a>
                     <a href="https://www.linkedin.com/company/dovira-me/"
@@ -34,28 +34,13 @@ const Banner = ({scrollTo, refs}) => {
                 <div className={classes.bannerLeftSide}>
                     <h1 className={classes.title} data-aos="fade-up" data-aos-delay="400">Are you tired of queues in
                         hospitals?</h1>
-                    <p className={classes.subtitle} data-aos="fade-up" data-aos-delay="400">Get quality doctor visits
-                        from home with Medivisit.</p>
+                    <p className={classes.subtitle} data-aos="fade-up" data-aos-delay="400">
+                        Get quality doctor visits from home with DOVIRA.
+                    </p>
                     <button className={classes.button} data-aos="fade-up" data-aos-delay="400"
-                            onClick={() => handleNavigationClick(refs.downloadAppRef)}>Download app
+                            onClick={() => handleNavigationClick(refs.downloadAppRef)}>Try our web version
                     </button>
-                    <div className={classes.statistic}>
-                        <div className={classes.statisticItemWrapper} data-aos="fade-up" data-aos-duration={2000}>
-                            <p className={classes.upperStatisticItemText}>coming soon</p>
-                            <p className={classes.statisticItemCount}>150k</p>
-                            <div className={classes.statisticItemText}>Patients</div>
-                        </div>
-                        <div className={classes.statisticItemWrapper} data-aos="fade-up" data-aos-duration={2000}>
-                            <p className={classes.upperStatisticItemText}>coming soon</p>
-                            <p className={classes.statisticItemCount}>100+</p>
-                            <div className={classes.statisticItemText}>Expert doctors</div>
-                        </div>
-                        <div className={classes.statisticItemWrapper} data-aos="fade-up" data-aos-duration={2000}>
-                            <p className={classes.upperStatisticItemText}>coming soon</p>
-                            <p className={classes.statisticItemCount}>100+</p>
-                            <div className={classes.statisticItemText}>Expert veterinarians</div>
-                        </div>
-                    </div>
+
                 </div>
                 <div className={classes.bannerRightSide}>
                     <div className={classes.doctorImgWrapper} data-aos-delay="200" data-aos="fade-in"
@@ -67,6 +52,23 @@ const Banner = ({scrollTo, refs}) => {
                     </div>
                     <div className={classes.cardWrapper} data-aos="fade-left" data-aos-duration={1000}>
                         <img src={card} alt="Card" className={classes.card}/>
+                    </div>
+                </div>
+                <div className={classes.statistic}>
+                    <div className={classes.statisticItemWrapper} data-aos="fade-up" data-aos-duration={2000}>
+                        <p className={classes.upperStatisticItemText}>coming soon</p>
+                        <p className={classes.statisticItemCount}>150k</p>
+                        <div className={classes.statisticItemText}>Patients</div>
+                    </div>
+                    <div className={classes.statisticItemWrapper} data-aos="fade-up" data-aos-duration={2000}>
+                        <p className={classes.upperStatisticItemText}>coming soon</p>
+                        <p className={classes.statisticItemCount}>100+</p>
+                        <div className={classes.statisticItemText}>Expert doctors</div>
+                    </div>
+                    <div className={classes.statisticItemWrapper} data-aos="fade-up" data-aos-duration={2000}>
+                        <p className={classes.upperStatisticItemText}>coming soon</p>
+                        <p className={classes.statisticItemCount}>100+</p>
+                        <div className={classes.statisticItemText}>Expert veterinarians</div>
                     </div>
                 </div>
             </div>

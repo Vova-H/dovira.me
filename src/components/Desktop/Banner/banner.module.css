@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     padding-top: 10px;
-    font-family: Inter;
     position: relative;
 }
 
@@ -63,13 +62,13 @@
     font-size: 58px;
     font-weight: 500;
     margin-bottom: 20px;
-    margin-top: 50px;
 }
 
 .subtitle {
     font-size: 22px;
     margin-bottom: 40px;
     color: var(--Black);
+    max-width: 85%;
 }
 
 .button {
@@ -78,7 +77,6 @@
     color: white;
     font-size: 22px;
     font-weight: 500;
-    font-family: Inter;
     border-color: transparent;
     border-radius: 10px;
     margin-bottom: 80px;
