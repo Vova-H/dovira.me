@@ -3,8 +3,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-x: hidden;
+    overflow: hidden;
+    scrollbar-width: none;
 }
+
+
 
 .bannerSection {
     width: 100%;

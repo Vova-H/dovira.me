@@ -3,16 +3,18 @@
     justify-content: center;
     padding-top: 10px;
     position: relative;
+    width: 100%;
+    max-width: 1920px;
 }
 
 .bannerContent {
     width: 80%;
+    max-width: 1600px;
     display: flex;
     align-items: start;
     justify-content: center;
     justify-self: center;
     margin-bottom: 50px;
-
 }
 
 
@@ -63,6 +65,7 @@
     font-size: 3.625rem;
     font-weight: 500;
     margin-bottom: 20px;
+
 }
 
 .subtitle {
