@@ -40,5 +40,20 @@
     "description2": "From human health to veterinary care, DOVIRA offers a wide range of medical services to meet all your needs.",
     "description3": "Our team consists of experienced and licensed medical professionals who provide compassionate care tailored to your specific requirements.",
     "description4": "Connect with a doctor anytime, day or night, and receive the consultation you need without delay."
+  },
+  "priorities": {
+    "title": "Try our web version",
+    "description": "Enjoy all the features of DOVIRA right from your browser. No downloads needed - just visit our website and start your consultation today!",
+    "button": "Visit now"
+  },
+  "getStarted": {
+    "title": "Get started today!",
+    "description": "Experience the convenience and peace of mind that DOVIRA offers. Download the app now and take control of your health journey with just a few taps. Your health is important to us, and we're here to help every step of the way."
+  },
+  "contact": {
+    "text": "If you have any questions, please, feel free to contact us through social media and send us a message."
+  },
+  "footer": {
+    "text": "© 2024 DOVIRA. All rights reserved. "
   }
 }

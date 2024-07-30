@@ -40,5 +40,20 @@
     "description2": "Od zdrowia ludzkiego po opiekę weterynaryjną, DOVIRA oferuje szeroką gamę usług medycznych, które zaspokoją wszystkie Twoje potrzeby.",
     "description3": "Nasz zespół składa się z doświadczonych i licencjonowanych lekarzy, którzy zapewniają współczującą opiekę dostosowaną do Twoich konkretnych wymagań.",
     "description4": "Skontaktuj się z lekarzem o każdej porze dnia i nocy i bezzwłocznie uzyskaj niezbędną konsultację."
+  },
+  "priorities": {
+    "title": "Wypróbuj naszą wersję internetową",
+    "description": "Korzystaj ze wszystkich funkcji DOVIRA bezpośrednio w swojej przeglądarce. Nie jest wymagane żadne pobieranie — wystarczy odwiedzić naszą stronę internetową i rozpocząć konsultację już dziś!",
+    "button": "Odwiedź teraz"
+  },
+  "getStarted": {
+    "title": "Zacznij dziś!",
+    "description": "Poczuj wygodę i spokój, jaki oferuje DOVIRA. Pobierz aplikację już teraz i zarządzaj swoim zdrowiem za pomocą kilku dotknięć. Twoje zdrowie jest dla nas ważne i jesteśmy tutaj, aby Ci pomóc na każdym kroku."
+  },
+  "contact": {
+    "text": "Jeśli masz jakiekolwiek pytania, skontaktuj się z nami za pośrednictwem mediów społecznościowych i wyślij nam wiadomość."
+  },
+  "footer": {
+    "text": "© 2024 DOVIRA. Wszelkie prawa zastrzeżone."
   }
 }

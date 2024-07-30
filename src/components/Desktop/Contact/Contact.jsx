@@ -4,15 +4,17 @@ import classes from "./contact.module.css"
 import facebook from "../../../assets/images/footer/facebook.svg";
 import linkedIn from "../../../assets/images/footer/linkedin.svg";
 import instagram from "../../../assets/images/footer/instagram.svg";
+import {useTranslation} from "react-i18next";
 
 const Contact = forwardRef((props, ref) => {
 
+    const {t} = useTranslation();
 
     return (
         <div className={classes.container} ref={ref} data-aos="fade-out" data-aos-duration="2000">
             <img src={email} alt="Email" className={classes.image}/>
             <div className={classes.title}>
-                If you have any questions, please, feel free to contact us through social media and send us a message.
+                {t("contact.text")}
             </div>
             <div className={classes.socialLinks}>
                 <a href="https://www.facebook.com/D0VIRA.me">
