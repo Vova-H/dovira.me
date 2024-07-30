@@ -1,0 +1,44 @@
+{
+  "header": {
+    "ourServices": "Our services",
+    "whyChooseUs": "Why choose us",
+    "webVersion": "Web version",
+    "downloadApp": "Download the app",
+    "contactUs": "Contact us",
+    "language": {
+      "en": "Eng"
+    }
+  },
+  "banner": {
+    "title": "Are you tired of queues in hospitals?",
+    "subtitle": "Get quality doctor visits from home with DOVIRA.",
+    "button": "Try our web version",
+    "comingSoon": "coming soon",
+    "count": "500k+",
+    "patients": "Patiens",
+    "expertDoctors": "Expert doctors",
+    "expertVeterinarians": "Expert veterinarians"
+  },
+  "ourServices": {
+    "ourServices": "Our services",
+    "title1": "Video consultations",
+    "title2": "Prescription services",
+    "title3": "Chat with doctor",
+    "title4": "Veterinary care",
+    "description1": "Connect with qualified doctors through high-quality video calls. Get medical advice and consultations from the comfort of your home.",
+    "description2": "With DOVIRA, get prescriptions from our online doctors directly in the app. Download them for easy access whenever necessary.",
+    "description3": "Have a question or need medical advice? Use our chat service to get prompt responses from experienced doctors.",
+    "description4": "DOVIRA cares for your pets too! Request a vet house call or schedule a video consultation to ensure your furry friends get the medical attention they need."
+  },
+  "whyChoose": {
+    "whyChoose": "Why choose DOVIRA?",
+    "title1": "Convenience",
+    "title2": "Comprehensive care",
+    "title3": "Licensed professionals",
+    "title4": "24/7 availability",
+    "description1": "Access quality healthcare services without leaving your home, saving you time and hassle.",
+    "description2": "From human health to veterinary care, DOVIRA offers a wide range of medical services to meet all your needs.",
+    "description3": "Our team consists of experienced and licensed medical professionals who provide compassionate care tailored to your specific requirements.",
+    "description4": "Connect with a doctor anytime, day or night, and receive the consultation you need without delay."
+  }
+}

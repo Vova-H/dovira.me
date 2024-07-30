@@ -1,0 +1,44 @@
+{
+  "header": {
+    "ourServices": "Nasze usługi",
+    "whyChooseUs": "Dlaczego właśnie my",
+    "webVersion": "Wersja internetowa",
+    "downloadApp": "Dodatek",
+    "contactUs": "Skontaktuj się z nami",
+    "language": {
+      "pl": "Pl"
+    }
+  },
+  "banner": {
+    "title": "Masz dość czekania w kolejkach w szpitalach?",
+    "subtitle": "Korzystaj z wysokiej jakości wizyt lekarskich w domu dzięki DOVIRA.",
+    "button": "Wersja internetowa",
+    "comingSoon": "wkrótce",
+    "count": "500 tys.+",
+    "patients": "Pacjenci",
+    "expertDoctors": "Lekarze eksperci",
+    "expertVeterinarians": "Doświadczeni lekarze weterynarii"
+  },
+  "ourServices": {
+    "ourServices": "Nasze usługi",
+    "title1": "Konsultacje wideo",
+    "title2": "Usługi na receptę",
+    "title3": "Porozmawiaj z lekarzem",
+    "title4": "Opieka weterynaryjna",
+    "description1": "Komunikuj się z wykwalifikowanymi lekarzami, korzystając z wysokiej jakości rozmów wideo. Uzyskaj poradę i konsultację lekarską bez wychodzenia z domu.",
+    "description2": "Dzięki DOVIRA możesz otrzymywać recepty od naszych lekarzy online bezpośrednio w aplikacji. Pobierz je, aby mieć do nich łatwy dostęp w razie potrzeby.",
+    "description3": "Masz pytania lub potrzebujesz porady lekarskiej? Skorzystaj z naszego czatu, aby uzyskać szybkie odpowiedzi od doświadczonych lekarzy.",
+    "description4": "DOVIRA dba także o Twoje zwierzaki! Zarezerwuj wizytę u weterynarza lub umów się na wideokonsultację, aby mieć pewność, że Twoi futrzani przyjaciele otrzymają niezbędną opiekę medyczną."
+  },
+  "whyChoose": {
+    "whyChoose": "Dlaczego wybrać DOVIRA?",
+    "title1": "Wygoda",
+    "title2": "Kompleksowa opieka",
+    "title3": "Licencjonowani specjaliści",
+    "title4": "Dostępność 24/7",
+    "description1": "Uzyskaj wysokiej jakości usługi medyczne bez wychodzenia z domu, oszczędzając czas i kłopoty.",
+    "description2": "Od zdrowia ludzkiego po opiekę weterynaryjną, DOVIRA oferuje szeroką gamę usług medycznych, które zaspokoją wszystkie Twoje potrzeby.",
+    "description3": "Nasz zespół składa się z doświadczonych i licencjonowanych lekarzy, którzy zapewniają współczującą opiekę dostosowaną do Twoich konkretnych wymagań.",
+    "description4": "Skontaktuj się z lekarzem o każdej porze dnia i nocy i bezzwłocznie uzyskaj niezbędną konsultację."
+  }
+}

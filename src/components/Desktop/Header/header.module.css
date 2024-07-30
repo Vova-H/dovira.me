@@ -1,51 +1,51 @@
 .headerContainer {
     width: 100%;
+    max-width: 1880px;
     display: flex;
     padding: 30px 0;
     justify-content: center;
 }
 
 .header {
-    width: 70%;
-    max-width: 1440px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-    box-sizing: border-box;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 80%;
+}
+
+@media (min-width: 1025px) and (max-width: 1120px) {
+    .header {
+        max-width: 100%;
+    }
+
+    .logo {
+        margin-left: 3%;
+    }
 }
 
 .logo {
     max-width: 100px;
     cursor: pointer;
-    margin-right: 5%;
+    margin-right: 30px;
 }
 
 .navigation {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .navigationItem {
-    margin-right: 60px;
-    font-size: 16px;
+    font-size: 18px;
     color: var(--Black);
-}
-@media (min-width: 1024px) and (max-width: 1390px) {
-    .navigationItem {
-        margin-right: 20px;
-        font-size: 15px;
-    }
-    .logo {
-        max-width: 100px;
-        cursor: pointer;
-        margin-right: 20px;
-    }
-}
-@media (min-width: 1391px) and (max-width: 1475px) {
-    .navigationItem {
-        margin-right: 30px;
-    }
+    position: relative;
+    z-index: 2;
+    white-space: nowrap;
+    margin-right: 20px;
+
+
 }
 
 .navigationItem:last-child {
@@ -54,4 +54,38 @@
 
 .navigationItem:hover {
     cursor: pointer;
+}
+
+.dropdownMenu {
+    position: absolute;
+    top: 200%;
+    right: -100%;
+    background: linear-gradient(to top, white 2%, var(--LightBlue) 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-radius: 7.5%;
+    min-width: 200px;
+}
+
+.dropdownItem {
+    padding: 20px;
+    cursor: pointer;
+    white-space: nowrap;
+    z-index: 3;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.dropdownItem:hover {
+    background: #157EFC;
+    color: #fff
+}
+
+.dropIcon {
+    margin-left: 5px;
+}
+
+.dropIconOpened {
+    transform: rotateX(180deg);
+    margin-left: 5px;
 }

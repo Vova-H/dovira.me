@@ -6,10 +6,12 @@ import instagram from "../../../assets/images/banner/instagram.svg"
 import linkedIn from "../../../assets/images/banner/linkedin.svg"
 import smallCard from "../../../assets/images/banner/smallCard.png"
 import card from "../../../assets/images/banner/card.png"
+import {useTranslation} from "react-i18next";
 
 
 const Banner = ({scrollTo, refs}) => {
 
+    const {t} = useTranslation();
     const handleNavigationClick = (ref) => {
         scrollTo(ref);
     };
@@ -25,36 +27,39 @@ const Banner = ({scrollTo, refs}) => {
                        data-aos-delay="300" data-aos="fade-right">
                         <img src={linkedIn} alt="Linked In" className={classes.socialLinkItem}/>
                     </a>
-                    <a href="https://www.instagram.com/dovira.me?igsh=MWc1ODFqbDV6aGppeg%3D%3D&utm_source=qr" data-aos="fade-right" data-aos-delay="300">
+                    <a href="https://www.instagram.com/dovira.me?igsh=MWc1ODFqbDV6aGppeg%3D%3D&utm_source=qr"
+                       data-aos="fade-right" data-aos-delay="300">
                         <img src={instagram} alt="Instagram" className={classes.socialLinkItem}/>
                     </a>
                 </div>
             </div>
             <div className={classes.bannerContent}>
                 <div className={classes.bannerLeftSide}>
-                    <h1 className={classes.title} data-aos="fade-up" data-aos-delay="400">Are you tired of queues in
-                        hospitals?</h1>
-                    <p className={classes.subtitle} data-aos="fade-up" data-aos-delay="400">Get quality doctor visits
-                        from home with DOVIRA.</p>
+                    <h1 className={classes.title} data-aos="fade-up" data-aos-delay="400">
+                        {t(`banner.title`)}
+                    </h1>
+                    <p className={classes.subtitle} data-aos="fade-up" data-aos-delay="400">
+                        {t(`banner.subtitle`)}
+                    </p>
                     <button className={classes.button} data-aos="fade-up" data-aos-delay="400"
                             onClick={() => handleNavigationClick(refs.ourPrioritiesRef)}>
-                        Try our web version
+                        {t(`banner.button`)}
                     </button>
                     <div className={classes.statistic}>
                         <div className={classes.statisticItemWrapper} data-aos="fade-up" data-aos-duration={2000}>
-                            <p className={classes.upperStatisticItemText}>coming soon</p>
-                            <p className={classes.statisticItemCount}>150k</p>
-                            <div className={classes.statisticItemText}>Patients</div>
+                            <p className={classes.upperStatisticItemText}>{t(`banner.comingSoon`)}</p>
+                            <p className={classes.statisticItemCount}>{t(`banner.count`)}</p>
+                            <div className={classes.statisticItemText}>{t(`banner.patients`)}</div>
                         </div>
                         <div className={classes.statisticItemWrapper} data-aos="fade-up" data-aos-duration={2000}>
-                            <p className={classes.upperStatisticItemText}>coming soon</p>
+                            <p className={classes.upperStatisticItemText}>{t(`banner.comingSoon`)}</p>
                             <p className={classes.statisticItemCount}>100+</p>
-                            <div className={classes.statisticItemText}>Expert doctors</div>
+                            <div className={classes.statisticItemText}>{t(`banner.expertDoctors`)}</div>
                         </div>
                         <div className={classes.statisticItemWrapper} data-aos="fade-up" data-aos-duration={2000}>
-                            <p className={classes.upperStatisticItemText}>coming soon</p>
+                            <p className={classes.upperStatisticItemText}>{t(`banner.comingSoon`)}</p>
                             <p className={classes.statisticItemCount}>100+</p>
-                            <div className={classes.statisticItemText}>Expert veterinarians</div>
+                            <div className={classes.statisticItemText}>{t(`banner.expertVeterinarians`)}</div>
                         </div>
                     </div>
                 </div>
