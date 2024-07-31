@@ -4,16 +4,16 @@ import classes from './getStartedToday.module.css';
 import phone from "../../../assets/images/getStartedToday/mobile/phone.png"
 import apple from "../../../assets/images/getStartedToday/mobile/button.svg"
 import android from "../../../assets/images/getStartedToday/mobile/button2.svg"
+import {useTranslation} from "react-i18next";
 
 
 const GetStartedToday = forwardRef((props, ref) => {
+    const {t} = useTranslation();
     return (
         <div className={classes.container} ref={ref}>
-            <div className={classes.title} data-aos="fade-left" data-aos-delay="200">Get started today!</div>
+            <div className={classes.title} data-aos="fade-left" data-aos-delay="200">{t("getStarted.title")}</div>
             <div className={classes.description} data-aos="fade-right" data-aos-delay="200">
-                Experience the convenience and peace of mind that DOVIRA offers. Download the app now and take control
-                of your health journey with just a few taps. Your health is important to us, and we're here to help
-                every step of the way.
+                {t("getStarted.description")}
             </div>
             <div className={classes.links}>
                 <a href="https://apps.apple.com/" className={classes.link} data-aos="fade-up" data-aos-duration="2000"

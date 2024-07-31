@@ -4,12 +4,11 @@ import Logo from "../../../assets/images/banner/logo.svg";
 import arrowImg from "../../../assets/images/header/arrow.png";
 import {LanguageContext} from '../../../context/LanguageProvider';
 import {useTranslation} from 'react-i18next';
-import i18n from "../../../i18n";
 
 
 const Header = ({scrollTo, refs}) => {
     const [dropdownOpen, setDropdownOpen] = useState(false);
-    const [chosenLangCode, setChosenLangCode] = useState(i18n.language);
+    const [chosenLangCode, setChosenLangCode] = useState("en");
 
     const {changeLanguage} = useContext(LanguageContext);
     const {t} = useTranslation();

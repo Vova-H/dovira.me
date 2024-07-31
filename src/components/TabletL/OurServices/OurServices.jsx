@@ -13,11 +13,13 @@ const OurServices = forwardRef((props, ref) => {
 
     return (
         <div className={classes.container} ref={ref}>
-            <div className={classes.title} data-aos="fade-down">Our services</div>
+            <div className={classes.title} data-aos="fade-down">{t(`ourServices.ourServices`)}</div>
             <div className={classes.serviceWrapper}>
                 <div className={classes.service} data-aos="fade-up">
                     <img src={doctor} alt="doctor" className={classes.serviceImage}/>
-                    <div className={classes.serviceName}>{t(`ourServices.title1`)}</div>
+                    <div className={classes.serviceName}>
+                        {t(`ourServices.title1`)}
+                    </div>
                     <div className={classes.serviceDescription}>
                         {t(`ourServices.description1`)}
                     </div>

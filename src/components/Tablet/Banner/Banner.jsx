@@ -1,8 +1,11 @@
 import React from 'react';
 import classes from "./banner.module.css"
 import doctor from "../../../assets/images/banner/mobile/picture of doctor.png"
+import {useTranslation} from "react-i18next";
 
 const Banner = ({scrollTo, refs}) => {
+
+    const {t} = useTranslation();
 
     const handleNavigationClick = (ref) => {
         scrollTo(ref);
@@ -11,33 +14,34 @@ const Banner = ({scrollTo, refs}) => {
     return (
         <div className={classes.bannerWrapper}>
             <h1 className={classes.title} data-aos="fade-left" data-aos-delay="200">
-                Are you tired of queues in hospitals?
+                {t(`banner.title`)}
             </h1>
             <p className={classes.subtitle} data-aos="fade-left" data-aos-delay="200">
-                Get quality doctor visits from home with DOVIRA.
+                {t(`banner.subtitle`)}
             </p>
             <button className={classes.button}
                     data-aos="fade"
                     data-aos-delay="200"
                     data-aos-duration="2000"
                     onClick={() => handleNavigationClick(refs.ourPrioritiesRef)}
-            >Try our web version
+            >
+                {t(`banner.button`)}
             </button>
             <div className={classes.statistic}>
                 <div className={classes.statisticItemWrapper} data-aos="fade-up" data-aos-delay="200">
-                    <p className={classes.statisticItemTextBefore}>Coming soon</p>
-                    <p className={classes.statisticItemCount}>150k</p>
-                    <div className={classes.statisticItemText}>Patients</div>
+                    <p className={classes.statisticItemTextBefore}>{t(`banner.comingSoon`)}</p>
+                    <p className={classes.statisticItemCount}>100k</p>
+                    <div className={classes.statisticItemText}>{t(`banner.expertDoctors`)}</div>
                 </div>
                 <div className={classes.statisticItemWrapper} data-aos="fade-up" data-aos-delay="400">
-                    <p className={classes.statisticItemTextBefore}>Coming soon</p>
+                    <p className={classes.statisticItemTextBefore}>{t(`banner.comingSoon`)}</p>
                     <p className={classes.statisticItemCount}>100+</p>
-                    <div className={classes.statisticItemText}>Expert doctors</div>
+                    <div className={classes.statisticItemText}>{t(`banner.expertDoctors`)}</div>
                 </div>
                 <div className={classes.statisticItemWrapper} data-aos="fade-up" data-aos-delay="600">
-                    <p className={classes.statisticItemTextBefore}>Coming soon</p>
+                    <p className={classes.statisticItemTextBefore}>{t(`banner.comingSoon`)}</p>
                     <p className={classes.statisticItemCount}>100+</p>
-                    <div className={classes.statisticItemText}>Expert veterinarians</div>
+                    <div className={classes.statisticItemText}>{t(`banner.expertVeterinarians`)}</div>
                 </div>
             </div>
             <img src={doctor} alt="Doctor" className={classes.doctor} data-aos="fade" data-aos-delay="200"/>

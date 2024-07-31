@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import classes from './header.module.css';
 import Logo from "../../../assets/images/banner/logo.svg";
 import Burger from "../../../assets/images/banner/mobile/burger menu.svg";
@@ -6,25 +6,45 @@ import FaceBook from "../../../assets/images/footer/facebook.svg";
 import Instagram from "../../../assets/images/footer/instagram.svg";
 import LinkedIn from "../../../assets/images/footer/linkedin.svg";
 import closeIcon from "../../../assets/images/banner/mobile/cross.svg";
+import arrowImg from "../../../assets/images/header/arrow.png";
+import {LanguageContext} from "../../../context/LanguageProvider";
+import {useTranslation} from "react-i18next";
+import i18n from "../../../i18n";
 
 
 const Header = ({scrollTo, refs}) => {
 
 
     const [openedMenu, setOpenedMenu] = useState(false);
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+    const [chosenLangCode, setChosenLangCode] = useState(i18n.language);
     const services = refs.ourServicesRef;
     const whyChooseUs = refs.whyChooseUsRef
     const priorities = refs.ourPrioritiesRef
     const downloadApp = refs.downloadAppRef
     const contactUs = refs.contactUsRef
 
+    const {changeLanguage} = useContext(LanguageContext);
+    const {t} = useTranslation();
+
     const handleOpenMenu = () => {
         setOpenedMenu(prevState => !prevState);
     };
 
+
     const handleNavigationClick = (ref) => {
         scrollTo(ref);
         setOpenedMenu(false);
+    };
+
+    const toggleDropdown = () => {
+        setDropdownOpen(!dropdownOpen);
+    };
+
+    const handleChangeLanguage = (lang, langCode) => {
+        changeLanguage(langCode)
+        setChosenLangCode(langCode)
+        setDropdownOpen(false);
     };
 
     useEffect(() => {
@@ -47,20 +67,43 @@ const Header = ({scrollTo, refs}) => {
             <div className={`${classes.menu} ${openedMenu ? classes.menuOpen : ''}`}>
                 <nav className={classes.nav}>
                     <p className={classes.navigationItem} onClick={() => handleNavigationClick(services)}>
-                        Our services
+                        {t("header.ourServices")}
                     </p>
                     <p className={classes.navigationItem} onClick={() => handleNavigationClick(whyChooseUs)}>
-                        Why choose us
+                        {t("header.whyChooseUs")}
                     </p>
                     <p className={classes.navigationItem} onClick={() => handleNavigationClick(priorities)}>
-                        Web version
+                        {t("header.webVersion")}
                     </p>
                     <p className={classes.navigationItem} onClick={() => handleNavigationClick(downloadApp)}>
-                        Download the app
+                        {t("header.downloadApp")}
                     </p>
                     <p className={classes.navigationItem} onClick={() => handleNavigationClick(contactUs)}>
-                        Contact us
+                        {t("header.contactUs")}
                     </p>
+                    <div className={classes.navigationItem} onClick={toggleDropdown}>
+                        <div className={classes.navigationItemChangeLang}>
+                            {t(`header.language.${chosenLangCode}`)}
+                            {dropdownOpen ?
+                                <img className={classes.dropIcon} src={arrowImg} alt="arrow"/>
+                                :
+                                <img className={classes.dropIconOpened} src={arrowImg} alt="arrow"/>
+                            }
+                            {dropdownOpen && (
+                                <div className={classes.dropdownMenu}>
+                                    <div className={classes.dropdownItem}
+                                         onClick={() => handleChangeLanguage("Eng", "en")}>English
+                                    </div>
+                                    <div className={classes.dropdownItem}
+                                         onClick={() => handleChangeLanguage("Українська", "ua")}>Українська
+                                    </div>
+                                    <div className={classes.dropdownItem}
+                                         onClick={() => handleChangeLanguage("Polski", "pl")}>Polski
+                                    </div>
+                                </div>
+                            )}
+                        </div>
+                    </div>
                 </nav>
                 <div className={classes.socials}>
                     <a href="https://www.facebook.com/D0VIRA.me">

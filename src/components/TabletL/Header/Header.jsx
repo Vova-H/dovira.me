@@ -14,7 +14,6 @@ import arrowImg from "../../../assets/images/header/arrow.png";
 
 const Header = ({scrollTo, refs}) => {
 
-
     const [openedMenu, setOpenedMenu] = useState(false);
     const [dropdownOpen, setDropdownOpen] = useState(false);
     const [chosenLangCode, setChosenLangCode] = useState(i18n.language);
@@ -68,23 +67,23 @@ const Header = ({scrollTo, refs}) => {
             <div className={`${classes.menu} ${openedMenu ? classes.menuOpen : ''}`}>
                 <nav className={classes.nav}>
                     <p className={classes.navigationItem} onClick={() => handleNavigationClick(services)}>
-                        Our services
+                        {t("header.ourServices")}
                     </p>
                     <p className={classes.navigationItem} onClick={() => handleNavigationClick(whyChooseUs)}>
-                        Why choose us
+                        {t("header.whyChooseUs")}
                     </p>
                     <p className={classes.navigationItem} onClick={() => handleNavigationClick(priorities)}>
-                        Web version
+                        {t("header.webVersion")}
                     </p>
                     <p className={classes.navigationItem} onClick={() => handleNavigationClick(downloadApp)}>
-                        Download the app
+                        {t("header.downloadApp")}
                     </p>
                     <p className={classes.navigationItem} onClick={() => handleNavigationClick(contactUs)}>
-                        Contact us
+                        {t("header.contactUs")}
                     </p>
 
                     <div className={classes.navigationItem} onClick={toggleDropdown}>
-                        <p className={classes.navigationItemChangeLang}>
+                        <div className={classes.navigationItemChangeLang}>
                             {t(`header.language.${chosenLangCode}`)}
                             {dropdownOpen ?
                                 <img className={classes.dropIcon} src={arrowImg} alt="arrow"/>
@@ -104,8 +103,7 @@ const Header = ({scrollTo, refs}) => {
                                     </div>
                                 </div>
                             )}
-                        </p>
-
+                        </div>
                     </div>
 
 
