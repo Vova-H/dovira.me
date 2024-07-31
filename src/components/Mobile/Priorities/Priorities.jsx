@@ -11,7 +11,7 @@ const Priorities = forwardRef((props, ref) => {
         <div className={classes.extraContainer} ref={ref}
              data-aos="fade-out" data-aos-duration="2000" data-aos-anchor-placement="top-center">
             <div className={classes.container}>
-                <div className={classes.title}>Try our web version</div>
+                <div className={classes.title}>Try{t("priorities.title")}</div>
                 <div className={classes.description}>
                     {t("priorities.description")}
                 </div>
