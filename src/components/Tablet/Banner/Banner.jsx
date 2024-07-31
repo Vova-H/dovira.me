@@ -30,7 +30,7 @@ const Banner = ({scrollTo, refs}) => {
             <div className={classes.statistic}>
                 <div className={classes.statisticItemWrapper} data-aos="fade-up" data-aos-delay="200">
                     <p className={classes.statisticItemTextBefore}>{t(`banner.comingSoon`)}</p>
-                    <p className={classes.statisticItemCount}>100k</p>
+                    <p className={classes.statisticItemCount}>{t(`banner.count`)}</p>
                     <div className={classes.statisticItemText}>{t(`banner.expertDoctors`)}</div>
                 </div>
                 <div className={classes.statisticItemWrapper} data-aos="fade-up" data-aos-delay="400">

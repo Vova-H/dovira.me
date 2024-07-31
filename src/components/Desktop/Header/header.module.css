@@ -66,7 +66,7 @@
     position: absolute;
     top: 200%;
     right: -100%;
-    background: linear-gradient(to top, white 2%, var(--LightBlue) 100%);
+    background: linear-gradient(to bottom, var(--LightBlue) 2%, white  100%);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     border-radius: 7.5%;

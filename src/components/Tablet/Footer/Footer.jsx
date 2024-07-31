@@ -6,7 +6,7 @@ const Footer = () => {
     const {t} = useTranslation()
     return (
         <footer className={classes.container}>
-            <div className={classes.copyright}> {t("footer.text")}</div>
+            <div className={classes.copyright}>{t("footer.text")}</div>
         </footer>
     );
 };

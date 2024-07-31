@@ -59,8 +59,14 @@
     font-size: 18px;
     font-weight: 400;
     color: var(--Black);
-    cursor: pointer;
     margin-bottom: 35px;
+}
+
+.navigationItemChangeLang {
+    display: flex;
+    align-items: center;
+    position: relative;
+
 }
 
 .socials {
@@ -76,4 +82,40 @@
     height: 60px;
     cursor: pointer;
 }
+
+
+.dropdownMenu {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background: linear-gradient(to bottom, var(--LightBlue) 2%, white  100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-radius: 7.5%;
+    min-width: 150px;
+}
+
+.dropdownItem {
+    padding: 20px;
+    white-space: nowrap;
+    z-index: 3;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--Black);
+}
+
+.dropdownItem:hover {
+    background: #157EFC;
+    color: #fff
+}
+
+.dropIcon {
+    margin-left: 10px;
+}
+
+.dropIconOpened {
+    transform: rotateX(180deg);
+    margin-left: 5px;
+}
+
 
