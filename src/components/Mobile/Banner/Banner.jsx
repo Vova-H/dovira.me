@@ -1,10 +1,14 @@
 import React from 'react';
 import classes from "./banner.module.css"
 import doctor from "../../../assets/images/banner/mobile/picture of doctor.png"
+import doctorUa from "../../../assets/images/banner/mobile/picture of doctorUa.png"
+import doctorPl from "../../../assets/images/banner/mobile/picture of doctorPl.png"
 import {useTranslation} from "react-i18next";
+import i18n from "../../../i18n";
 
 const Banner = ({scrollTo, refs}) => {
     const {t} = useTranslation();
+    const lang = i18n.language
 
     const handleNavigationClick = (ref) => {
         scrollTo(ref);
@@ -43,7 +47,15 @@ const Banner = ({scrollTo, refs}) => {
                     <div className={classes.statisticItemText}>{t(`banner.expertVeterinarians`)}</div>
                 </div>
             </div>
-            <img src={doctor} alt="Doctor" className={classes.doctor} data-aos="fade" data-aos-delay="200"/>
+            {
+                lang === "en" ? (
+                    <img src={doctor} alt="Doctor" className={classes.doctor} data-aos="fade" data-aos-delay="200"/>
+                ) : lang === "ua" ? (
+                    <img src={doctorUa} alt="Doctor" className={classes.doctor} data-aos="fade" data-aos-delay="200"/>
+                ) : (
+                    <img src={doctorPl} alt="Doctor" className={classes.doctor} data-aos="fade" data-aos-delay="200"/>
+                )
+            }
         </div>
     );
 };

@@ -3,10 +3,14 @@ import classes from "./whyChoose.module.css"
 import doctor from "../../../assets/images/whyChoose/picture.png"
 import check from "../../../assets/images/whyChoose/check.svg"
 import {useTranslation} from "react-i18next";
+import i18n from "../../../i18n";
+import doctorUa from "../../../assets/images/whyChoose/pictureUa.png";
+import doctorPl from "../../../assets/images/whyChoose/picturePl.png";
 
 const WhyChoose = forwardRef((props, ref) => {
 
     const {t} = useTranslation();
+    const lang = i18n.language;
 
     return (
         <div className={classes.container} ref={ref}>
@@ -49,7 +53,18 @@ const WhyChoose = forwardRef((props, ref) => {
                     {t("whyChoose.description4")}
                 </div>
             </div>
-            <img src={doctor} alt="Doctor" className={classes.doctorImage} data-aos="fade" data-aos-delay="200" data-aos-duration="1500"/>
+            {
+                lang === "en" ? (
+                    <img src={doctor} alt="Doctor" className={classes.doctorImage} data-aos="fade" data-aos-delay="200"
+                         data-aos-duration="1500"/>
+                ) : lang === "ua" ? (
+                    <img src={doctorUa} alt="Doctor" className={classes.doctorImage} data-aos="fade" data-aos-delay="200"
+                         data-aos-duration="1500"/>
+                ) : (
+                    <img src={doctorPl} alt="Doctor" className={classes.doctorImage} data-aos="fade" data-aos-delay="200"
+                         data-aos-duration="1500"/>
+                )
+            }
         </div>
     );
 });

@@ -1,16 +1,16 @@
 .container {
-    max-width: 1200px;
+    max-width: 1920px;
     display: flex;
     align-items: center;
     margin-bottom: 200px;
-    padding: 0 20px;
+    width: 100%;
+    align-content: space-between;
 }
 
 .rightSide {
     width: 50%;
     display: flex;
     flex-direction: column;
-    margin-left: -3%;
 }
 
 .title {
@@ -31,19 +31,22 @@
 .links {
     display: flex;
     gap: 5%;
+
+
 }
 
+.link{
 
-.linkItemImage {
-    width: auto;
-    max-width: 100%;
+}
+
+.linkImage {
+
 }
 
 .phoneWrapper {
     display: flex;
     justify-content: center;
     position: relative;
-    width: 50%;
     margin-left: -2%;
 }
 
@@ -61,7 +64,6 @@
     width: 80%;
     height: 80%;
     margin: auto;
-    /*margin-right: auto;*/
 }
 
 .circle2 {

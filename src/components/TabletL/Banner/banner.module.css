@@ -26,31 +26,24 @@
     position: relative;
 }
 
-.smallCardWrapper {
+.smallCard {
+    max-width: 60%;
     position: absolute;
     bottom: 30%;
-    left: -20%;
-}
-
-.smallCard {
-    max-width: 50%;
-}
-
-.cardWrapper {
-    max-width: 100%;
-    position: absolute;
-    top: 5%;
-    right: -80%;
+    left: -25%;
 }
 
 .card {
-    width: 100%;
-    max-width: 50%;
+    position: absolute;
+    top: 0;
+    right: -30%;
+    max-width: 60%;
 }
 
 
 .doctorImgWrapper {
     max-width: 90%;
+    position: relative;
 }
 
 .doctorImg {

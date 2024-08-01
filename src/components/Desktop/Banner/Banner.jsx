@@ -7,11 +7,17 @@ import linkedIn from "../../../assets/images/banner/linkedin.svg"
 import smallCard from "../../../assets/images/banner/smallCard.png"
 import card from "../../../assets/images/banner/card.png"
 import {useTranslation} from "react-i18next";
+import i18n from "../../../i18n";
+import smallCardUa from "../../../assets/images/banner/smallCardUa.png";
+import smallCardPl from "../../../assets/images/banner/smallCardPl.png";
+import cardUa from "../../../assets/images/banner/cardUa.png";
+import cardPl from "../../../assets/images/banner/cardPl.png";
 
 
 const Banner = ({scrollTo, refs}) => {
 
     const {t} = useTranslation();
+    const lang = i18n.language
     const handleNavigationClick = (ref) => {
         scrollTo(ref);
     };
@@ -69,10 +75,26 @@ const Banner = ({scrollTo, refs}) => {
                         <img src={pictureDoctor} alt="Doctor" className={classes.doctorImg}/>
                     </div>
                     <div className={classes.smallCardWrapper} data-aos="fade-right" data-aos-duration={2000}>
-                        <img src={smallCard} alt="Small card" className={classes.smallCard}/>
+                        {
+                            lang === "en" ? (
+                                <img src={smallCard} alt="Small card" className={classes.smallCard}/>
+                            ) : lang === "ua" ? (
+                                <img src={smallCardUa} alt="Small card" className={classes.smallCard}/>
+                            ) : (
+                                <img src={smallCardPl} alt="Small card" className={classes.smallCard}/>
+                            )
+                        }
                     </div>
                     <div className={classes.cardWrapper} data-aos="fade-left" data-aos-duration={2000}>
-                        <img src={card} alt="Card" className={classes.card}/>
+                        {
+                            lang === "en" ? (
+                                <img src={card} alt="Card" className={classes.card}/>
+                            ) : lang === "ua" ? (
+                                <img src={cardUa} alt="Card" className={classes.card}/>
+                            ) : (
+                                <img src={cardPl} alt="Card" className={classes.card}/>
+                            )
+                        }
                     </div>
                 </div>
             </div>
