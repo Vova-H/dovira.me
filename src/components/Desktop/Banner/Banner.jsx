@@ -70,10 +70,9 @@ const Banner = ({scrollTo, refs}) => {
                     </div>
                 </div>
                 <div className={classes.bannerRightSide}>
-                    <div className={classes.doctorImgWrapper} data-aos-delay="200" data-aos="fade-in"
-                         data-aos-duration={1000}>
-                        <img src={pictureDoctor} alt="Doctor" className={classes.doctorImg}/>
-                    </div>
+                    <img src={pictureDoctor} alt="Doctor" className={classes.doctorImg} data-aos-delay="200"
+                         data-aos="fade-in"
+                         data-aos-duration={1000}/>
                     <div className={classes.smallCardWrapper} data-aos="fade-right" data-aos-duration={2000}>
                         {
                             lang === "en" ? (

@@ -1,7 +1,6 @@
 .bannerWrapper {
     display: flex;
     justify-content: center;
-    padding-top: 10px;
     position: relative;
     width: 100%;
     max-width: 1920px;
@@ -9,7 +8,7 @@
 
 .bannerContent {
     width: 80%;
-    max-width: 1600px;
+    max-width: 1920px;
     display: flex;
     align-items: start;
     justify-content: center;
@@ -24,39 +23,35 @@
 
 .bannerRightSide {
     max-width: 40%;
-    position: relative;
 }
 
 .smallCardWrapper {
+    width: 23%;
     position: absolute;
-    max-width: 70%;
-    bottom: 30%;
-    left: -15%;
+    top: 40%;
+    right: 25%
 }
 
 .smallCard {
-    max-width: 80%;
-    margin-left: 2%;
+    max-width: 70%;
 }
 
 .cardWrapper {
-    max-width: 70%;
+    width: 20%;
     position: absolute;
-    top: 5%;
-    right: -40%;
+    top: -7%;
+    right: 0;
 }
 
 .card {
     max-width: 70%;
-    height: auto;
-}
-
-
-.doctorImgWrapper {
-    max-width: 100%;
 }
 
 .doctorImg {
+    width: 600px;
+    max-height: 670px;
+    position: relative;
+    margin-top: -15%;
     max-width: 100%;
 }
 

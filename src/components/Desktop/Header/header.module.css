@@ -4,11 +4,12 @@
     display: flex;
     padding: 30px 0;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 .headerContainerUa {
     width: 80%;
-    max-width: 1520px;
+    max-width: 1920px;
     display: flex;
     padding: 30px 0;
     justify-content: center;
