@@ -90,9 +90,11 @@
 
 .dropIcon {
     margin-left: 5px;
+    width: 16px;
 }
 
 .dropIconOpened {
     transform: rotateX(180deg);
     margin-left: 5px;
+    width: 16px;
 }
