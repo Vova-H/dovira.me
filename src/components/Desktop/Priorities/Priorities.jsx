@@ -12,7 +12,7 @@ const Priorities = forwardRef((props, ref) => {
     const lang = i18n.language
     return (
         <div className={classes.extraContainer} ref={ref} data-aos="fade-out" data-aos-duration="2000">
-            <div className={classes.container}>
+            <div className={classes.container} ref={ref}>
                 <div className={classes.title}>{t("priorities.title")}</div>
                 <div className={classes.description}>
                     {t("priorities.description")}

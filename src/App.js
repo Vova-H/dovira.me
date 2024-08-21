@@ -29,9 +29,14 @@ function App() {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    const scrollTo = (ref) => {
-        ref.current.scrollIntoView({behavior: 'smooth', block: 'start'});
-    }
+    const scrollTo = (ref, offset = 0) => {
+        const topPosition = ref.current.getBoundingClientRect().top + window.pageYOffset + offset;
+        window.scrollTo({
+            top: topPosition,
+            behavior: 'smooth'
+        });
+    };
+
 
     return (
         <div>

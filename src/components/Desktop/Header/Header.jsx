@@ -14,8 +14,8 @@ const Header = ({scrollTo, refs}) => {
     const {t} = useTranslation();
 
 
-    const handleNavigationClick = (ref) => {
-        scrollTo(ref);
+    const handleNavigationClick = (ref, offset = 0) => {
+        scrollTo(ref, offset);
     };
 
     const toggleDropdown = () => {
@@ -45,7 +45,7 @@ const Header = ({scrollTo, refs}) => {
                         {t('header.whyChooseUs')}
                     </div>
                     <div className={classes.navigationItem}
-                         onClick={() => handleNavigationClick(refs.ourPrioritiesRef)}
+                         onClick={() => handleNavigationClick(refs.ourPrioritiesRef, -80)}
                          data-aos="fade-down" data-aos-delay="400">
                         {t('header.webVersion')}
                     </div>
