@@ -30,14 +30,14 @@
 
 .link {
     width: 200px;
+    max-width: 80%;
 }
 
 .linkImage {
     width: 200px;
-    max-width: 200px;
+    max-width: 100%;
 }
 
 .image {
-    max-width: 70%;
     width: 100%;
 }
