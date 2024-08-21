@@ -110,12 +110,14 @@
 }
 
 .dropIcon {
-    margin-left: 10px;
+    margin-left: 5px;
+    width: 1rem;
 }
 
 .dropIconOpened {
     transform: rotateX(180deg);
     margin-left: 5px;
+    width: 1rem;
 }
 
 
