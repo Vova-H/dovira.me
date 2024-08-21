@@ -40,6 +40,12 @@
 }
 
 
+
+.linkImage {
+    width: 195px;
+}
+
+
 .phoneWrapper {
     flex: 1;
     padding-right: 20px;

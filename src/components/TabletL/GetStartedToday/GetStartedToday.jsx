@@ -27,10 +27,12 @@ const GetStartedToday = forwardRef((props, ref) => {
                     lang === "en" ? (
                         <img src={phoneImage} className={classes.phoneImage} alt="phoneImage" data-aos="fade-up"/>
                     ) : lang === "ua" ? (
-                        <img src={phoneImageUa} className={classes.phoneImage} alt="phoneImage" data-aos="fade" data-aos-duration="3000"
+                        <img src={phoneImageUa} className={classes.phoneImage} alt="phoneImage" data-aos="fade"
+                             data-aos-duration="3000"
                              data-aos-anchor-placement="top-center"/>
                     ) : (
-                        <img src={phoneImagePl} className={classes.phoneImage} alt="phoneImage" data-aos="fade" data-aos-duration="3000"
+                        <img src={phoneImagePl} className={classes.phoneImage} alt="phoneImage" data-aos="fade"
+                             data-aos-duration="3000"
                              data-aos-anchor-placement="top-center"/>
                     )
                 }
@@ -46,41 +48,35 @@ const GetStartedToday = forwardRef((props, ref) => {
                 </div>
                 {
                     lang === "en" ? (
-                        <div className={classes.links}>
-                            <a href="https://apps.apple.com/" className={classes.link} data-aos="fade-up"
-                               data-aos-duration="2000"
-                               data-aos-anchor-placement="top-center">
+                        <div className={classes.links} data-aos="fade-up"
+                             data-aos-duration="2000"
+                             data-aos-anchor-placement="top-center">
+                            <a href="https://apps.apple.com/" className={classes.link} >
                                 <img src={apple} alt="Apple Sotore" className={classes.linkImage}/>
                             </a>
-                            <a href="https://play.google.com/" className={classes.link} data-aos="fade-up"
-                               data-aos-duration="2000"
-                               data-aos-anchor-placement="top-center">
+                            <a href="https://play.google.com/" className={classes.link} >
                                 <img src={android} alt="Play market" className={classes.linkImage}/>
                             </a>
                         </div>
                     ) : lang === "ua" ? (
-                        <div className={classes.links}>
-                            <a href="https://apps.apple.com/" className={classes.link} data-aos="fade-up"
-                               data-aos-duration="2000"
-                               data-aos-anchor-placement="top-center">
+                        <div className={classes.links} data-aos="fade-up"
+                             data-aos-duration="2000"
+                             data-aos-anchor-placement="top-center">
+                            <a href="https://apps.apple.com/" className={classes.link} >
                                 <img src={appleUa} alt="Apple Sotore" className={classes.linkImage}/>
                             </a>
-                            <a href="https://play.google.com/" className={classes.link} data-aos="fade-up"
-                               data-aos-duration="2000"
-                               data-aos-anchor-placement="top-center">
+                            <a href="https://play.google.com/" className={classes.link}>
                                 <img src={androidUa} alt="Play market" className={classes.linkImage}/>
                             </a>
                         </div>
                     ) : (
-                        <div className={classes.links}>
-                            <a href="https://apps.apple.com/" className={classes.link} data-aos="fade-up"
-                               data-aos-duration="2000"
-                               data-aos-anchor-placement="top-center">
+                        <div className={classes.links} data-aos="fade-up"
+                             data-aos-duration="2000"
+                             data-aos-anchor-placement="top-center">
+                            <a href="https://apps.apple.com/" className={classes.link}>
                                 <img src={applePl} alt="Apple Sotore" className={classes.linkImage}/>
                             </a>
-                            <a href="https://play.google.com/" className={classes.link} data-aos="fade-up"
-                               data-aos-duration="2000"
-                               data-aos-anchor-placement="top-center">
+                            <a href="https://play.google.com/" className={classes.link}>
                                 <img src={androidPl} alt="Play market" className={classes.linkImage}/>
                             </a>
                         </div>

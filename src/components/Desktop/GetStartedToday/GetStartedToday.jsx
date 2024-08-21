@@ -49,12 +49,12 @@ const GetStartedToday = forwardRef((props, ref) => {
                 {
                     lang === "en" ? (
                         <div className={classes.links}>
-                            <a href="https://apps.apple.com/" className={classes.link} data-aos="fade-up"
+                            <a href="https://apps.apple.com/" data-aos="fade-up"
                                data-aos-duration="2000"
                                data-aos-anchor-placement="top-center">
                                 <img src={apple} alt="Apple Sotore" className={classes.linkImage}/>
                             </a>
-                            <a href="https://play.google.com/" className={classes.link} data-aos="fade-up"
+                            <a href="https://play.google.com/" data-aos="fade-up"
                                data-aos-duration="2000"
                                data-aos-anchor-placement="top-center">
                                 <img src={android} alt="Play market" className={classes.linkImage}/>

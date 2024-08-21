@@ -22,15 +22,13 @@ const Priorities = forwardRef((props, ref) => {
                 <a href="///" className={classes.button}>
                     {t("priorities.button")}
                 </a>
-
-
                 {
                     lang === "en" ? (
-                        <img src={macbook} alt="doctor" className={classes.image}/>
+                        <img src={macbook} alt="macbook" className={classes.image}/>
                     ) : lang === "ua" ? (
-                        <img src={macbookUa} alt="doctor" className={classes.image}/>
+                        <img src={macbookUa} alt="macbook" className={classes.image}/>
                     ) : (
-                        <img src={macbookPl} alt="doctor" className={classes.image}/>
+                        <img src={macbookPl} alt="macbook" className={classes.image}/>
                     )
                 }
 
