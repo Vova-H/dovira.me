@@ -1,8 +1,8 @@
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1920px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 70px 20px 0;
     box-sizing: border-box;
@@ -10,8 +10,7 @@
 }
 
 .leftSide {
-    flex: 1;
-    padding-right: 20px;
+    margin-right: 100px;
 }
 
 .doctorImage {
@@ -20,9 +19,8 @@
 
 .rightSide {
     flex: 1;
-    display: flex;
     flex-direction: column;
-    padding-left: 20px;
+    max-width: 40%;
 }
 
 .title {
