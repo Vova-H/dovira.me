@@ -8,6 +8,7 @@ import smallCard from "../../../assets/images/banner/smallCard.png"
 import card from "../../../assets/images/banner/card.png"
 import {useTranslation} from "react-i18next";
 import i18n from "../../../i18n";
+import LazyImage from "../../LazyImage";
 import smallCardUa from "../../../assets/images/banner/smallCardUa.png";
 import smallCardPl from "../../../assets/images/banner/smallCardPl.png";
 import cardUa from "../../../assets/images/banner/cardUa.png";
@@ -27,15 +28,15 @@ const Banner = ({scrollTo, refs}) => {
             <div className={classes.socialLinksWrapper}>
                 <div className={classes.socialLinkItemWrapper}>
                     <a href="https://www.facebook.com/D0VIRA.me" data-aos="fade-right" data-aos-delay="300">
-                        <img src={facebook} alt="Facebook" className={classes.socialLinkItem}/>
+                        <LazyImage src={facebook} alt="Facebook" className={classes.socialLinkItem}/>
                     </a>
                     <a href="https://www.linkedin.com/company/dovira-me/"
                        data-aos-delay="300" data-aos="fade-right">
-                        <img src={linkedIn} alt="Linked In" className={classes.socialLinkItem}/>
+                        <LazyImage src={linkedIn} alt="Linked In" className={classes.socialLinkItem}/>
                     </a>
                     <a href="https://www.instagram.com/dovira.me?igsh=MWc1ODFqbDV6aGppeg%3D%3D&utm_source=qr"
                        data-aos="fade-right" data-aos-delay="300">
-                        <img src={instagram} alt="Instagram" className={classes.socialLinkItem}/>
+                        <LazyImage src={instagram} alt="Instagram" className={classes.socialLinkItem}/>
                     </a>
                 </div>
             </div>
@@ -70,28 +71,28 @@ const Banner = ({scrollTo, refs}) => {
                     </div>
                 </div>
                 <div className={classes.bannerRightSide}>
-                    <img src={pictureDoctor} alt="Doctor" className={classes.doctorImg} data-aos-delay="200"
-                         data-aos="fade-in"
-                         data-aos-duration={1000}/>
+                    <LazyImage src={pictureDoctor} alt="Doctor" className={classes.doctorImg} data-aos-delay="200"
+                               data-aos="fade-in"
+                               data-aos-duration={1000}/>
                     <div className={classes.smallCardWrapper} data-aos="fade-right" data-aos-duration={2000}>
                         {
                             lang === "en" ? (
-                                <img src={smallCard} alt="Small card" className={classes.smallCard}/>
+                                <LazyImage src={smallCard} alt="Small card" className={classes.smallCard}/>
                             ) : lang === "ua" ? (
-                                <img src={smallCardUa} alt="Small card" className={classes.smallCard}/>
+                                <LazyImage src={smallCardUa} alt="Small card" className={classes.smallCard}/>
                             ) : (
-                                <img src={smallCardPl} alt="Small card" className={classes.smallCard}/>
+                                <LazyImage src={smallCardPl} alt="Small card" className={classes.smallCard}/>
                             )
                         }
                     </div>
                     <div className={classes.cardWrapper} data-aos="fade-left" data-aos-duration={2000}>
                         {
                             lang === "en" ? (
-                                <img src={card} alt="Card" className={classes.card}/>
+                                <LazyImage src={card} alt="Card" className={classes.card}/>
                             ) : lang === "ua" ? (
-                                <img src={cardUa} alt="Card" className={classes.card}/>
+                                <LazyImage src={cardUa} alt="Card" className={classes.card}/>
                             ) : (
-                                <img src={cardPl} alt="Card" className={classes.card}/>
+                                <LazyImage src={cardPl} alt="Card" className={classes.card}/>
                             )
                         }
                     </div>

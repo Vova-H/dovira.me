@@ -15,6 +15,7 @@ import appleUa from "../../../assets/images/getStartedToday/appleUa.png";
 import androidUa from "../../../assets/images/getStartedToday/androidUa.png";
 import applePl from "../../../assets/images/getStartedToday/applePl.png";
 import androidPl from "../../../assets/images/getStartedToday/androidPl.png";
+import LazyImage from "../../LazyImage";
 
 const GetStartedToday = forwardRef((props, ref) => {
 
@@ -25,20 +26,20 @@ const GetStartedToday = forwardRef((props, ref) => {
             <div className={classes.phoneWrapper}>
                 {
                     lang === "en" ? (
-                        <img src={phoneImage} className={classes.phoneImage} alt="phoneImage" data-aos="fade-up"/>
+                        <LazyImage src={phoneImage} className={classes.phoneImage} alt="phoneImage" data-aos="fade-up"/>
                     ) : lang === "ua" ? (
-                        <img src={phoneImageUa} className={classes.phoneImage} alt="phoneImage" data-aos="fade"
-                             data-aos-duration="3000"
-                             data-aos-anchor-placement="top-center"/>
+                        <LazyImage src={phoneImageUa} className={classes.phoneImage} alt="phoneImage" data-aos="fade"
+                                  data-aos-duration="3000"
+                                  data-aos-anchor-placement="top-center"/>
                     ) : (
-                        <img src={phoneImagePl} className={classes.phoneImage} alt="phoneImage" data-aos="fade"
-                             data-aos-duration="3000"
-                             data-aos-anchor-placement="top-center"/>
+                        <LazyImage src={phoneImagePl} className={classes.phoneImage} alt="phoneImage" data-aos="fade"
+                                  data-aos-duration="3000"
+                                  data-aos-anchor-placement="top-center"/>
                     )
                 }
-                <img src={circle1} className={classes.circle1} alt="Cirlce" data-aos="fade-up"/>
-                <img src={circle2} className={classes.circle2} alt="Cirlce" data-aos="fade-right"/>
-                <img src={circle3} className={classes.circle3} alt="Cirlce" data-aos="fade-left"/>
+                <LazyImage src={circle1} className={classes.circle1} alt="Cirlce" data-aos="fade-up"/>
+                <LazyImage src={circle2} className={classes.circle2} alt="Cirlce" data-aos="fade-right"/>
+                <LazyImage src={circle3} className={classes.circle3} alt="Cirlce" data-aos="fade-left"/>
             </div>
 
             <div className={classes.rightSide}>
@@ -52,12 +53,12 @@ const GetStartedToday = forwardRef((props, ref) => {
                             <a href="https://apps.apple.com/" data-aos="fade-up"
                                data-aos-duration="2000"
                                data-aos-anchor-placement="top">
-                                <img src={apple} alt="Apple Sotore" className={classes.linkImage}/>
+                                <LazyImage src={apple} alt="Apple Sotore" className={classes.linkImage}/>
                             </a>
                             <a href="https://play.google.com/" data-aos="fade-up"
                                data-aos-duration="2000"
                                data-aos-anchor-placement="top">
-                                <img src={android} alt="Play market" className={classes.linkImage}/>
+                                <LazyImage src={android} alt="Play market" className={classes.linkImage}/>
                             </a>
                         </div>
                     ) : lang === "ua" ? (
@@ -65,12 +66,12 @@ const GetStartedToday = forwardRef((props, ref) => {
                             <a href="https://apps.apple.com/" className={classes.link} data-aos="fade-up"
                                data-aos-duration="2000"
                                data-aos-anchor-placement="top-center">
-                                <img src={appleUa} alt="Apple Sotore" className={classes.linkImage}/>
+                                <LazyImage src={appleUa} alt="Apple Sotore" className={classes.linkImage}/>
                             </a>
                             <a href="https://play.google.com/" className={classes.link} data-aos="fade-up"
                                data-aos-duration="2000"
                                data-aos-anchor-placement="top-center">
-                                <img src={androidUa} alt="Play market" className={classes.linkImage}/>
+                                <LazyImage src={androidUa} alt="Play market" className={classes.linkImage}/>
                             </a>
                         </div>
                     ) : (
@@ -78,12 +79,12 @@ const GetStartedToday = forwardRef((props, ref) => {
                             <a href="https://apps.apple.com/" className={classes.link} data-aos="fade-up"
                                data-aos-duration="2000"
                                data-aos-anchor-placement="top-center">
-                                <img src={applePl} alt="Apple Sotore" className={classes.linkImage}/>
+                                <LazyImage src={applePl} alt="Apple Sotore" className={classes.linkImage}/>
                             </a>
                             <a href="https://play.google.com/" className={classes.link} data-aos="fade-up"
                                data-aos-duration="2000"
                                data-aos-anchor-placement="top-center">
-                                <img src={androidPl} alt="Play market" className={classes.linkImage}/>
+                                <LazyImage src={androidPl} alt="Play market" className={classes.linkImage}/>
                             </a>
                         </div>
                     )
