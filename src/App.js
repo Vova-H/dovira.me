@@ -1,11 +1,12 @@
 import '@fontsource/inter/400.css';
 import '@fontsource/inter/500.css';
-import "./styles/variables.css"
-import React, {useEffect, useRef, useState} from "react";
-import Desktop from "./Layouts/Desktop";
-import Mobile from "./Layouts/Mobile";
-import Tablet from "./Layouts/Tablet";
-import TabletL from "./Layouts/TabletL";
+import "./styles/variables.css";
+import React, {lazy, Suspense, useEffect, useRef, useState} from "react";
+
+const Desktop = lazy(() => import("./Layouts/Desktop"));
+const Mobile = lazy(() => import("./Layouts/Mobile"));
+const Tablet = lazy(() => import("./Layouts/Tablet"));
+const TabletL = lazy(() => import("./Layouts/TabletL"));
 
 function App() {
 
@@ -39,22 +40,30 @@ function App() {
 
 
     return (
-        <div>
-            {isMobile && <Mobile scrollTo={scrollTo} ourServicesRef={ourServicesRef} whyChooseUsRef={whyChooseUsRef}
-                                 ourPrioritiesRef={ourPrioritiesRef} downloadAppRef={downloadAppRef}
-                                 contactUsRef={contactUsRef}/>}
-            {isTablet && <Tablet scrollTo={scrollTo} ourServicesRef={ourServicesRef} whyChooseUsRef={whyChooseUsRef}
-                                 ourPrioritiesRef={ourPrioritiesRef} downloadAppRef={downloadAppRef}
-                                 contactUsRef={contactUsRef}/>}
-            {isTabletL && <TabletL scrollTo={scrollTo} ourServicesRef={ourServicesRef} whyChooseUsRef={whyChooseUsRef}
-                                   ourPrioritiesRef={ourPrioritiesRef} downloadAppRef={downloadAppRef}
-                                   contactUsRef={contactUsRef}/>}
-            {!isTablet && !isMobile && !isTabletL &&
+        <Suspense fallback={null}>
+            {isMobile && (
+                <Mobile scrollTo={scrollTo} ourServicesRef={ourServicesRef} whyChooseUsRef={whyChooseUsRef}
+                       ourPrioritiesRef={ourPrioritiesRef} downloadAppRef={downloadAppRef}
+                       contactUsRef={contactUsRef}/>
+            )}
+            {isTablet && (
+                <Tablet scrollTo={scrollTo} ourServicesRef={ourServicesRef} whyChooseUsRef={whyChooseUsRef}
+                        ourPrioritiesRef={ourPrioritiesRef} downloadAppRef={downloadAppRef}
+                        contactUsRef={contactUsRef}/>
+            )}
+            {isTabletL && (
+                <TabletL scrollTo={scrollTo} ourServicesRef={ourServicesRef} whyChooseUsRef={whyChooseUsRef}
+                         ourPrioritiesRef={ourPrioritiesRef} downloadAppRef={downloadAppRef}
+                         contactUsRef={contactUsRef}/>
+            )}
+            {!isTablet && !isMobile && !isTabletL && (
                 <Desktop scrollTo={scrollTo} ourServicesRef={ourServicesRef} whyChooseUsRef={whyChooseUsRef}
                          ourPrioritiesRef={ourPrioritiesRef} downloadAppRef={downloadAppRef}
                          contactUsRef={contactUsRef}
-                />}
-        </div>)
+                />
+            )}
+        </Suspense>
+    );
 }
 
 export default App;
