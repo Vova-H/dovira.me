@@ -1,12 +1,12 @@
 import React, {useLayoutEffect} from 'react';
-import Header from "../components/TabletL/Header/Header";
-import Banner from "../components/TabletL/Banner/Banner";
-import OurServices from "../components/TabletL/OurServices/OurServices";
-import WhyChoose from "../components/TabletL/WhyChoose/WhyChoose";
-import Priorities from "../components/TabletL/Priorities/Priorities";
-import GetStartedToday from "../components/TabletL/GetStartedToday/GetStartedToday";
-import Contact from "../components/TabletL/Contact/Contact";
-import Footer from "../components/TabletL/Footer/Footer";
+import Header from "../components/sections/TabletL/Header/Header";
+import Banner from "../components/sections/TabletL/Banner/Banner";
+import OurServices from "../components/sections/TabletL/OurServices/OurServices";
+import WhyChoose from "../components/sections/TabletL/WhyChoose/WhyChoose";
+import Priorities from "../components/sections/TabletL/Priorities/Priorities";
+import GetStartedToday from "../components/sections/TabletL/GetStartedToday/GetStartedToday";
+import Contact from "../components/sections/TabletL/Contact/Contact";
+import Footer from "../components/sections/TabletL/Footer/Footer";
 import 'aos/dist/aos.css'
 import AOS from "aos";
 import classes from "../styles/app.tabletL.module.css"

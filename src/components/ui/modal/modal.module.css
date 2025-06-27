@@ -1,0 +1,152 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background: white;
+    border-radius: 8px;
+    padding: 40px 30px;
+    max-width: 35%;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.closeBtn {
+    position: absolute;
+    top: 3%;
+    right: 4%;
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: var(--Black);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: var(--Black);
+}
+
+.radioGroup {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.radioOption {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--Black);
+    cursor: pointer;
+    position: relative;
+}
+
+.radioOption input {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.customRadio {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid var(--DarkGray);
+    background: var(--LightGray);
+    position: relative;
+    transition: box-shadow 0.2s ease;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.radioOption input:checked + .customRadio {
+    box-shadow: none;
+}
+
+/* Внутренний кружок при выборе */
+.radioOption input:checked + .customRadio::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--Blue);
+}
+
+
+/*!* 🔽 Mobile (up to 450px) *!*/
+/*@media (max-width: 450px) {*/
+/*    .modal {*/
+/*        width: 100%;*/
+/*        padding: 24px 16px;*/
+/*        border-radius: 0;*/
+/*    }*/
+
+/*    .title {*/
+/*        font-size: 20px;*/
+/*    }*/
+
+/*    .radioGroup {*/
+/*        flex-direction: column;*/
+/*        gap: 16px;*/
+/*        align-items: flex-start;*/
+/*    }*/
+
+/*    .radioOption {*/
+/*        font-size: 16px;*/
+/*    }*/
+/*}*/
+
+/*!* 🔽 Tablet (450px – 768px) *!*/
+/*@media (min-width: 451px) and (max-width: 768px) {*/
+/*    .modal {*/
+/*        width: 90%;*/
+/*        padding: 28px;*/
+/*    }*/
+
+/*    .title {*/
+/*        font-size: 22px;*/
+/*    }*/
+
+/*    .radioGroup {*/
+/*        flex-direction: row;*/
+/*        gap: 16px;*/
+/*        flex-wrap: wrap;*/
+/*        justify-content: center;*/
+/*    }*/
+/*}*/
+
+/*!* 🔽 Tablet Large (768px – 1024px) *!*/
+/*@media (min-width: 769px) and (max-width: 1024px) {*/
+/*    .modal {*/
+/*        width: 380px;*/
+/*        padding: 32px;*/
+/*    }*/
+
+/*    .title {*/
+/*        font-size: 23px;*/
+/*    }*/
+
+/*    .radioGroup {*/
+/*        gap: 18px;*/
+/*    }*/
+/*}*/

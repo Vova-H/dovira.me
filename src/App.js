@@ -2,6 +2,8 @@ import '@fontsource/inter/400.css';
 import '@fontsource/inter/500.css';
 import "./styles/variables.css";
 import React, {lazy, Suspense, useEffect, useRef, useState} from "react";
+import {useModal} from "./context/ModalContext";
+import Modal from "./components/ui/modal/Modal";
 
 const Desktop = lazy(() => import("./Layouts/Desktop"));
 const Mobile = lazy(() => import("./Layouts/Mobile"));
@@ -13,7 +15,7 @@ function App() {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 450);
     const [isTablet, setIsTablet] = useState(window.innerWidth > 450 && window.innerWidth <= 768);
     const [isTabletL, setIsTabletL] = useState(window.innerWidth > 768 && window.innerWidth <= 1024);
-
+    const { isOpen, closeModal, setRole, selectedRole } = useModal();
     const ourServicesRef = useRef(null);
     const whyChooseUsRef = useRef(null);
     const ourPrioritiesRef = useRef(null);
@@ -62,6 +64,12 @@ function App() {
                          contactUsRef={contactUsRef}
                 />
             )}
+            <Modal
+                isOpen={isOpen}
+                onClose={closeModal}
+                onSelect={setRole}
+                selectedRole={selectedRole}
+            />
         </Suspense>
     );
 }

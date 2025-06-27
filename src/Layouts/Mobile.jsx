@@ -1,13 +1,13 @@
 import React, {useLayoutEffect} from 'react';
 import classes from "../styles/app.mobile.module.css";
-import Header from "../components/Mobile/Header/Header";
-import Banner from "../components/Mobile/Banner/Banner";
-import OurServices from "../components/Mobile/OurServices/OurServices";
-import WhyChoose from "../components/Mobile/WhyChoose/WhyChoose";
-import Priorities from "../components/Mobile/Priorities/Priorities";
-import GetStartedToday from "../components/Mobile/GetStartedToday/GetStartedToday";
-import Contact from "../components/Mobile/Contact/Contact";
-import Footer from "../components/Mobile/Footer/Footer";
+import Header from "../components/sections/Mobile/Header/Header";
+import Banner from "../components/sections/Mobile/Banner/Banner";
+import OurServices from "../components/sections/Mobile/OurServices/OurServices";
+import WhyChoose from "../components/sections/Mobile/WhyChoose/WhyChoose";
+import Priorities from "../components/sections/Mobile/Priorities/Priorities";
+import GetStartedToday from "../components/sections/Mobile/GetStartedToday/GetStartedToday";
+import Contact from "../components/sections/Mobile/Contact/Contact";
+import Footer from "../components/sections/Mobile/Footer/Footer";
 import 'aos/dist/aos.css'
 import AOS from "aos";
 

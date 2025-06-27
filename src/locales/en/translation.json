@@ -10,9 +10,9 @@
     }
   },
   "banner": {
-    "title": "Are you tired of queues in hospitals?",
-    "subtitle": "Get quality doctor visits from home with DOVIRA.",
-    "button": "Try our web version",
+    "title": "DOVIRA - online healthcare you can trust",
+    "subtitle": "Join the waitlist - be the first to know when we launch",
+    "button": "Join the waitlist",
     "comingSoon": "coming soon",
     "count": "500k+",
     "patients": "Patiens",
@@ -23,11 +23,11 @@
     "ourServices": "Our services",
     "title1": "Video consultations",
     "title2": "Prescription services",
-    "title3": "Chat with doctor",
+    "title3": "Online sick leave",
     "title4": "Veterinary care",
     "description1": "Connect with qualified doctors through high-quality video calls. Get medical advice and consultations from the comfort of your home.",
     "description2": "With DOVIRA, get prescriptions from our online doctors directly in the app. Download them for easy access whenever necessary.",
-    "description3": "Have a question or need medical advice? Use our chat service to get prompt responses from experienced doctors.",
+    "description3": "Get an official sick leave certificate from a licensed doctor remotely — no clinic visits, no waiting rooms, just professional care from home.",
     "description4": "DOVIRA cares for your pets too! Request a vet house call or schedule a video consultation to ensure your furry friends get the medical attention they need."
   },
   "whyChoose": {
@@ -42,18 +42,31 @@
     "description4": "Connect with a doctor anytime, day or night, and receive the consultation you need without delay."
   },
   "priorities": {
-    "title": "Try our web version",
-    "description": "Enjoy all the features of DOVIRA right from your browser. No downloads needed - just visit our website and start your consultation today!",
-    "button": "Visit now"
+    "title": "DOVIRA in your browser - launching soon",
+    "description": "You’ll soon be able to access all DOVIRA features directly from your browser — no downloads needed.",
+    "description2": "Leave your email, and we’ll notify you as soon as the platform goes live.",
+    "email": "Email",
+    "button": "Get early access"
   },
   "getStarted": {
-    "title": "Get started today!",
-    "description": "Experience the convenience and peace of mind that DOVIRA offers. Download the app now and take control of your health journey with just a few taps. Your health is important to us, and we're here to help every step of the way."
+    "title": "DOVIRA is coming to your smartphone very soon",
+    "description": "The app is not available for download yet, but we're launching on the App Store and Google Play very soon.",
+    "description2": "Join the waitlist to be among the first to get notified.",
+    "button": "Notify me"
   },
   "contact": {
-    "text": "If you have any questions, please, feel free to contact us through social media and send us a message."
+    "title": "Want to join DOVIRA?",
+      "description": "Whether you're a patient or a medical professional - leave your contact details and we’ll reach out before we launch.",
+      "button": "Join the waitlist"
   },
   "footer": {
     "text": "© 2024 DOVIRA. All rights reserved. "
+  },
+  "modal": {
+    "title": "Please, select your role",
+    "choice1": "I`m a doctor/vet",
+    "choice2": "I`m a patient",
+    "button": "Join the waitlist",
+    "message": "Please select your role before proceeding"
   }
 }

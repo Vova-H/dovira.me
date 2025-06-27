@@ -3,14 +3,14 @@ import classes from "../styles/app.tablet.module.css";
 
 import 'aos/dist/aos.css'
 import AOS from "aos";
-import Header from "../components/Tablet/Header/Header";
-import Banner from "../components/Tablet/Banner/Banner";
-import OurServices from "../components/Tablet/OurServices/OurServices";
-import WhyChoose from "../components/Tablet/WhyChoose/WhyChoose";
-import Priorities from "../components/Tablet/Priorities/Priorities";
-import GetStartedToday from "../components/Tablet/GetStartedToday/GetStartedToday";
-import Contact from "../components/Tablet/Contact/Contact";
-import Footer from "../components/Tablet/Footer/Footer";
+import Header from "../components/sections/Tablet/Header/Header";
+import Banner from "../components/sections/Tablet/Banner/Banner";
+import OurServices from "../components/sections/Tablet/OurServices/OurServices";
+import WhyChoose from "../components/sections/Tablet/WhyChoose/WhyChoose";
+import Priorities from "../components/sections/Tablet/Priorities/Priorities";
+import GetStartedToday from "../components/sections/Tablet/GetStartedToday/GetStartedToday";
+import Contact from "../components/sections/Tablet/Contact/Contact";
+import Footer from "../components/sections/Tablet/Footer/Footer";
 
 const Tablet = (props) => {
 

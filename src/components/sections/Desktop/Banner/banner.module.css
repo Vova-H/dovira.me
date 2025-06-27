@@ -1,0 +1,132 @@
+.bannerWrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+}
+
+.bannerContent {
+    width: 80%;
+    max-width: 1920px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    justify-self: center;
+    margin-bottom: 50px;
+}
+
+
+.bannerLeftSide {
+    max-width: 60%;
+}
+
+.bannerRightSide {
+    max-width: 40%;
+}
+
+.smallCardWrapper {
+    width: 23%;
+    position: absolute;
+    top: 40%;
+    right: 25%
+}
+
+.smallCard {
+    max-width: 70%;
+}
+
+.cardWrapper {
+    width: 20%;
+    position: absolute;
+    top: -7%;
+    right: 0;
+}
+
+.card {
+    max-width: 70%;
+}
+
+.doctorImg {
+    width: 600px;
+    max-height: 670px;
+    position: relative;
+    margin-top: -15%;
+    max-width: 100%;
+}
+
+.title {
+    color: var(--Black);
+    font-size: 3.625rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+
+.subtitle {
+    font-size: 22px;
+    margin-bottom: 40px;
+    color: var(--Black);
+    max-width: 77.5%;
+}
+
+.statistic {
+    display: flex;
+}
+
+.statisticItemWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-right: 55px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+
+.upperStatisticItemText {
+    color: var(--Black);
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.statisticItemCount {
+    font-weight: 500;
+    font-size: 42px;
+    color: var(--Blue);
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+.statisticItemText {
+    display: flex;
+    color: var(--Black);
+    font-weight: 400;
+    font-size: 22px;
+    white-space: nowrap;
+    max-width: 80%;
+}
+
+.statisticItemWrapper:last-child .statisticItemText {
+    /*white-space: normal;*/
+}
+
+.socialLinksWrapper {
+    position: absolute;
+    left: 2.5%;
+    top: 150px;
+}
+
+.socialLinkItemWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.socialLinkItem {
+    margin-bottom: 30px;
+    height: 55px;
+    text-decoration: none;
+}

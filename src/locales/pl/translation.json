@@ -10,9 +10,9 @@
     }
   },
   "banner": {
-    "title": "Masz dość czekania w kolejkach w szpitalach?",
-    "subtitle": "Korzystaj z wysokiej jakości wizyt lekarskich w domu dzięki DOVIRA.",
-    "button": "Wersja internetowa",
+    "title": "DOVIRA - opieka zdrowotna online, której możesz zaufać",
+    "subtitle": "Dołącz do listy oczekujących - dowiedz się pierwszy, kiedy wystartujemy",
+    "button": "Dołącz do listy",
     "comingSoon": "wkrótce",
     "count": "500 tys.+",
     "patients": "Pacjenci",
@@ -42,18 +42,30 @@
     "description4": "Skontaktuj się z lekarzem o każdej porze dnia i nocy i bezzwłocznie uzyskaj niezbędną konsultację."
   },
   "priorities": {
-    "title": "Wypróbuj naszą wersję internetową",
-    "description": "Korzystaj ze wszystkich funkcji DOVIRA bezpośrednio w swojej przeglądarce. Nie jest wymagane żadne pobieranie — wystarczy odwiedzić naszą stronę internetową i rozpocząć konsultację już dziś!",
-    "button": "Odwiedź teraz"
+    "title": "DOVIRA w przeglądarce - uruchomienie wkrótce",
+    "description": "Wkrótce będziesz mógł uzyskać dostęp do wszystkich funkcji DOVIRA bezpośrednio z przeglądarki - bez konieczności pobierania.",
+    "description2": "Zostaw swój adres e-mail, a powiadomimy Cię, gdy tylko platforma zostanie uruchomiona.",
+    "button": "Uzyskaj wczesny dostęp"
   },
   "getStarted": {
     "title": "Zacznij dziś!",
-    "description": "Poczuj wygodę i spokój, jaki oferuje DOVIRA. Pobierz aplikację już teraz i zarządzaj swoim zdrowiem za pomocą kilku dotknięć. Twoje zdrowie jest dla nas ważne i jesteśmy tutaj, aby Ci pomóc na każdym kroku."
+    "description": "Poczuj wygodę i spokój, jaki oferuje DOVIRA. Pobierz aplikację już teraz i zarządzaj swoim zdrowiem za pomocą kilku dotknięć. Twoje zdrowie jest dla nas ważne i jesteśmy tutaj, aby Ci pomóc na każdym kroku.",
+    "description2": "Dołącz do listy oczekujących, aby otrzymać powiadomienie jako jeden z pierwszych.",
+    "button": "Powiadom mnie"
   },
   "contact": {
-    "text": "Jeśli masz jakiekolwiek pytania, skontaktuj się z nami za pośrednictwem mediów społecznościowych i wyślij nam wiadomość."
+    "text": "Chcesz dołączyć do DOVIRA?",
+    "description": "Niezależnie od tego, czy jesteś pacjentem, czy specjalistą medycznym - zostaw swoje dane kontaktowe, a my skontaktujemy się z Tobą przed uruchomieniem aplikacji.",
+    "button": "Dołącz do listy"
   },
   "footer": {
     "text": "© 2024 DOVIRA. Wszelkie prawa zastrzeżone."
+  },
+  "modal": {
+    "title": "Proszę wybrać swoją rolę",
+    "choice1": "Lekarz/Weterynarz",
+    "choice2": "Pacjent",
+    "button": "Dołącz do listy",
+    "message": "Przed kontynuowaniem wybierz swoją rolę"
   }
 }

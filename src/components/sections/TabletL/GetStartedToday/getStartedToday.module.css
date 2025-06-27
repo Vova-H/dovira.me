@@ -1,0 +1,89 @@
+.container {
+    max-width: 1920px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 200px;
+    width: 100%;
+    align-content: space-between;
+}
+
+.rightSide {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 15px;
+}
+
+.title {
+    color: var(--Black);
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.description {
+    color: var(--Black);
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    max-width: 90%;
+}
+
+.button {
+    background-color: var(--Blue);
+    padding: 16px 0;
+    width: 100%;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    border-color: transparent;
+    border-radius: 10px;
+}
+
+.links {
+    display: flex;
+}
+
+
+.linkImage {
+    width: 90%;
+    max-width: 190px;
+}
+
+
+.phoneWrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-left: -2%;
+}
+
+.phoneImage {
+    width: 50%;
+    z-index: 999;
+}
+
+.circle1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
+.circle2 {
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+    max-width: 70%;
+}
+
+.circle3 {
+    position: absolute;
+    top: -15%;
+    right: 10%;
+    max-width: 50%;
+}
