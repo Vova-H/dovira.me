@@ -12,6 +12,7 @@
 }
 
 .modal {
+    min-width: 500px;
     background: white;
     border-radius: 8px;
     padding: 40px 30px;
@@ -41,7 +42,7 @@
 
 .radioGroup {
     display: flex;
-    justify-content: center; /* Центрує .radioGroup в модалці */
+    justify-content: center;
     margin-bottom: 40px;
 }
 
@@ -101,33 +102,33 @@
 }
 
 
-/*!* 🔽 Mobile (up to 450px) *!*/
-/*@media (max-width: 450px) {*/
-/*    .modal {*/
-/*        width: 100%;*/
-/*        padding: 24px 16px;*/
-/*        border-radius: 0;*/
-/*    }*/
-
-/*    .title {*/
-/*        font-size: 20px;*/
-/*    }*/
-
-/*    .radioGroup {*/
-/*        flex-direction: column;*/
-/*        gap: 16px;*/
-/*        align-items: flex-start;*/
-/*    }*/
-
-/*    .radioOption {*/
-/*        font-size: 16px;*/
-/*    }*/
-/*}*/
+/* 🔽 Mobile (up to 450px) */
+@media (max-width: 450px) {
+    .modal {
+        min-width: 90%;
+        width: 100%;
+        padding: 60px 30px 40px;
+    }
+    .radioGroupInner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    .radioGroup {
+        flex-direction: row;
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .title{
+        font-size: 4.5vw;
+    }
+}
 
 /* 🔽 Tablet (450px – 768px) */
 @media (min-width: 451px) and (max-width: 768px) {
     .modal {
-        min-width: 350px;
+        min-width: 450px;
         width: 100%;
         padding: 60px 30px 40px;
     }
@@ -148,6 +149,7 @@
 @media (min-width: 769px) and (max-width: 1024px) {
     .modal{
         width: 100%;
-        min-width: 400px;
+        min-width: 500px;
+        padding: 60px 30px 40px;
     }
 }
