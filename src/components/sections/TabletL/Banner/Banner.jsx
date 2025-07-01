@@ -51,7 +51,7 @@ const Banner = () => {
                     <Button data-aos="fade-up" data-aos-delay="400"
                             onClick={openModal}
                             text={t(`banner.button`)}
-                            styles={{maxWidth: "300px", fontSize: "18px", marginBottom:"20px"}}
+                            styles={{maxWidth: "320px", fontSize: "18px", marginBottom:"20px"}}
                     />
 
                 </div>

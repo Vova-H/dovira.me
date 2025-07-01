@@ -46,7 +46,7 @@ const GetStartedToday = forwardRef((props, ref) => {
                 <Button text={t("getStarted.button")}
                         onClick={openModal}
                         data-aos="fade-up" data-aos-delay="400"
-                        styles={{width: "380px", maxWidth: "70%", padding: "15px 50px"}}
+                        className={classes.button}
                 />
             </div>
         </div>
