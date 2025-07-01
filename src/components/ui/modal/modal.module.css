@@ -41,11 +41,16 @@
 
 .radioGroup {
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    justify-content: center; /* Центрує .radioGroup в модалці */
     margin-bottom: 40px;
-    flex-wrap: wrap;
 }
+
+.radioGroupInner {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
 
 .radioOption {
     display: flex;
@@ -84,7 +89,10 @@
 .radioOption input:checked + .customRadio::after {
     content: "";
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     margin: auto;
     width: 8px;
     height: 8px;
@@ -116,37 +124,30 @@
 /*    }*/
 /*}*/
 
-/*!* 🔽 Tablet (450px – 768px) *!*/
-/*@media (min-width: 451px) and (max-width: 768px) {*/
-/*    .modal {*/
-/*        width: 90%;*/
-/*        padding: 28px;*/
-/*    }*/
+/* 🔽 Tablet (450px – 768px) */
+@media (min-width: 451px) and (max-width: 768px) {
+    .modal {
+        min-width: 350px;
+        width: 100%;
+        padding: 60px 30px 40px;
+    }
+    .radioGroupInner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    .radioGroup {
+        flex-direction: row;
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
 
-/*    .title {*/
-/*        font-size: 22px;*/
-/*    }*/
-
-/*    .radioGroup {*/
-/*        flex-direction: row;*/
-/*        gap: 16px;*/
-/*        flex-wrap: wrap;*/
-/*        justify-content: center;*/
-/*    }*/
-/*}*/
-
-/*!* 🔽 Tablet Large (768px – 1024px) *!*/
-/*@media (min-width: 769px) and (max-width: 1024px) {*/
-/*    .modal {*/
-/*        width: 380px;*/
-/*        padding: 32px;*/
-/*    }*/
-
-/*    .title {*/
-/*        font-size: 23px;*/
-/*    }*/
-
-/*    .radioGroup {*/
-/*        gap: 18px;*/
-/*    }*/
-/*}*/
+/* 🔽 Tablet Large (768px – 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .modal{
+        width: 100%;
+        min-width: 400px;
+    }
+}

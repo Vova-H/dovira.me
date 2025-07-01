@@ -3,7 +3,6 @@
     justify-content: center;
     padding-top: 10px;
     position: relative;
-
 }
 
 .bannerContent {
@@ -60,7 +59,7 @@
 
 .subtitle {
     font-size: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     color: var(--Black);
     max-width: 80%;
 }

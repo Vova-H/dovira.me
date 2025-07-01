@@ -9,9 +9,12 @@ import circle2 from "../../../../assets/images/getStartedToday/2.png"
 import circle3 from "../../../../assets/images/getStartedToday/3.png"
 import {useTranslation} from "react-i18next";
 import i18n from "../../../../i18n";
+import Button from "../../../ui/button/Button";
+import {useModal} from "../../../../context/ModalContext";
 
 
 const GetStartedToday = forwardRef((props, ref) => {
+    const {openModal} = useModal()
     const {t} = useTranslation();
     const lang = i18n.language
     return (
@@ -40,9 +43,11 @@ const GetStartedToday = forwardRef((props, ref) => {
                 <div className={classes.description} data-aos="fade-up">
                     {t("getStarted.description")}
                 </div>
-                <a href="///" className={classes.button} data-aos="fade-up" data-aos-delay="400">
-                    {t("getStarted.button")}
-                </a>
+                <Button text={t("getStarted.button")}
+                        onClick={openModal}
+                        data-aos="fade-up" data-aos-delay="400"
+                        styles={{width: "380px", maxWidth: "70%", padding: "15px 50px"}}
+                />
             </div>
         </div>
     );

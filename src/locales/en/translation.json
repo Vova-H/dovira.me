@@ -56,8 +56,8 @@
   },
   "contact": {
     "title": "Want to join DOVIRA?",
-      "description": "Whether you're a patient or a medical professional - leave your contact details and we’ll reach out before we launch.",
-      "button": "Join the waitlist"
+    "description": "Whether you're a patient or a medical professional - leave your contact details and we’ll reach out before we launch.",
+    "button": "Join the waitlist"
   },
   "footer": {
     "text": "© 2024 DOVIRA. All rights reserved. "

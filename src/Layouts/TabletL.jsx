@@ -43,7 +43,7 @@ const TabletL = (props) => {
                             contactUsRef
                         }}
                 />
-                <Banner scrollTo={props.scrollTo} refs={{downloadAppRef}}/>
+                <Banner/>
             </div>
             <OurServices ref={props.ourServicesRef}/>
             <WhyChoose ref={props.whyChooseUsRef}/>

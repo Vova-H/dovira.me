@@ -12,15 +12,16 @@ import smallCardPl from "../../../../assets/images/banner/smallCardPl.png"
 import cardPl from "../../../../assets/images/banner/cardPl.png"
 import {useTranslation} from "react-i18next";
 import i18n from "../../../../i18n";
+import {useModal} from "../../../../context/ModalContext";
+import Button from "../../../ui/button/Button";
 
 
-const Banner = ({scrollTo, refs}) => {
+const Banner = () => {
 
     const {t} = useTranslation();
     const lang = i18n.language
-    const handleNavigationClick = (ref) => {
-        scrollTo(ref);
-    };
+    const {openModal} = useModal();
+
 
     return (
         <div className={classes.bannerWrapper}>
@@ -47,11 +48,11 @@ const Banner = ({scrollTo, refs}) => {
                     <p className={classes.subtitle} data-aos="fade-up" data-aos-delay="400">
                         {t(`banner.subtitle`)}
                     </p>
-                    <button className={classes.button} data-aos="fade-up" data-aos-delay="400"
-                            onClick={() => handleNavigationClick(refs.downloadAppRef)}
-                    >
-                        {t(`banner.button`)}
-                    </button>
+                    <Button data-aos="fade-up" data-aos-delay="400"
+                            onClick={openModal}
+                            text={t(`banner.button`)}
+                            styles={{maxWidth: "300px", fontSize: "18px", marginBottom:"20px"}}
+                    />
 
                 </div>
                 <div className={classes.bannerRightSide}>

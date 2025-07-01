@@ -28,33 +28,35 @@ const Modal = ({isOpen, onClose, onSelect, selectedRole}) => {
                 <h2 className={classes.title}>{t("modal.title")}</h2>
 
                 <div className={classes.radioGroup}>
-                    <label className={classes.radioOption}>
-                        <input
-                            type="radio"
-                            name="role"
-                            value="doctor"
-                            checked={selectedRole === 'doctor'}
-                            onChange={() => onSelect('doctor')}
-                        />
-                        <span className={classes.customRadio}></span>
-                        {t("modal.choice1")}
-                    </label>
+                    <div className={classes.radioGroupInner}>
+                        <label className={classes.radioOption}>
+                            <input
+                                type="radio"
+                                name="role"
+                                value="doctor"
+                                checked={selectedRole === 'doctor'}
+                                onChange={() => onSelect('doctor')}
+                            />
+                            <span className={classes.customRadio}></span>
+                            {t("modal.choice1")}
+                        </label>
 
-                    <label className={classes.radioOption}>
-                        <input
-                            type="radio"
-                            name="role"
-                            value="patient"
-                            checked={selectedRole === 'patient'}
-                            onChange={() => onSelect('patient')}
-                        />
-                        <span className={classes.customRadio}></span>
-                        {t("modal.choice2")}
-                    </label>
+                        <label className={classes.radioOption}>
+                            <input
+                                type="radio"
+                                name="role"
+                                value="patient"
+                                checked={selectedRole === 'patient'}
+                                onChange={() => onSelect('patient')}
+                            />
+                            <span className={classes.customRadio}></span>
+                            {t("modal.choice2")}
+                        </label>
+                    </div>
                 </div>
 
                 <Button text={t("modal.button")} onClick={handleSubmitButtonClick}
-                        styles={{margin: "0 70px"}}
+
                 />
             </div>
         </div>
