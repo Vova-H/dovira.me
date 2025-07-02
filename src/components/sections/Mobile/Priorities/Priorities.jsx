@@ -5,6 +5,7 @@ import macbookUa from "../../../../assets/images/priorities/macbookUa.png"
 import macbookPl from "../../../../assets/images/priorities/macbookPl.png"
 import {useTranslation} from "react-i18next";
 import i18n from "../../../../i18n";
+import LazyImage from "../../../ui/LazyImage";
 
 const Priorities = forwardRef((props, ref) => {
 
@@ -24,11 +25,11 @@ const Priorities = forwardRef((props, ref) => {
                 </a>
                 {
                     lang === "en" ? (
-                        <img src={macbook} alt="macbook" className={classes.image}/>
+                        <LazyImage src={macbook} alt="macbook" className={classes.image}/>
                     ) : lang === "ua" ? (
-                        <img src={macbookUa} alt="macbook" className={classes.image}/>
+                        <LazyImage src={macbookUa} alt="macbook" className={classes.image}/>
                     ) : (
-                        <img src={macbookPl} alt="macbook" className={classes.image}/>
+                        <LazyImage src={macbookPl} alt="macbook" className={classes.image}/>
                     )
                 }
 

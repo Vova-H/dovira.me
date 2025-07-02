@@ -5,18 +5,32 @@ import facebook from "../../../../assets/images/footer/facebook.svg";
 import linkedIn from "../../../../assets/images/footer/linkedin.svg";
 import instagram from "../../../../assets/images/footer/instagram.svg";
 import {useTranslation} from "react-i18next";
+import LazyImage from "../../../ui/LazyImage";
+import Button from "../../../ui/button/Button";
+import {useModal} from "../../../../context/ModalContext";
 
 const Contact = forwardRef((props, ref) => {
 
+    const {openModal} = useModal();
     const {t} = useTranslation();
 
     return (
         <div className={classes.container} ref={ref} data-aos="fade-out" data-aos-duration="2000"
-             data-aos-anchor-placement="top-bootom">
-            <img src={email} alt="Email" className={classes.image}/>
+             data-aos-anchor-placement="top-bootom"
+        >
+            <LazyImage src={email} alt="Email" className={classes.image}/>
             <div className={classes.title}>
-                {t("contact.text")}
+                {t("contact.title")}
             </div>
+            <div className={classes.description}>
+                {t("contact.description")}
+            </div>
+            <Button
+                text={t("contact.button")}
+                onClick={openModal}
+                styles={{marginBottom: "40px", minWidth: "450px"}}
+
+            />
             <div className={classes.socialLinks}>
                 <a href="https://www.facebook.com/D0VIRA.me">
                     <img src={facebook} alt="Facebook"/>

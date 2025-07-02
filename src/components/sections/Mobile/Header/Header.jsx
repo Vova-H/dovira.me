@@ -57,8 +57,7 @@ const Header = ({scrollTo, refs}) => {
     return (
         <header className={classes.header}>
             <img className={classes.logo} src={Logo} alt="Logo"/>
-            <img
-                src={openedMenu ? closeIcon : Burger}
+            <img src={openedMenu ? closeIcon : Burger}
                 alt={openedMenu ? "Close menu" : "Burger menu"}
                 className={classes.burger}
                 onClick={handleOpenMenu}

@@ -7,6 +7,7 @@ import macbookUa from "../../../../assets/images/priorities/macbookUa.png";
 import macbookPl from "../../../../assets/images/priorities/macbookPl.png";
 import Button from "../../../ui/button/Button";
 import {useModal} from "../../../../context/ModalContext";
+import LazyImage from "../../../ui/LazyImage";
 
 const Priorities = forwardRef((props, ref) => {
 
@@ -26,11 +27,11 @@ const Priorities = forwardRef((props, ref) => {
                 </div>
                 {
                     lang === "en" ? (
-                        <img src={macbook} alt="doctor" className={classes.image}/>
+                        <LazyImage src={macbook} alt="doctor" className={classes.image}/>
                     ) : lang === "ua" ? (
-                        <img src={macbookUa} alt="doctor" className={classes.image}/>
+                        <LazyImage src={macbookUa} alt="doctor" className={classes.image}/>
                     ) : (
-                        <img src={macbookPl} alt="doctor" className={classes.image}/>
+                        <LazyImage src={macbookPl} alt="doctor" className={classes.image}/>
                     )
                 }
                 <Button text={t("priorities.button")} data-aos="fade-up" data-aos-delay="400"

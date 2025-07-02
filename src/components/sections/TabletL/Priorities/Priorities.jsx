@@ -7,6 +7,7 @@ import {useTranslation} from "react-i18next";
 import i18n from "../../../../i18n";
 import Button from "../../../ui/button/Button";
 import {useModal} from "../../../../context/ModalContext";
+import LazyImage from "../../../ui/LazyImage";
 
 const Priorities = forwardRef((props, ref) => {
 
@@ -26,11 +27,11 @@ const Priorities = forwardRef((props, ref) => {
                 />
                 {
                     lang === "en" ? (
-                        <img src={macbook} alt="mackbook" className={classes.image}/>
+                        <LazyImage src={macbook} alt="mackbook" className={classes.image}/>
                     ) : lang === "ua" ? (
-                        <img src={macbookUa} alt="mackbook" className={classes.image}/>
+                        <LazyImage src={macbookUa} alt="mackbook" className={classes.image}/>
                     ) : (
-                        <img src={macbookPl} alt="mackbook" className={classes.image}/>
+                        <LazyImage src={macbookPl} alt="mackbook" className={classes.image}/>
                     )
                 }
             </div>

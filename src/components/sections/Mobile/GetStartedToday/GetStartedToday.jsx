@@ -6,6 +6,7 @@ import phone from "../../../../assets/images/getStartedToday/mobile/phone.png";
 import phoneUa from "../../../../assets/images/getStartedToday/mobile/phoneUa.png";
 import phonePl from "../../../../assets/images/getStartedToday/mobile/phonePl.png";
 import i18n from "../../../../i18n";
+import LazyImage from "../../../ui/LazyImage";
 
 
 const GetStartedToday = forwardRef((props, ref) => {
@@ -21,13 +22,13 @@ const GetStartedToday = forwardRef((props, ref) => {
             </div>
             {
                 lang === "en" ? (
-                    <img src={phone} className={classes.image} alt="Phone" data-aos="fade" data-aos-duration="3000"
+                    <LazyImage src={phone} className={classes.image} alt="Phone" data-aos="fade" data-aos-duration="3000"
                          data-aos-anchor-placement="top-center"/>
                 ) : lang === "ua" ? (
-                    <img src={phoneUa} className={classes.image} alt="Phone" data-aos="fade" data-aos-duration="3000"
+                    <LazyImage src={phoneUa} className={classes.image} alt="Phone" data-aos="fade" data-aos-duration="3000"
                          data-aos-anchor-placement="top-center"/>
                 ) : (
-                    <img src={phonePl} className={classes.image} alt="Phone" data-aos="fade" data-aos-duration="3000"
+                    <LazyImage src={phonePl} className={classes.image} alt="Phone" data-aos="fade" data-aos-duration="3000"
                          data-aos-anchor-placement="top-center"/>
                 )
             }

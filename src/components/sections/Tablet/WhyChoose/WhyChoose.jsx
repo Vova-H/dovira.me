@@ -6,6 +6,7 @@ import {useTranslation} from "react-i18next";
 import i18n from "../../../../i18n";
 import doctorUa from "../../../../assets/images/whyChoose/pictureUa.png";
 import doctorPl from "../../../../assets/images/whyChoose/picturePl.png";
+import LazyImage from "../../../ui/LazyImage";
 
 const WhyChoose = forwardRef((props, ref) => {
 
@@ -55,13 +56,13 @@ const WhyChoose = forwardRef((props, ref) => {
             </div>
             {
                 lang === "en" ? (
-                    <img src={doctor} alt="Doctor" className={classes.doctorImage} data-aos="fade" data-aos-delay="200"
+                    <LazyImage src={doctor} alt="Doctor" className={classes.doctorImage} data-aos="fade" data-aos-delay="200"
                          data-aos-duration="1500"/>
                 ) : lang === "ua" ? (
-                    <img src={doctorUa} alt="Doctor" className={classes.doctorImage} data-aos="fade" data-aos-delay="200"
+                    <LazyImage src={doctorUa} alt="Doctor" className={classes.doctorImage} data-aos="fade" data-aos-delay="200"
                          data-aos-duration="1500"/>
                 ) : (
-                    <img src={doctorPl} alt="Doctor" className={classes.doctorImage} data-aos="fade" data-aos-delay="200"
+                    <LazyImage src={doctorPl} alt="Doctor" className={classes.doctorImage} data-aos="fade" data-aos-delay="200"
                          data-aos-duration="1500"/>
                 )
             }
