@@ -15,7 +15,7 @@ const Priorities = forwardRef((props, ref) => {
     const {openModal} = useModal();
     const lang = i18n.language
     return (
-        <div ref={ref} data-aos="fade-out" data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
+        <section ref={ref} data-aos="fade-out" data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
             <div className={classes.container}>
                 <div className={classes.title}>{t("priorities.title")}</div>
                 <div className={classes.description}>
@@ -35,7 +35,7 @@ const Priorities = forwardRef((props, ref) => {
                     )
                 }
             </div>
-        </div>
+        </section>
     );
 });
 

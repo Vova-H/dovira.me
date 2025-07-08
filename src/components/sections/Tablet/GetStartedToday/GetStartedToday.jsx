@@ -16,7 +16,7 @@ const GetStartedToday = forwardRef((props, ref) => {
     const {openModal} = useModal()
     const lang = i18n.language
     return (
-        <div className={classes.container} ref={ref}>
+        <section className={classes.container} ref={ref}>
             <div className={classes.title} data-aos="fade-left" data-aos-delay="200">{t("getStarted.title")}</div>
             <div className={classes.description} style={{marginBottom: "20px"}} data-aos="fade-right"
                  data-aos-delay="200">
@@ -48,7 +48,7 @@ const GetStartedToday = forwardRef((props, ref) => {
                                data-aos-anchor-placement="top-center"/>
                 )
             }
-        </div>
+        </section>
     );
 });
 

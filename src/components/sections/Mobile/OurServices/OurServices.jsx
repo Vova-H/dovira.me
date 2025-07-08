@@ -12,7 +12,7 @@ const OurServices = forwardRef((props, ref) => {
     const {t} = useTranslation();
 
     return (
-        <div className={classes.container} ref={ref}>
+        <section className={classes.container} ref={ref}>
             <div className={classes.title} data-aos="fade-down" data-aos-delay="200">  {t(`ourServices.ourServices`)}</div>
             <div className={classes.serviceWrapper}>
                 <div className={classes.service} data-aos="fade-up">
@@ -47,7 +47,7 @@ const OurServices = forwardRef((props, ref) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 });
 

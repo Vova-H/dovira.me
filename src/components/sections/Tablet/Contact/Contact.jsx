@@ -15,7 +15,7 @@ const Contact = forwardRef((props, ref) => {
     const {t} = useTranslation();
 
     return (
-        <div className={classes.container} ref={ref} data-aos="fade-out" data-aos-duration="2000"
+        <section className={classes.container} ref={ref} data-aos="fade-out" data-aos-duration="2000"
              data-aos-anchor-placement="top-bootom"
         >
             <LazyImage src={email} alt="Email" className={classes.image}/>
@@ -42,7 +42,7 @@ const Contact = forwardRef((props, ref) => {
                     <img src={instagram} alt="Instagram"/>
                 </a>
             </div>
-        </div>
+        </section>
     );
 });
 

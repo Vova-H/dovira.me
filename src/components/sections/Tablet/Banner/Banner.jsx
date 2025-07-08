@@ -15,7 +15,7 @@ const Banner = () => {
     const {openModal} = useModal()
 
     return (
-        <div className={classes.bannerWrapper}>
+        <section className={classes.bannerWrapper}>
             <h1 className={classes.title} data-aos="fade-left" data-aos-delay="200">
                 {t(`banner.title`)}
             </h1>
@@ -56,7 +56,7 @@ const Banner = () => {
                     <img src={doctorPl} alt="Doctor" className={classes.doctor} data-aos="fade" data-aos-delay="200"/>
                 )
             }
-        </div>
+        </section>
     );
 };
 

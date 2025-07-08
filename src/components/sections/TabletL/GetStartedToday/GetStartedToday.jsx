@@ -19,7 +19,7 @@ const GetStartedToday = forwardRef((props, ref) => {
     const {t} = useTranslation();
     const lang = i18n.language
     return (
-        <div className={classes.container} ref={ref}>
+        <section className={classes.container} ref={ref}>
             <div className={classes.phoneWrapper}>
                 {
                     lang === "en" ? (
@@ -50,7 +50,7 @@ const GetStartedToday = forwardRef((props, ref) => {
                         className={classes.button}
                 />
             </div>
-        </div>
+        </section>
     );
 });
 

@@ -7,13 +7,13 @@ const Footer = () => {
     const {t} = useTranslation()
 
     return (
-        <footer className={classes.container}>
+        <section className={classes.container}>
             <div className={classes.content}>
                 <div className={classes.copyright}>
                     {t("footer.text")}
                 </div>
             </div>
-        </footer>
+        </section>
     );
 };
 

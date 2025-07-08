@@ -13,7 +13,7 @@ const Contact = forwardRef((props, ref) => {
     const {t} = useTranslation();
     const {openModal} = useModal();
     return (
-        <div className={classes.container} ref={ref} data-aos="fade-out" data-aos-duration="2000">
+        <section className={classes.container} ref={ref} data-aos="fade-out" data-aos-duration="2000">
             <img src={email} alt="Email" className={classes.image}/>
             <div className={classes.title}>
                 {t("contact.title")}
@@ -36,7 +36,7 @@ const Contact = forwardRef((props, ref) => {
                     <img src={instagram} alt="Instagram"/>
                 </a>
             </div>
-        </div>
+        </section>
     );
 });
 

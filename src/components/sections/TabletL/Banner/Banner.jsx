@@ -24,7 +24,7 @@ const Banner = () => {
 
 
     return (
-        <div className={classes.bannerWrapper}>
+        <section className={classes.bannerWrapper}>
             <div className={classes.socialLinksWrapper}>
                 <div className={classes.socialLinkItemWrapper}>
                     <a href="https://www.facebook.com/D0VIRA.me" data-aos="fade-right" data-aos-delay="300">
@@ -100,7 +100,7 @@ const Banner = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

@@ -14,7 +14,7 @@ const Contact = forwardRef((props, ref) => {
     const {openModal} = useModal();
 
     return (
-        <div className={classes.container} ref={ref} data-aos="fade-out" data-aos-duration="2000"
+        <section className={classes.container} ref={ref} data-aos="fade-out" data-aos-duration="2000"
              data-aos-anchor-placement="top-center">
             <img src={email} alt="Email" className={classes.image}/>
             <div className={classes.title}>
@@ -25,7 +25,7 @@ const Contact = forwardRef((props, ref) => {
             </div>
             <Button text={t("contact.button")}
                     onClick={openModal}
-                    styles={{marginBottom: "20px", width: "100%"}}
+                    styles={{marginBottom: "20px", width: "100%", padding: "15px 0", fontSize: "22px"}}
             />
             <div className={classes.socialLinks}>
                 <a href="https://www.facebook.com/D0VIRA.me">
@@ -38,7 +38,7 @@ const Contact = forwardRef((props, ref) => {
                     <img src={instagram} alt="Instagram"/>
                 </a>
             </div>
-        </div>
+        </section>
     );
 });
 

@@ -15,7 +15,7 @@ const WhyChoose = forwardRef((props, ref) => {
     const lang = i18n.language;
 
     return (
-        <div className={classes.container} ref={ref}>
+        <section className={classes.container} ref={ref}>
             <div className={classes.title} data-aos="fade-down" data-aos-delay="200">{t("whyChoose.whyChoose")}</div>
             <div className={classes.reason} data-aos="fade-right" data-aos-delay="100" data-aos-duration="1500">
                 <div className={classes.reasonNameWrapper}>
@@ -70,7 +70,7 @@ const WhyChoose = forwardRef((props, ref) => {
             }
 
 
-        </div>
+        </section>
     );
 });
 
