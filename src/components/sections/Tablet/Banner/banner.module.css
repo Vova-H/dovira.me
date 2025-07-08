@@ -8,7 +8,6 @@
     font-size: 45px;
     font-weight: 500;
     margin-bottom: 20px;
-    text-align: center;
 }
 
 .subtitle {
@@ -16,7 +15,6 @@
     font-weight: 400;
     color: var(--Black);
     margin-bottom: 30px;
-    text-align: center;
 }
 
 .button {

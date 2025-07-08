@@ -6,12 +6,14 @@ import macbookPl from "../../../../assets/images/priorities/macbookPl.png"
 import {useTranslation} from "react-i18next";
 import i18n from "../../../../i18n";
 import LazyImage from "../../../ui/LazyImage";
+import Button from "../../../ui/button/Button";
+import {useModal} from "../../../../context/ModalContext";
 
 const Priorities = forwardRef((props, ref) => {
 
     const {t} = useTranslation()
     const lang = i18n.language
-
+    const {openModal} = useModal()
     return (
         <div className={classes.extraContainer} ref={ref}
              data-aos="fade-out" data-aos-duration="2000" data-aos-anchor-placement="top-center">
@@ -20,9 +22,15 @@ const Priorities = forwardRef((props, ref) => {
                 <div className={classes.description}>
                     {t("priorities.description")}
                 </div>
-                <a href="///" className={classes.button}>
-                    {t("priorities.button")}
-                </a>
+                <div className={classes.description}>
+                    {t("priorities.description2")}
+                </div>
+                <Button
+                    text={t("priorities.button")}
+                    className={classes.button}
+                    onClick={openModal}
+                />
+
                 {
                     lang === "en" ? (
                         <LazyImage src={macbook} alt="macbook" className={classes.image}/>

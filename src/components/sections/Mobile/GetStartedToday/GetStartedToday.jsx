@@ -7,12 +7,15 @@ import phoneUa from "../../../../assets/images/getStartedToday/mobile/phoneUa.pn
 import phonePl from "../../../../assets/images/getStartedToday/mobile/phonePl.png";
 import i18n from "../../../../i18n";
 import LazyImage from "../../../ui/LazyImage";
+import Button from "../../../ui/button/Button";
+import {useModal} from "../../../../context/ModalContext";
 
 
 const GetStartedToday = forwardRef((props, ref) => {
 
     const {t} = useTranslation();
     const lang = i18n.language
+    const {openModal} = useModal()
     return (
         <div className={classes.container} ref={ref}>
 
@@ -20,6 +23,16 @@ const GetStartedToday = forwardRef((props, ref) => {
             <div className={classes.description} data-aos="fade-right" data-aos-delay="200">
                 {t("getStarted.description")}
             </div>
+            <div className={classes.description} data-aos="fade-right" data-aos-delay="200">
+                {t("getStarted.description2")}
+            </div>
+            <Button
+                text={t("getStarted.button")}
+                onClick={openModal}
+                styles={{width: "100%"}}
+                data-aos="fade-in"
+                data-aos-delay="400"
+            />
             {
                 lang === "en" ? (
                     <LazyImage src={phone} className={classes.image} alt="Phone" data-aos="fade" data-aos-duration="3000"

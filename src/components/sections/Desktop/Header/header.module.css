@@ -24,14 +24,7 @@
 
 }
 
-@media (min-width: 1025px) and (max-width: 1120px) {
-    .header {
-        max-width: 100%;
-    }
-    .logo{
-        margin-left: 3%;
-    }
-}
+
 
 .logo {
     max-width: 100px;
@@ -97,4 +90,16 @@
     transform: rotateX(180deg);
     margin-left: 5px;
     width: 16px;
+}
+
+@media (min-width: 1025px) and (max-width: 1120px) {
+    .header {
+        max-width: 100%;
+    }
+    .logo{
+        margin-left: 3%;
+    }
+    .dropdownMenu {
+        right:0;
+    }
 }

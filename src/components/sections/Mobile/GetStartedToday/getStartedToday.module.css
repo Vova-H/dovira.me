@@ -11,6 +11,7 @@
     font-size: 28px;
     font-weight: 500;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .description {
@@ -18,24 +19,13 @@
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 30px;
+
 }
 
 .links {
     width: 100%;
     display: flex;
     justify-content: center;
-}
-
-.link {
-    width: 200px;
-    margin-right: 5%;
-    &:last-child{
-        margin-right: 0;
-    }
-}
-
-.linkImage {
-    width: 100%;
 }
 
 .image {

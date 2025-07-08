@@ -36,7 +36,7 @@
 .title {
     font-size: 24px;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: var(--Black);
 }
 
@@ -101,6 +101,18 @@
     background: var(--Blue);
 }
 
+.button {
+    background-color: var(--Blue);
+    padding: 15px 55px;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    border-color: transparent;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 
 /* 🔽 Mobile (up to 450px) */
 @media (max-width: 450px) {
@@ -109,47 +121,76 @@
         width: 100%;
         padding: 60px 30px 40px;
     }
+
     .radioGroupInner {
         flex-direction: column;
         align-items: flex-start;
         gap: 16px;
     }
+
     .radioGroup {
         flex-direction: row;
         gap: 16px;
         flex-wrap: wrap;
         justify-content: center;
     }
-    .title{
+
+    .title {
+        font-size: 5.5vw;
+        width: 100%;
+    }
+
+    .radioOption {
         font-size: 4.5vw;
+    }
+
+    .button {
+        font-size: 5vw;
+        padding: 4vw 8vw;
     }
 }
 
+
 /* 🔽 Tablet (450px – 768px) */
-@media (min-width: 451px) and (max-width: 768px) {
+@media (min-width: 450px) and (max-width: 768px) {
     .modal {
-        min-width: 450px;
+        min-width: 400px;
         width: 100%;
         padding: 60px 30px 40px;
     }
+
+    .title {
+        font-size: 21px;
+    }
+
+    .button {
+        font-size: 24px;
+        padding: 5% 10%;
+    }
+
     .radioGroupInner {
         flex-direction: column;
         align-items: flex-start;
         gap: 16px;
     }
+
     .radioGroup {
         flex-direction: row;
         gap: 16px;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .radioOption {
+        font-size: 20px;
     }
 }
 
 /* 🔽 Tablet Large (768px – 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
-    .modal{
+    .modal {
         width: 100%;
         min-width: 500px;
-        padding: 60px 30px 40px;
+        padding: 40px 30px 40px;
     }
 }

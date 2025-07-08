@@ -56,7 +56,7 @@ const Modal = ({isOpen, onClose, onSelect, selectedRole}) => {
                 </div>
 
                 <Button text={t("modal.button")} onClick={handleSubmitButtonClick}
-
+                        className={classes.button}
                 />
             </div>
         </div>

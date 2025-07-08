@@ -5,14 +5,13 @@ import doctorUa from "../../../../assets/images/banner/mobile/picture of doctorU
 import doctorPl from "../../../../assets/images/banner/mobile/picture of doctorPl.png"
 import {useTranslation} from "react-i18next";
 import i18n from "../../../../i18n";
+import Button from "../../../ui/button/Button";
+import {useModal} from "../../../../context/ModalContext";
 
-const Banner = ({scrollTo, refs}) => {
+const Banner = () => {
     const {t} = useTranslation();
     const lang = i18n.language
-
-    const handleNavigationClick = (ref) => {
-        scrollTo(ref);
-    };
+    const {openModal} = useModal()
 
     return (
         <div className={classes.bannerWrapper}>
@@ -22,14 +21,16 @@ const Banner = ({scrollTo, refs}) => {
             <p className={classes.subtitle} data-aos="fade-left" data-aos-delay="200">
                 {t(`banner.subtitle`)}
             </p>
-            <button className={classes.button}
-                    data-aos="fade"
-                    data-aos-delay="200"
-                    data-aos-duration="2000"
-                    onClick={() => handleNavigationClick(refs.ourPrioritiesRef)}
-            >
-                {t(`banner.button`)}
-            </button>
+            <Button
+                text={t(`banner.button`)}
+                className={classes.button}
+                data-aos="fade"
+                data-aos-delay="200"
+                data-aos-duration="2000"
+                onClick={openModal}
+            />
+
+
             <div className={classes.statistic}>
                 <div className={classes.statisticItemWrapper} data-aos="fade-up" data-aos-delay="200">
                     <p className={classes.statisticItemTextBefore}>{t(`banner.comingSoon`)}</p>

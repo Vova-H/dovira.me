@@ -5,9 +5,6 @@
     user-select: none;
     box-sizing: border-box;
     scrollbar-width: none;
-}
-
-a {
     -webkit-tap-highlight-color: transparent;
 }
 
