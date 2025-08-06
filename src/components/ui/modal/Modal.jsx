@@ -12,9 +12,11 @@ const Modal = ({isOpen, onClose, onSelect, selectedRole}) => {
 
     const handleSubmitButtonClick = () => {
         if (selectedRole === 'doctor') {
-            window.location.href = 'https://google.com';
+            window.open('https://docs.google.com/forms/d/e/1FAIpQLSfkQAyJtFOazszd5jrUgZaz4EXPC7r_GxUXnQlEYwO-ahW7sg/viewform', '_blank');
+            onClose();
         } else if (selectedRole === 'patient') {
-            window.location.href = 'https://google.com';
+            window.open('https://docs.google.com/forms/d/e/1FAIpQLSe3LQNUvTqxACkx-b2uUp3bTy1riob9OfNhNJFMqthQ7ElKMw/viewform?usp=header', '_blank');
+            onClose();
         } else {
             alert(t("modal.message"));
         }
