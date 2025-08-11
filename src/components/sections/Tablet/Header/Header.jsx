@@ -9,7 +9,6 @@ import closeIcon from "../../../../assets/images/banner/mobile/cross.svg";
 import arrowImg from "../../../../assets/images/header/arrow.png";
 import {LanguageContext} from "../../../../context/LanguageProvider";
 import {useTranslation} from "react-i18next";
-import i18n from "../../../../i18n";
 
 
 const Header = ({scrollTo, refs}) => {
@@ -17,7 +16,6 @@ const Header = ({scrollTo, refs}) => {
 
     const [openedMenu, setOpenedMenu] = useState(false);
     const [dropdownOpen, setDropdownOpen] = useState(false);
-    const [chosenLangCode, setChosenLangCode] = useState(i18n.language);
     const services = refs.ourServicesRef;
     const whyChooseUs = refs.whyChooseUsRef
     const priorities = refs.ourPrioritiesRef
@@ -25,7 +23,7 @@ const Header = ({scrollTo, refs}) => {
     const contactUs = refs.contactUsRef
 
     const {changeLanguage} = useContext(LanguageContext);
-    const {t} = useTranslation();
+    const {t, i18n} = useTranslation();
 
     const handleOpenMenu = () => {
         setOpenedMenu(prevState => !prevState);
@@ -43,7 +41,6 @@ const Header = ({scrollTo, refs}) => {
 
     const handleChangeLanguage = (lang, langCode) => {
         changeLanguage(langCode)
-        setChosenLangCode(langCode)
         setDropdownOpen(false);
     };
 
@@ -82,7 +79,7 @@ const Header = ({scrollTo, refs}) => {
                     </p>
                     <div className={classes.navigationItem} onClick={toggleDropdown}>
                         <div className={classes.navigationItemChangeLang}>
-                            {t(`header.language.${chosenLangCode}`)}
+                            {t(`header.language.${i18n.language}`)}
                             {dropdownOpen ?
                                 <img className={classes.dropIcon} src={arrowImg} alt="arrow"/>
                                 :

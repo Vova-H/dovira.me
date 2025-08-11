@@ -8,10 +8,8 @@ import {useTranslation} from 'react-i18next';
 
 const Header = ({scrollTo, refs}) => {
     const [dropdownOpen, setDropdownOpen] = useState(false);
-    const [chosenLangCode, setChosenLangCode] = useState("en");
-
     const {changeLanguage} = useContext(LanguageContext);
-    const {t} = useTranslation();
+    const {t, i18n} = useTranslation();
 
 
     const handleNavigationClick = (ref, offset = 0) => {
@@ -24,7 +22,6 @@ const Header = ({scrollTo, refs}) => {
 
     const handleChangeLanguage = (lang, langCode) => {
         changeLanguage(langCode)
-        setChosenLangCode(langCode)
         setDropdownOpen(false);
     };
 
@@ -63,7 +60,7 @@ const Header = ({scrollTo, refs}) => {
                          onClick={toggleDropdown}
                     >
                         <p style={{display: "flex", alignItems: "center"}}>
-                            {t(`header.language.${chosenLangCode}`)}
+                            {t(`header.language.${i18n.language}`)}
                             {dropdownOpen ?
                                 <img className={classes.dropIcon} src={arrowImg} alt="arrow"/>
                                 :
